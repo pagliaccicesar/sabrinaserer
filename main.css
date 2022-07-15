@@ -82,7 +82,7 @@
 /* Comienza la segunda hoja html */
 
   .botonera {
-     padding-left: 10px;
+     padding-left: 10px;     
   }
 
   .button {
@@ -100,6 +100,10 @@
   
   .button1 {border-radius: 20px;}
   .button2 {border-radius: 20px;}
+
+  .button1, .button2 {
+    text-decoration: none;
+  }
   
 p {
     padding-left: 16px;

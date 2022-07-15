@@ -8,7 +8,7 @@ body {
     font: 1rem Helvetica, Arian, sans-serif;
     margin: 2rem;
     padding: 2rem;
-    text-align: center;
+    text-align: justify;
     transition: 0.3s;
   }
   .item.in-viewport {
