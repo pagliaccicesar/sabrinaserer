@@ -78,7 +78,7 @@
   }
   
   .footer {
-    padding-bottom: 450px ;
+    padding-bottom: 450px;
     background-color: #9933cc;
     color: #ffffff;
     text-align: center;
@@ -116,6 +116,7 @@ h2 {
   font: 1rem Helvetica, Arian, sans-serif;
   font-size: 150%;
   text-align: justify;
+  color: darkblue;
 }
 
 .foto {
