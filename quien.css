@@ -6,7 +6,7 @@ body {
   .item {
     background: #ccc;
     font: 1rem Helvetica, Arian, sans-serif;
-    margin: 2rem;
+    margin: 1rem;
     padding: 2rem;
     text-align: justify;
     transition: 0.3s;
@@ -21,8 +21,11 @@ body {
   .header {
     background-image: linear-gradient(to right,#9933cc , orange);    
     color: #ffffff;
-    padding: 15px;
-    
+    padding: 15px;    
+  }
+
+h4 {
+  text-align: left;
   }
 
   .botonera {
