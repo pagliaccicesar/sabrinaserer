@@ -68,9 +68,9 @@
 
   .portada:hover {
     cursor: pointer;
-    -webkit-transform:scale(1.3);
+    /*-webkit-transform:scale(1.1);
     transition: .5s;
-    transform: scale(1.1);
+    transform: scale(1.1);*/
   }
 
   .redes:hover {
@@ -117,6 +117,14 @@ h2 {
   font-size: 150%;
   text-align: justify;
   color: darkblue;
+}
+
+h3 {
+  font: 1rem Helvetica, Arian, sans-serif;
+  font-size: 130%;
+  text-align: justify;
+  color: darkblue;
+
 }
 
 .foto {
