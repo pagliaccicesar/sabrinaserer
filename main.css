@@ -68,7 +68,7 @@
 
   .portada:hover {
     cursor: pointer;
-    -webkit-filter: contrast(300%)
+    -webkit-filter: contrast(300%);
     /*-webkit-transform:scale(1.1);
     transition: .5s;
     transform: scale(1.1);*/
