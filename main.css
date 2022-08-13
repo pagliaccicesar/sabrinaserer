@@ -125,7 +125,10 @@ h3 {
   font-size: 130%;
   text-align: justify;
   color: darkblue;
+}
 
+h5 {
+  color: darkblue;
 }
 
 .foto {
@@ -197,7 +200,7 @@ p {
   h3 {
     font: 1rem Helvetica, Arian, sans-serif;
     font-size: 110%;
-    text-align: justify;
+    text-align: left;
     color: darkblue;
   }
 
