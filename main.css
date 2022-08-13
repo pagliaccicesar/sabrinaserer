@@ -177,7 +177,7 @@ p {
     .col-12 {width: 100%;}
   }
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 769px) {    /*769*/
     .libro {
       align-content: center;
       width: 100%;
@@ -185,3 +185,20 @@ p {
     }
 
   }
+
+  @media (max-width: 636px) {
+
+  h2 {
+    font: 1rem Helvetica, Arian, sans-serif;
+    font-size: 120%;
+    text-align: left;
+    color: darkblue;
+  }
+  h3 {
+    font: 1rem Helvetica, Arian, sans-serif;
+    font-size: 110%;
+    text-align: justify;
+    color: darkblue;
+  }
+
+}
