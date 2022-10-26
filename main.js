@@ -37,7 +37,7 @@ items.forEach(item => {
 /*  javascript para el carro de compras  */////////
 
 // Variables
-const baseDeDatos = [
+/*const baseDeDatos = [
     {
         id: 1,
         nombre: '"Diseño y Monitoreo de las Politicas Públicas en el marco de Gestión para Resutados"',
@@ -58,7 +58,7 @@ const baseDeDatos = [
     },*/
     
 
-];
+/*];
 
 let carrito = [];
 const divisa = '$';
@@ -72,7 +72,7 @@ const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 /**
  * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
  */
-function renderizarProductos() {
+/*function renderizarProductos() {
     baseDeDatos.forEach((info) => {
         // Estructura
         const miNodo = document.createElement('div');
@@ -111,7 +111,7 @@ function renderizarProductos() {
 /**
  * Evento para añadir un producto al carrito de la compra
  */
-function anyadirProductoAlCarrito(evento) {
+/*function anyadirProductoAlCarrito(evento) {
     // Anyadimos el Nodo a nuestro carrito
     carrito.push(evento.target.getAttribute('marcador'))
     // Actualizamos el carrito 
@@ -122,7 +122,7 @@ function anyadirProductoAlCarrito(evento) {
 /**
  * Dibuja todos los productos guardados en el carrito
  */
-function renderizarCarrito() {
+/*function renderizarCarrito() {
     // Vaciamos todo el html
     DOMcarrito.textContent = '';
     // Quitamos los duplicados
@@ -145,7 +145,7 @@ function renderizarCarrito() {
         miNodo.textContent = `${numeroUnidadesItem}  ${miItem[0].nombre}`;
         /*miNodo.textContent = `${numeroUnidadesItem}  ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;*/
         // Boton de borrar
-        const miBoton = document.createElement('button');
+    /*const miBoton = document.createElement('button');
         miBoton.classList.add('btn', 'btn-danger', 'mx-5');
         miBoton.textContent = 'Volver a 0';
         miBoton.style.marginLeft = '1rem';
@@ -162,7 +162,7 @@ function renderizarCarrito() {
 /**
  * Evento para borrar un elemento del carrito
  */
-function borrarItemCarrito(evento) {
+/*function borrarItemCarrito(evento) {
     // Obtenemos el producto ID que hay en el boton pulsado
     const id = evento.target.dataset.item;
     // Borramos todos los productos
@@ -176,7 +176,7 @@ function borrarItemCarrito(evento) {
 /**
  * Calcula el precio total teniendo en cuenta los productos repetidos
  */
-function calcularTotal() {
+/*function calcularTotal() {
     // Recorremos el array del carrito 
     return carrito.reduce((total, item) => {
         // De cada elemento obtenemos su precio
@@ -191,7 +191,7 @@ function calcularTotal() {
 /**
  * Varia el carrito y vuelve a dibujarlo
  */
-function vaciarCarrito() {
+/*function vaciarCarrito() {
     // Limpiamos los productos guardados
     carrito = [];
     // Renderizamos los cambios
@@ -204,3 +204,4 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 // Inicio
 renderizarProductos();
 renderizarCarrito();
+*/
