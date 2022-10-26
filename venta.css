@@ -79,7 +79,7 @@ aside {
     width: 60%;
     
     color: #fff;
-    padding: 0 60px;
+    padding: 0 30px;
     box-sizing: border-box;
 }
 
@@ -90,7 +90,7 @@ aside {
 }
 
 .glow-on-hover {
-    width: 100px;
+    width: 110px;
     height: 35px;
     border: none;
     outline: none;
