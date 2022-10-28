@@ -83,6 +83,21 @@ aside {
     box-sizing: border-box;
 }
 
+.car {
+    border-radius: 10%;
+    box-shadow: #7a00ff;
+}
+.car:hover {
+    cursor: pointer;
+    opacity: 50%;    
+}
+
+.cielo:hover {
+    transform: scale(1.1);
+}
+
+
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
