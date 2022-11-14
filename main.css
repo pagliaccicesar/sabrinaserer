@@ -60,18 +60,11 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
-  /*.libro { 
-    align-content: center;
-    width: 100%;
-    height: auto;
-  }*/
 
   .portada:hover {
     cursor: pointer;
     -webkit-filter: contrast(300%);
-    /*-webkit-transform:scale(1.1);
-    transition: .5s;
-    transform: scale(1.1);*/
+    
   }
 
   .redes:hover {
