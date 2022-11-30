@@ -1,32 +1,26 @@
 * {
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 
 body {
     padding: .5rem;
     font-family:  Helvetica, Arian, sans-serif;
-    background-color: whitesmoke;   
-}
+    background-color: whitesmoke;}
 
 html {
-    font-family:  Helvetica, Arian, sans-serif;
-}  
+    font-family:  Helvetica, Arian, sans-serif;}  
   
 .header {
     background-image: linear-gradient(to right,#9933cc , orange);    
     color: #ffffff;
-    padding: 8px;    
-}
+    padding: 8px;}
 
 h1 {
     font-family:  Helvetica, Arian, sans-serif;
-    font-size: 150%;
-    font-weight: bold;
-}
+    font-size: 170%;
+    font-weight: bold;}
 
 .botonera {
-    padding-left: 15px;     
-}
+    padding-left: 15px;}
 
 .button {
     background-color: #88dffc; 
@@ -38,20 +32,21 @@ h1 {
    display: inline-block;
    font-size: 16px;
    margin: 2px 6px;
-   cursor: pointer;      
-}
- 
+   cursor: pointer;}
+
 .button1 {border-radius: 20px;}
 
 h4 {
-    color: indigo;
-}
-          
+    color: indigo;}  
+
+
+/********************  Galeria de fotos, segun eventos ************************/ 
+
 img {
     max-width: 100%;
     vertical-align: top;
 }
-          
+
 .gallery {
     display: flex;
     margin: 10px auto;
@@ -83,7 +78,7 @@ img {
     visibility: hidden;           
 }
 
-.gallery2__selector:hover {
+.gallery__selector:hover {
     cursor: pointer;
 }
         
@@ -94,6 +89,44 @@ img {
     box-shadow: 0 0 0 3px #0be2f6;
     cursor: pointer;
 }
+
+
+.gallery1 {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: 66.6666666667%;
+}
+@media screen and (min-width: 600px) {
+    .gallery1 {
+    padding-top: 400px;
+    }
+}
+.gallery1__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+.gallery1__thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+}
+.gallery1__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.gallery1__selector:checked + .gallery1__img {
+    opacity: 1;
+}
+.gallery1__selector:checked ~ .gallery1__thumb > img {
+    box-shadow: 0 0 0 3px #0be2f6;
+}
+
 
 
 
@@ -133,6 +166,10 @@ transition: opacity 0.3s ease-in-out;
 .gallery2__selector:checked ~ .gallery2__thumb > img {
     box-shadow: 0 0 0 3px #0be2f6;
 }
+
+
+
+
 .gallery3 {
     display: flex;
     margin: 10px auto;
