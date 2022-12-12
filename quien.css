@@ -24,7 +24,7 @@ body {
     padding: 15px;    
   }
 
-h4 {
+h3 {
   text-align: left;
   }
 
@@ -48,8 +48,13 @@ h4 {
  .button1 {border-radius: 20px;}
  .button2 {border-radius: 20px;}
 
- 
+ .graf {
+  align-items: center;
+  width: 100%;
+  height: auto;
+ }
 
+ 
  .btn-11 {
   border: none;
   background: rgb(251,33,117);
