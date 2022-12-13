@@ -161,3 +161,35 @@
     line-height: 1.1;
     word-spacing: 1vw;
   }
+
+
+  table {
+    font-family: 'Alata', sans-serif;
+    size: 80em;
+    color: midnightblue;
+    border-collapse: collapse;
+ }
+
+  h5 {
+    font-family: 'Alata', sans-serif;    
+    font-size: 150%;
+    color: black;
+  }
+
+  @media (max-width: 480px) {
+    th, td, tr {
+      text-align: center;
+      font-size: 79%; } }
+
+      td, th {
+        border: 2px solid coral;
+        text-align: center;
+        padding: 8px; }
+
+@media (max-width: 600px) {
+  h5 {
+    font-size: 100%;
+
+  }
+}
+
