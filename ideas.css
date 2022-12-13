@@ -165,7 +165,11 @@
   .esi {
     width: 65%;
     height: auto;
+  }
 
+  .ultimograf {
+    width: 45%;
+    height: auto;
   }
 
 
@@ -197,6 +201,10 @@
     font-size: 100%;
   }
   .esi {
+    width: 100%;
+    height: auto;
+  }
+  .ultimograf {
     width: 100%;
     height: auto;
   }
