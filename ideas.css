@@ -162,6 +162,12 @@
     word-spacing: 1vw;
   }
 
+  .esi {
+    width: 65%;
+    height: auto;
+
+  }
+
 
   table {
     font-family: 'Alata', sans-serif;
@@ -189,7 +195,10 @@
 @media (max-width: 600px) {
   h5 {
     font-size: 100%;
-
+  }
+  .esi {
+    width: 100%;
+    height: auto;
   }
 }
 
