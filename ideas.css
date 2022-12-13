@@ -172,6 +172,16 @@
     height: auto;
   }
 
+  .diagrama {
+    width: 70%;
+    height: auto;
+}
+
+  .grafica {
+    width: 70%;
+    height: auto;
+  }
+
 
   table {
     font-family: 'Alata', sans-serif;
@@ -205,6 +215,10 @@
     height: auto;
   }
   .ultimograf {
+    width: 100%;
+    height: auto;
+  }
+  .diagrama {
     width: 100%;
     height: auto;
   }
