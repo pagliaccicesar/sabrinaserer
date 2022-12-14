@@ -4,7 +4,7 @@
 body {
     padding: .5rem;
     font-family:  Helvetica, Arian, sans-serif;
-    background-color: whitesmoke;}
+    background-color: rgb(255, 242, 212);}
 
 html {
     font-family:  Helvetica, Arian, sans-serif;}  
@@ -23,7 +23,7 @@ h1 {
     padding-left: 15px;}
 
 .button {
-    background-color: #88dffc; 
+   background-color: #0099cc;
    border: none;
    color: white;
    padding: 15px;
