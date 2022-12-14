@@ -144,8 +144,7 @@
     top: 0;
   }
   
-  .card__category{
-    /*color: var(--text-lighter);*/
+  .card__category{    
     color: orange;
     font-size: 0.9rem;
     margin-bottom: var(--spacing-s);
