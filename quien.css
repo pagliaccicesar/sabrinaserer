@@ -4,7 +4,7 @@ body {
   }
   
   .item {
-    background: rgb(153, 21, 204, 0.6);
+    background:rgb(255, 165, 0, 0.7);
     font: 1rem Helvetica, Arian, sans-serif;
     margin: 1rem;
     padding: 2rem;
@@ -12,7 +12,7 @@ body {
     transition: 0.3s;
   }
   .item.in-viewport {
-    background:rgb(255, 165, 0, 0.7) ;
+    background: rgb(153, 21, 204, 0.6);
     /*background: #669;*/
     color: #fff;
   }
