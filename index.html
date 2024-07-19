@@ -26,71 +26,45 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
           <h4 style="color: white; font-weight: 600; padding-right: 30px; text-shadow: 0 0 20px white;" class="intro-heading text-uppercase" href="#page-top">Sabrina Serer</h4>
-          
-          
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              
-            <i class="fa fa-bars"></i>              
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#page-top">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#publicacion">Publicaciones</a>
-                  </li>                        
-                  <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
-                  </li>
-              </ul>
+                    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <div class="collapse navbar-collapse" id="navbarResponsive">          
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#page-top">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about_titulo">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#publicacion_titulo">Publicaciones</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contacto_titulo">Contacto</a>
+                        </li>
+                    </ul>
           </div>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">                        
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#page-top">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about_titulo">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#publicacion_titulo">Publicaciones</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contacto_titulo">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+    
       </div>
   </nav>
-
-
-
-
- <!-- Agrega el atributo data-toggle y data-target al botón del navbar para activar el colapso 
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>-->
-
-<!-- Agrega la clase 'collapse' al div que contiene las opciones del menú -
-<div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav ml-auto">
-        
-    </ul>
-</div>-->
-
-<!--// Cerrar el navbar al hacer clic en una opción del menú en dispositivos móviles
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
-Con estas modificaciones, el navbarResponsive colapsará automáticamente cuando el usuario seleccione una sección del menú en un dispositivo móvil. ¡Inténtalo y comprueba cómo funciona! ¿Hay algo más en lo que pueda ayudarte o alguna otra modificación que desees realizar? ¡Estoy aquí para asistirte en lo que necesites!-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   
@@ -101,7 +75,7 @@ Con estas modificaciones, el navbarResponsive colapsará automáticamente cuando
          <p style="color: rgb(78, 1, 78); font-weight: 600;">¡Hola! 👋 Soy Sabrina, apasionada por construir un futuro mejor para todas las generaciones venideras. 
             Para mí, ser buena profesional va de la mano de ser una buena persona. Mi objetivo es compartir conocimientos y experiencias, contribuyendo así a mejorar 
             la gestión pública desde cualquier rol que ocupemos. Sueño con un futuro mejor para nuestros niños y jóvenes, construyendo paso a paso una Argentina 
-            más próspera y justa para todos..</p>        
+            más próspera y justa para todos.</p>        
           <!--<p style="color: black;" >"La igualdad de género no es un destino, es un viaje. Revisá y ajustá tu presupuesto para un futuro más equitativo
               Empezá a invertir en proyectos con impacto de género hoy mismo..."</p>-->
 
@@ -122,7 +96,8 @@ Con estas modificaciones, el navbarResponsive colapsará automáticamente cuando
   </section>
 
   <!----------------------- About ----------------------->
-
+  <div id="about_titulo"></div>
+  <br>
   <section id="about">
       <div class="container">
           <div class="row">
@@ -153,6 +128,9 @@ Con estas modificaciones, el navbarResponsive colapsará automáticamente cuando
       </div>
   </section>
 
+
+  <div id="publicacion_titulo" ></div>
+  <br>
   <section id="publicacion">
       <div class="container">
           <div class="row">
@@ -299,6 +277,9 @@ Con estas modificaciones, el navbarResponsive colapsará automáticamente cuando
   <br>    
    
   <!-- Contact -->   <!--Aca eeta el viejo formulario que se va a reactivar cuando esten aviso legal y privacidad-->
+
+  <div id="contacto_titulo" ></div>
+  <br>
          
   <section id="contact">            
       <div class="container">                

@@ -56,14 +56,14 @@ items.forEach(item => {
       }
     });
     
-    $('.js-scroll-trigger').click(function() {
+    /*$('.js-scroll-trigger').click(function() {
       $('.navbar-collapse').collapse('hide');          
-    });  
+    });  */
 
-   /*  // Cerrar el navbar al hacer clic en una opción del menú en dispositivos móviles
-$('.navbar-nav>li>a').on('click', function(){
-  $('.navbar-collapse').collapse('hide');
-});*/
+  
+    $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
     
     
     $('body').scrollspy({
