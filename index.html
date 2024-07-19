@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -14,76 +13,509 @@
 
 <title>Sabrina Serer</title>
 <link rel="stylesheet" href="./main.css">
-
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
-<div class="container">
 
-<div class="header">
-  <h1>Sabrina Serer</h1>
-</div>
+<body id="page-top">
+       
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+          <h4 style="color: white; font-weight: 600; padding-right: 30px; text-shadow: 0 0 20px white;" class="intro-heading text-uppercase" href="#page-top">Sabrina Serer</h4>
+          
+          
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              
+            <i class="fa fa-bars"></i>              
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#page-top">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#publicacion">Publicaciones</a>
+                  </li>                        
+                  <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 
-<div class="row">
-  <div class="col-3 col-s-3 menu">
-    <ul>
-      <li><a href="./soy.html">Formación y trayectoria &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
-      <li><a href="./carrera.html">Carrera y distinciones &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>      
-      <li><a href="./libro.html">Beneficios y detalles del libro &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
-      <li><a href="./ideas.html">Dando forma a tus ideas</a></li>
-      <li><a href="./vision.html">Misión y Visión &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
-      <li><a href="./soy.html"><img class="foto" src="./img/pic.jpeg" alt="Sabrina Serer"></a></li>
 
+
+
+ <!-- Agrega el atributo data-toggle y data-target al botón del navbar para activar el colapso 
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>-->
+
+<!-- Agrega la clase 'collapse' al div que contiene las opciones del menú -
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        
     </ul>
+</div>-->
+
+<!--// Cerrar el navbar al hacer clic en una opción del menú en dispositivos móviles
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+Con estas modificaciones, el navbarResponsive colapsará automáticamente cuando el usuario seleccione una sección del menú en un dispositivo móvil. ¡Inténtalo y comprueba cómo funciona! ¿Hay algo más en lo que pueda ayudarte o alguna otra modificación que desees realizar? ¡Estoy aquí para asistirte en lo que necesites!-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  </div>
+  <section class="home">      
+     <img class="picself img-thumbnail" src="./img/sabrina_serer.png" alt="Sabrina Serer">
 
-  <div class="col-6 col-s-9">
-    
-    <h2>Soy contadora (UBA), Especialista en Administración Financiera del Sector Público (UNCO).<br>Actualmente, me encuentro estudiando la Licenciatura en Relaciones Internacionales (SIGLO XXI) y en forma paralela, el Máster en Análisis Político (UOC Universitat Oberta de Catalunya).</h2>
-    
-    <div class="frame">      
-      <a href="./galeria.html"><button class="custom-btn btn-9"><span>Galeria de fotos</span></button></a>      
-      <p style="font-family: Andale Mono, monospace;">
-        
-    </div>
-    
-    <!--<div align="center"><h5>___________________________</h5></div>-->
-    <h3>Si estás interesado en capacitarte y aprender más, no dudes en escribirme.</h3>
-    
-    
-    <h3>Te espero para que charlemos sobre "Diseño y monitoreo de las políticas públicas en el marco de la gestión para resultados".</h3>
-    <div class="frame">      
-      <a href="./venta.html"><button class="custom-btn btn-9"><span>Comprar Libro!</span></button></a>      
-      <p style="font-family: Andale Mono, monospace;">
-        
-    </div>
-    
-    
-  </div>
+      <div>         
+         <p style="color: rgb(78, 1, 78); font-weight: 600;">¡Hola! 👋 Soy Sabrina, apasionada por construir un futuro mejor para todas las generaciones venideras. 
+            Para mí, ser buena profesional va de la mano de ser una buena persona. Mi objetivo es compartir conocimientos y experiencias, contribuyendo así a mejorar 
+            la gestión pública desde cualquier rol que ocupemos. Sueño con un futuro mejor para nuestros niños y jóvenes, construyendo paso a paso una Argentina 
+            más próspera y justa para todos..</p>        
+          <!--<p style="color: black;" >"La igualdad de género no es un destino, es un viaje. Revisá y ajustá tu presupuesto para un futuro más equitativo
+              Empezá a invertir en proyectos con impacto de género hoy mismo..."</p>-->
 
+          <div class="cards">
+              <div style="background-color: rgb(38, 39, 39);" class="card">
+                  <h1 class="entry-title">
+                  <a href="#publicacion">Diseño y monitoreo de las políticas públicas  <br> en el marco de la gestión para resultados</a>
+                </h1>
+                <small>Por <a href="#about" style="font-weight: 600;">Sabrina Serer</a></small>
+                
+                <span><a href="#publicacion">Conoce mas sobre el libro</a></span>
+                <span>Ver acá: <a href="#contenidos">Ultimos contenidos</a></span>
+              </div>                   
+          </div>
+          
 
-  <div class="col-3 col-s-12">
-    <div class="aside">
-      <div class="portada">
-          <a href="./libro.html"><img class="libro" src="./img/unco.jpg" alt="tapa libro Sabrina Serer"></a>
+      </div>                
+  </section>
+
+  <!----------------------- About ----------------------->
+
+  <section id="about">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Sobre mí</h2>
+                  <div class="row">
+                  <div class="section-subheading text-muted col-md-8">Soy contadora graduada de la UBA y Especialista en Administración Financiera del Sector Público 
+                    por la UNCO. Actualmente, estoy cursando la Licenciatura en Relaciones Internacionales en la Universidad Siglo XXI y un Máster en Análisis Político 
+                    en la Universitat Oberta de Catalunya.<br>
+                    <br>
+                    En mi labor profesional, soy referente provincial del Presupuesto Orientado a Resultados (PoR) del Gobierno de la Provincia del Neuquén. Además, 
+                    represento a la provincia en la Comisión de Planificación, Evaluación y Calidad de las Políticas Públicas del CoFeFuP, dependiente de la Jefatura 
+                    de Gabinete de Ministros de la República Argentina.                 
+                </div>
+                <div class="col-md-4"><img class="picself img-thumbnail"  src="./img/perfil_sabrina_about.png" alt="Sabrina Serer"></div>
+              
+                
+                <!--<div class="col-md-4"><img class="picself img-thumbnail"></div>-->
+
+              <div class="botonera_libro">
+                      <a href="./soy.html" class="btn">Más de mi trayectoria</a>                               
+                      <a href="./vision.html" class="btn">Misión y Visión</a>
+              </div>
+  
+                
+              </div>
+          </div>
       </div>
-      
-      
-    
-      <div class="redes">
-          <a href="mailto:serersabrina@gmail.com" target="_blank"><img src="./img/mail.png" alt="mail sabrina serer">&nbsp</a><a href="https://www.instagram.com/sabrinasererok/" target="_blank"><img src="./img/insta.png" alt="instagram sabrina serer">&nbsp<a href="https://wa.me/5492995182272" target="_blank"><img src="./img/ws.png" alt="whatsapp sabrina serer">&nbsp<a href="https://www.linkedin.com/in/sabricserer455843715/" target="_blank"><img src="./img/din.png" alt="linkedin sabrina serer"></a>
+  </section>
+
+  <section id="publicacion">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Diseño y monitoreo de las políticas públicas en el marco de la gestión para resultados</h2> <br>
+                  <div class="row">
+                     
+                  <div class="col-md-3"><img class="picself img-thumbnail"  src="./img/librosabrinablanco.jpeg"></div>   
+                  <div class="section-subheading text-muted col-md-9">El propósito de este libro es contribuir a la formulación y monitoreo de las políticas públicas desde el 
+                      Presupuesto en el Marco de la Gestión para Resultados (GpR). Está dirigido a funcionarios/as públicos, técnicos/as, alumnos/as del posgrado y/o todas 
+                      aquellas personas interesadas en la temática.<br> Un eficiente sistema de monitoreo permite poner a disposición de los decisores políticos, mandos alto 
+                      y medios, un instrumento metodológico para la toma de decisiones en base a evidencia, fundamentado en los principios de transparencia en la gestión, 
+                      eficacia y eficiencia en materia de asignación de recursos públicos con el fin de contribuir a fortalecer la distribución igualitaria de los mismos y 
+                      garantizar el acceso colectivo a los servicios brindados por el estado con el fin de contribuir a una mejor calidad de vida.                        
+                  </div>
+
+                  <div class="botonera_libro">
+                          <a href="./libro.html" class="btn">Más sobre el libro</a>                                
+                          <a href="./venta.html" class="btn">Comprar el libro</a>
+                  </div>
+                  
+                
+                <!--<div class="col-md-4"><img class="picself img-thumbnail"></div>-->
+              </div>
+          </div>
       </div>
+  </section>
+
+  <!----------------    Contenidos    --------------------->
+
+  <section id="contenidos">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Contenidos</h2>
+              </div>
+          </div>
+          <div class="row text-center">
+              <div class="col-md-4">
+                  <span><img src="./img/publicacion1.png" alt=""></span>
+                  <!--<span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
+
+          </span>-->
+                  <h4 class="service-heading">#EquidadDeGénero</h4>
+                  <p class="text-muted">La educación financiera no discrimina. Descubrí nuestros recursos para aprender sobre finanzas sin importar tu género. 
+                      Tu presupuesto debería reflejar la igualdad. Aprende cómo lograrlo aquí.Empezá a invertir en proyectos con impacto de género hoy mismo!
+                      Está disponible el libro "Diseño y Monitoreo de las Políticas Públicas en el Marco de la Gestión para Resultados".
+                      Acordate de etiquetar y compartir estos consejos con colegas y amigos comprometidos con la equidad de género. Juntos 
+                      creamos un futuro más igualitario. .</p>
+              </div>
+              <div class="col-md-4">
+                  <span><img src="./img/publicacion2.png" alt="Sabrina Serer"></span>
+                  <!--<span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-arrows-alt fa-stack-1x fa-inverse"></i>
+          </span>-->
+                  <h4 class="service-heading">#FuturoMasIgualitario</h4>
+                  <p class="text-muted">Inversiones con impacto de género:<br> Investigá opciones de inversión que respalden proyectos y empresas que promuevan la igualdad
+                       de género. Protegé tu futuro con un seguro que entienda tus necesidades. Empezá a invertir en proyectos con impacto de género hoy mismo!
+                      Está disponible el libro "Diseño y Monitoreo de las Políticas Públicas en el Marco de la Gestión para Resultados".
+                      Acordate de etiquetar y compartir estos consejos con colegas y amigos comprometidos con la equidad de género. Juntos creamos 
+                      un futuro más igualitario. </p>
+              </div>
+              <div class="col-md-4">
+                  <span><img src="./img/publicacion3.png" alt="Sabrina Serer"></span>
+                  <!--<span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+          </span>-->
+                  <h4 class="service-heading">#AhorroParaEmergencias</h4>
+                  <p class="text-muted">Ahorro para emergencias de género:<br> Asegúrate de que todos tengan acceso a un fondo de emergencia, independientemente de su género.
+                       Empezá a invertir en proyectos con impacto de género hoy mismo!
+                      Está disponible el libro "Diseño y Monitoreo de las Políticas Públicas en el Marco de la Gestión para Resultados".
+                      Acordate de etiquetar y compartir estos consejos con colegas y amigos comprometidos con la equidad de género. 
+                      Juntos creamos un futuro más igualitario.</p>                        
+                     
+              </div>
+              <div class="botonera_libro">
+                <a href="https://www.instagram.com/sabrinasererok/"  class="btn"><i class="fa fa-instagram"></i>&nbsp;Mucho más en Ig</a>
+                <a href="./ideas.html" class="btn">Dando forma a tus ideas</a>                       
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Portfolio Grid -->
+<section class="bg-light" id="portfolio">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Ustedes</h2>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                              <i class="fa fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="./img/universidad.png" alt="Sabrina Serer">
+                  </a>
+                  <div class="portfolio-caption">
+                      <h4>Presentación</h4>
+                      <p class="text-muted">Universidad Nac. del Comahue 09/09/2022</p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                              <i class="fa fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="./img/fondo_nqn.png" alt="Sabrina Serer">
+                  </a>
+                  <div class="portfolio-caption">
+                      <h4>Feria del libro 2022</h4>
+                      <p class="text-muted">Neuquén</p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                              <i class="fa fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="./img/cipo_feria.png" alt="Sabrina Serer">
+                  </a>
+                  <div class="portfolio-caption">
+                      <h4>Feria del libro 2022</h4>
+                      <p class="text-muted">Cipolletti</p>
+                  </div>                        
+              </div>                  
+          </div>
+      </div>
+  </section>      
+  <br>
+  <br>
+  <br>
+  <br>    
+   
+  <!-- Contact -->   <!--Aca eeta el viejo formulario que se va a reactivar cuando esten aviso legal y privacidad-->
+         
+  <section id="contact">            
+      <div class="container">                
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 style="color: black;" class="section-heading text-uppercase">Contactame</h2>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <form action="form.php" method="post" name="contactform" id="contactForm" novalidate>
+                      <div class="row">
+                          <div class="col-md-6">                                    
+                              <div class="form-group">
+                                  <input class="form-control" id="name" name="first_name" type="text" placeholder="Tu nombre" required data-validation-required-message="Please enter your name.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                              <div class="form-group">
+                                  <input class="form-control" id="email" name="email" type="email" placeholder="Tu email" required data-validation-required-message="Please enter your email address.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                              <div class="form-group">
+                                  <input class="form-control" id="phone" name="telephone" type="tel" placeholder="Tu telefono" required data-validation-required-message="Please enter your phone number.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <textarea class="form-control" id="message"name="comments" placeholder="Tu mensaje" required data-validation-required-message="Please enter a message."></textarea>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="col-lg-12 text-center">
+                              <div id="success"></div>                            
+
+                              <button id="sendMessageButton" class="botonera_form" type="submit" value="Submit">Enviar mensaje</button>
+                              
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer>
       
-    </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3"><a href="https://azagile.ar" target="_blank">
+                  <span class="copyright">Idea AzAgile | Dev Cesar Pagliacci</span></a>
+              </div>
+              <div class="col-md-3"><a href="./avisolegal.html">
+                  <span class="copyright">Politica de privacidad</span></a>
+              </div>
+              <div class="col-md-3">
+                  <span class="copyright">© 2024 Sabrina Serer</span>
+              </div>
+                
+              <div class="col-md-3">
+                  <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                          <a target='_blank' href="https://www.instagram.com/sabrinasererok/"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <!--<li class="list-inline-item">
+                          <a target='_blank' href="https://www.facebook.com/share/rbgLLNNNdJ3k3AXk/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
+                      </li>   -->                         
+                      <li class="list-inline-item">
+                          <a target='_blank' href="https://www.linkedin.com/in/sabricserer455843715/"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a target='_blank' href="mailto:info@sabrinaserer.ar"><i class="fa fa-envelope"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a target='_blank' href="https://wa.me/5492995182272?text=¡Te+escribo+desde+tu+web!"><i class="fa fa-whatsapp"></i></a>
+                      </li>
+                  </ul>
+              </div>
+              
+          </div>
+      </div>
+  </footer>
+  <!-- Portfolio Modals -->
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                              <!-- Project Details Go Here -->
+                              <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                              <p class="item-intro text-muted">Presentación del libro en la Universidad Nacional del Comahue 09/09/2022</p>
+                              <div class="grid-container">
+                                  <div class="item"><img src="./img/unco1.png" alt="sabrina serer"></div>
+                                  <div class="item"><img src="./img/unco2.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/unco3.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/unco4.png" alt="sabrina serer"></div>
+                                  <div class="item"><img src="./img/unco5.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/unco6.png" alt="sabrina serer"></div>         
+                                  <div class="item"><img src="./img/unco7.png" alt="sabrina serer"></div>
+                                  <div class="item"><img src="./img/unco8.png" alt="sabrina serer"></div>                                        
+                              </div>
+                              <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
+                              <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                              
+                                  <a class="botonera_form" data-dismiss="modal" type="button">
+                                      <i class="fa fa-times"></i> Cerrar galeria</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                              <!-- Project Details Go Here -->
+                              <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                              <p class="item-intro text-muted">Feria del libro Ciudad de Neuquén 22/09/22</p>
+                              <div class="grid-container">
+                                  <div class="item"><img src="./img/nqn_feria1.png" alt="sabrina serer"></div>
+                                  <div class="item"><img src="./img/nqn_feria2.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/nqn_feria3.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/nqn_feria4.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/nqn_feria5.png" alt="sabrina serer"></div>                                                                               
+                              </div>
+                              <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
+                              <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                              
+                              <a class="botonera_form" data-dismiss="modal" type="button">
+                                      <i class="fa fa-times"></i> Cerrar galeria</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                              <!-- Project Details Go Here -->
+                              <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                              <p class="item-intro text-muted">Presentación Feria del libro Cipolletti 03/10/2022</p>
+                              <div class="grid-container">
+                                  <div class="item"><img src="./img/cipo1.png" alt="sabrina serer"></div>
+                                  <div class="item"><img src="./img/cipo2.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/cipo3.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/cipo4.png" alt="sabrina serer"></div>        
+                                  <div class="item"><img src="./img/cipo5.png" alt="sabrina serer"></div>
+                                  <div class="item"><img src="./img/cipo6.png" alt="sabrina serer"></div>                                                                               
+                              </div>
+                              <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
+                              <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                              
+                              <a class="botonera_form" data-dismiss="modal" type="button">
+                                  <i class="fa fa-times"></i> Cerrar galeria</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-</div>
-
-<div class="footer">
-  <p><a href="https://www.instagram.com/azdcomunicacion/" target="_blank">Desarrollo Cesar Pagliacci. Idea AZ Diseños en comunicación. &#169 2022 Sabrina Serer.</a></p>
-</div>
-
-</div>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
 </body>
+
+
+
+
+
+
+<script src="./main.js"></script>
+
+
 </html>

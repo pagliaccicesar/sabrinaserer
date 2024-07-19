@@ -36,8 +36,7 @@
   }
   
   h2 {
-      color: #9933cc;
-      /*font: 400 1em/1.5 "Neuton";*/
+      color: #9933cc;     
       letter-spacing: 0.3em;
       font: 700 2em/1 Helvetica, sans-serif;
       text-shadow: 80px;
@@ -47,11 +46,11 @@
     font-size: 200%;
   }
   
-  /*.botonera {
+  .botonera_libro {
     padding-left: 10px;
   }
   
-  .button {
+  /*.button {
    background-color: #0099cc; 
    border: none;
    color: white;
@@ -67,7 +66,7 @@
   .button1 {border-radius: 20px;}
   .button2 {border-radius: 20px;}*/
 
-  .botonera {
+  /*.botonera {
     display: flex;
     justify-content: left;
     align-items: left;
@@ -79,21 +78,20 @@
     margin: 8px;
     padding: 6px 21px;
     text-align: center;
-    /*text-transform: uppercase;*/
+    color: black;    
     transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(61, 23, 167); 
+    background-size: 200% auto;    
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
-   }
+   }*/
   .btn a {
     cursor: pointer;    
   } 
   a:link, :visited, :hover, :active{
     text-decoration: none;
 }
-  .btn:hover {
-    background-position: right center; /* change the direction of the change here */
+  /*.btn:hover {
+    background-position: right center; 
   }  
   .btn-1 {
     background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
@@ -109,7 +107,7 @@
   }  
   .btn-5 {
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
-  }
+  }*/
 
 
   

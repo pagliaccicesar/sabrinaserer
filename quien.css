@@ -1,10 +1,10 @@
 body {
     padding: .5rem;
-    font-family:  Helvetica, Arian, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   
   .item {
-    background: #ccc;
+    background: rgb(153, 21, 204, 0.6);
     font: 1rem Helvetica, Arian, sans-serif;
     margin: 1rem;
     padding: 2rem;
@@ -12,42 +12,43 @@ body {
     transition: 0.3s;
   }
   .item.in-viewport {
-    background: #669;
+    background:rgb(255, 165, 0, 0.7) ;
+    /*background: #669;*/
     color: #fff;
   }
 
 /* header del quien soy*/
   .header {
-    background-image: linear-gradient(to right,#9933cc , orange);    
+    background-image: linear-gradient(to right,rgb(153, 21, 204) , rgb(255, 165, 0)); 
     color: #ffffff;
     padding: 15px;    
+  }
+  h1 {
+    color: white; font-weight: 600; padding-right: 30px; text-shadow: 0 0 20px white;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
   }
 
 h3 {
   text-align: left;
   }
 
-
-
-  .botonera {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    align-content: left;
-    flex-wrap: wrap;    
-    margin: 0 auto;    
+  .botonera_libro  {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 10px 0;    
   }
-  .btn {    
-    margin: 2px;
-    padding: 6px 21px;
-    text-align: center;
-    /*text-transform: uppercase;*/
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(61, 23, 167); 
-    box-shadow: 0 0 20px #eee;
+  .botonera_libro .btn {
+    color: white;
+    font-size: small;
+    font-weight: 600;
+    border: 2px orange solid;
     border-radius: 10px;
-   }
+    padding: 10px;
+    margin: 3px;
+  }
+
   .btn a {
     cursor: pointer;    
   } 
@@ -73,26 +74,6 @@ h3 {
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
   }
   
-
-  /*.botonera {
-    padding-left: 10px;
- }
-
- .button {
-   background-color: #0099cc; 
-   border: none;
-   color: white;
-   padding: 15px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
- }
- 
- .button1 {border-radius: 20px;}
- .button2 {border-radius: 20px;}*/
 
  .graf {
   align-items: center;
