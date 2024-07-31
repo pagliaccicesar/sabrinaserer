@@ -449,6 +449,10 @@ margin-top: 40px;
 #evento {
   padding-bottom: 80px;
 }
+#evento p {
+  padding-top: 75px;
+  text-align: justify;
+}
 #evento .flyer:hover {
   cursor: pointer;
   -webkit-transform:scale(1.2);
@@ -461,6 +465,10 @@ margin-top: 40px;
     -webkit-transform:scale(1.04);
     transform:scale(1.04);
     transition: transform 0.7s ease-out;
+  }
+  #evento p {
+    padding-top: 55px;
+    padding-bottom: 35px;  
   }
 }
 
