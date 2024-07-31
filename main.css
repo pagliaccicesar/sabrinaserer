@@ -444,6 +444,26 @@ margin-top: 40px;
   }
 }
 
+/********************   eventos    **********************/
+
+#evento {
+  padding-bottom: 80px;
+}
+#evento .flyer:hover {
+  cursor: pointer;
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+  transition: transform 0.7s ease-out;
+}
+
+@media (max-width: 768px) {
+  #evento .flyer:hover  {
+    -webkit-transform:scale(1.04);
+    transform:scale(1.04);
+    transition: transform 0.7s ease-out;
+  }
+}
+
 
 
 
