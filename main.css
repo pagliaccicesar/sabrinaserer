@@ -448,6 +448,7 @@ margin-top: 40px;
 
 #evento {
   padding-bottom: 80px;
+ 
 }
 #evento p {
   padding-top: 75px;
@@ -460,7 +461,7 @@ margin-top: 40px;
   transition: transform 0.7s ease-out;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   #evento .flyer:hover  {
     -webkit-transform:scale(1.04);
     transform:scale(1.04);
@@ -469,6 +470,31 @@ margin-top: 40px;
   #evento p {
     padding-top: 55px;
     padding-bottom: 35px;  
+  }
+}*/
+iframe {
+  margin-top: 25px;
+  width: 504px; ;
+  height: 283px ;
+}
+
+@media (max-width: 1080px) {
+  #evento iframe {  
+    width: 392px; ;
+    height: 220px ;
+  }
+}
+@media (max-width: 860px) {
+  #evento {
+    max-height: 880px;   
+  }
+  #evento p {
+    margin-bottom: 35px;
+  }
+  #evento iframe {   
+    margin-top: 45px;
+    width: 392px; 
+    height: 230px ;
   }
 }
 
