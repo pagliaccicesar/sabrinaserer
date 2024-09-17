@@ -446,32 +446,39 @@ margin-top: 40px;
 
 /********************   eventos    **********************/
 
+
+
+
+
 #evento {
-  padding-bottom: 80px;
- 
+  padding-bottom: 80px; 
 }
 #evento p {
-  padding-top: 75px;
+  /*padding-top: 75px;*/
   text-align: justify;
 }
 #evento .flyer:hover {
   cursor: pointer;
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+  -webkit-transform:scale(1);
+  transform:scale(1);
   transition: transform 0.7s ease-out;
 }
 
-/*@media (max-width: 768px) {
+
+@media (max-width: 768px) {
   #evento .flyer:hover  {
-    -webkit-transform:scale(1.04);
-    transform:scale(1.04);
+    -webkit-transform:scale(1.);
+    transform:scale(1.);
     transition: transform 0.7s ease-out;
   }
-  #evento p {
+ /* #evento p {
     padding-top: 55px;
     padding-bottom: 35px;  
-  }
-}*/
+  }*/
+}
+
+
+
 iframe {
   margin-top: 25px;
   width: 504px; ;
@@ -486,10 +493,14 @@ iframe {
 }
 @media (max-width: 860px) {
   #evento {
-    max-height: 1380px;   
+    max-height: 2880px;   
   }
-  #evento p {
-    margin-bottom: 35px;
+  #evento .flyer {
+    padding-bottom: 24px;
+  }
+  p #turismo {
+    padding-top: 15px;
+   
   }
   #evento iframe {   
     margin-top: 45px;
