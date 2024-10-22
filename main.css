@@ -493,7 +493,7 @@ iframe {
 }
 @media (max-width: 860px) {
   #evento {
-    max-height: 2880px;   
+    max-height: 5000;   
   }
   #evento .flyer {
     padding-bottom: 24px;
