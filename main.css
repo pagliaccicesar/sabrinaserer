@@ -481,8 +481,8 @@ margin-top: 40px;
 
 iframe {
   margin-top: 25px;
-  width: 504px; ;
-  height: 283px ;
+  width: 504px; 
+  height: 283px; 
 }
 
 @media (max-width: 1080px) {
@@ -505,7 +505,12 @@ iframe {
   #evento iframe {   
     margin-top: 45px;
     width: 392px; 
-    height: 230px ;
+    height: 230px ;    
+  }
+  #portfolioModal104 iframe {
+    margin-top: 45px;   
+    width: 302px; 
+    height: 180px ;
   }
 }
 .noticia {
@@ -519,7 +524,7 @@ iframe {
   }
 }
 
-
+/*******   modal del portfolio   *****/
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
