@@ -464,6 +464,10 @@ margin-top: 40px;
   transition: transform 0.7s ease-out;
 }
 
+#toggleText1:hover, #toggleText2:hover, #toggleText3:hover, #toggleText4:hover, #toggleText5:hover, #toggleText6:hover, #toggleText7:hover, #toggleText8:hover {
+  text-decoration: underline;                
+}
+
 
 @media (max-width: 768px) {
   #evento .flyer:hover  {

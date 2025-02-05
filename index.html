@@ -19,6 +19,7 @@
 <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body id="page-top">
@@ -163,7 +164,99 @@
   <section id="evento">
         <div class="container">
 
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas = document.getElementById("toggleText"); // Selecciona el span
+                const textosOcultos = document.querySelectorAll("#oculto-1"); // Selecciona los textos ocultos                
+                let visible = false; // Estado del contenido
 
+                // Ocultar textos inicialmente
+                textosOcultos.forEach(texto => texto.style.display = "none");
+
+                leerMas.addEventListener("click", function () {
+                    visible = !visible; // Alternar estado
+
+                    textosOcultos.forEach(texto => {
+                        texto.style.display = visible ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas.textContent = visible ? "Leer menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">LA IMPLEMENTACIÓN DE LA TRANSVERSALIDAD DE LAS POLÍTICAS PÚBLICAS DE PRIMERA 
+                        INFANCIA EN LA PROVINCIA DE NEUQUÉN (2018 – 2020)</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 30%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/cuadero_de_investigacion.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 15px;">                            
+                    
+                        <p id="turismo">El objetivo principal del presente trabajo es resaltar; mediante el relevamiento y análisis parcial de las políticas públicas 
+                            actuales; la necesidad de diseñar políticas públicas transversales de primera infancia con un enfoque sistémico comprensivo y desarrollar 
+                            un modelo de gestión orientado a resultados, para garantizar la eficiencia del gasto público en la administración pública provincial.<br>
+                            
+                        </p> <span id="toggleText" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>                   
+                </div>
+                
+
+                <div class="col-md-12" id="oculto-1">
+                    <p id="turismo">Los objetivos específicos que se desarrollaron en el presente trabajo, son los siguientes: Relevar y analizar información de las políticas 
+                        públicas de primera infancia, para sensibilizar y poner en conocimiento a los tomadores de decisión, sobre la necesidad de elaborar en forma 
+                        coordinada e integrada políticas públicas transversales, que se visibilicen en un presupuesto provincial orientado a resultados. 
+                        Sensibilizar y dar a conocer a los mandos medios y operativos de la provincia, acerca de la responsabilidad con respecto a la implementación, 
+                        monitoreo y evaluación de las políticas públicas de primera infancia orientadas a resultados diseñadas transversalmente.
+
+                    </p>
+                </div>               
+
+                <div class="col-md-12" id="oculto-1">
+                    <p id="turismo">Fortalecer las capacidades institucionales provinciales para el diseño estratégico de políticas públicas con un enfoque sistémico 
+                        comprensivo de primera infancia orientadas a resultados. Promover la capacitación sobre la reingeniería de los procesos para el logro efectivo 
+                        de la implementación de políticas públicas transversales de primera infancia en la provincia de Neuquén. Sensibilizar a los funcionarios 
+                        públicos de la provincia acerca de las ventajas que brinda la capacitación referida a la elaboración del presupuesto provincial orientado 
+                        a resultados destacando la viabilidad de una nueva forma de presupuestar enfocada en los principios de eficacia, eficiencia, efectividad 
+                        y calidad del gasto público.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-1">
+                    <a href="./img/Serer_Transversalidad_.pdf" target="_blank">💾  Enlace al documento PDF</a>                    
+                </div>  
+                
+                
+            </div>
+            <br>
+            <br>            
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas2 = document.getElementById("toggleText2"); // Selecciona el span
+                const textosOcultos2 = document.querySelectorAll("#oculto-2"); // Selecciona los textos ocultos                
+                let visible2 = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos2.forEach(texto2 => texto2.style.display = "none");
+
+                leerMas2.addEventListener("click", function () {
+                    visible2 = !visible2; // Alternar estado
+
+                    textosOcultos2.forEach(texto2 => {
+                        texto2.style.display = visible2 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas2.textContent = visible2 ? "Leer menos..." : "Leer más...";
+                });
+            });
+               
+            </script>
 
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -173,79 +266,83 @@
             </div>
             <br>
             <div class="row text-center">
-                
-                <div class="col-md-7" style="padding-top: 15px;">                    
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/ia.webp" alt="Sabrina Serer">
+                </div>
+
+                <div class="col-md-8" style="padding-top: 35px;">                    
                     <p id="turismo">Pensarnos como ciudadanos a 10, 15 o 20 años puede parecer casi imposible, especialmente si consideramos el contexto en el que 
                         vivimos como argentinos/as. Somos un ejemplo claro de capacidad de adaptación y superación. Sin embargo, contamos con herramientas técnicas y 
                         políticas que podrían ayudarnos a reducir la incertidumbre socioeconómica.<br>
-                        <br>
-                        La planificación estratégica es esencial para trazar una hoja de ruta desde una perspectiva técnica y política. Además, la gestión 
+                        
+                    </p> <span id="toggleText2" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                </div>   
+
+                
+                <br>
+            
+                <div class="col-md-12" id="oculto-2" style="padding-top: 15px;">    
+                    <p id="turismo">La planificación estratégica es esencial para trazar una hoja de ruta desde una perspectiva técnica y política. Además, la gestión 
                         presupuestaria y financiera es el motor que convierte esas ideas en acción. Por eso, al planificar, no solo debemos enfocarnos en las acciones 
                         a ejecutar, sino también en los insumos necesarios (bienes de consumo, de capital y servicios) para concretar el plan. De otro modo, la 
                         planificación por sí sola se convierte en una simple “expresión de deseo”. Por lo tanto, es crucial fortalecer el trabajo en equipo dentro 
                         de los ministerios, ya que la desconexión entre la planificación y las necesidades presupuestarias sigue siendo un desafío importante.                  
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="flyer" style="width: 60%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/ia.webp" alt="Sabrina Serer">
-                </div>             
+                
+                
 
-
-                <div class="col-md-12">
+            
+                <div class="col-md-12" id="oculto-2">
                     <p id="turismo">Transformar la cultura institucional en torno al presupuesto es indispensable para que los resultados se materialicen y respondan 
                         a las metas trazadas. Mi propósito principal es fortalecer la colaboración interdisciplinaria entre quienes planifican y quienes gestionan 
                         los recursos administrativos, trabajando juntos para lograr previsibilidad y eficiencia en el uso de los recursos provinciales.
                     </p>                    
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-2">
                     <p id="turismo">Este trabajo demanda profesionales formados/as en múltiples áreas, pero, sobre todo, con habilidades como empatía, escucha activa, 
                         experiencia y criterio para desarrollar herramientas técnicas presupuestarias que sean amigables y fáciles de aplicar. Formarnos en 
                         habilidades blandas como profesionales de Ciencias Económicas es el desafío que debemos asumir. Así podremos crear herramientas flexibles y 
                         adaptadas a las necesidades específicas de cada ministerio. Para ello, es fundamental salir de los escritorios y realizar diagnósticos que 
                         reflejen las realidades regionales.</p>                        
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-2">
                     <p id="turismo">La planificación estratégica también es la base para diseñar un sistema de seguimiento y monitoreo de políticas públicas. Este debe 
                         incluir indicadores y metas que permitan evaluar tanto la planificación en territorio como los aspectos presupuestarios, asegurando que los 
                         bienes y servicios generados por los programas sean eficientes y optimicen los recursos públicos. Además, el monitoreo de las políticas 
                         públicas nos da la posibilidad de medir resultados, identificar desvíos y mejorar continuamente los procesos y el plan de acción.</p>
                 </div>
                 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-2">
                     <p id="turismo">Estoy convencida de que el rol del profesional en Ciencias Económicas es clave para alcanzar los objetivos esperados y aportar 
                         valor público en la implementación de políticas públicas. Ya no somos solo generadores de datos duros: somos actores fundamentales para que 
                         los resultados se materialicen en los distintos ministerios. Nuestra responsabilidad es ofrecer herramientas que aporten previsibilidad al 
-                        gasto y hagan un uso eficiente de los recursos públicos, con una visión integral y comprensiva del contexto ministerial al que pertenecemos.</p>                        
-                </div>
-                
-            </div>
+                        gasto y hagan un uso eficiente de los recursos públicos, con una visión integral y comprensiva del contexto ministerial al que pertenecemos.
+                        </p>                                                
+                </div>          
+            
+          </div>  
+           
             <br>
             <br>
-
-
-
-
-
-
-
 
 
 
             
             <br>
             <div class="row text-center">
-                <div class="col-md-4">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 18px;" src="./img/chanchito.jpg" alt="Sabrina Serer">
+                <div class="col-md-4" id="oculto-2">
+                    <img class="flyer" style="width: 55%; height: auto; padding-bottom: 18px;" src="./img/chanchito.jpg" alt="Sabrina Serer">
                 </div>
-                <div class="col-md-8" style="padding-top: 24px;">                    
-                    <p id="turismo">Empezá el año con todo y tu presupuesto alineado! 💸✨<br>
+                <div class="col-md-8" id="oculto-2" style="padding-top: 24px;">                    
+                    <p id="turismo" >Empezá el año con todo y tu presupuesto alineado! 💸✨<br>
 
                         3️⃣ Hacelo equitativo: Planificá pensando en todos. . 🏡💞 Invertí en formación para mejorar la calidad del servicio y fomentar un ambiente 
                         laboral inclusivo.<br>                        
                         💾 Descargá el libro gratis desde mi web y llevá tu emprendimiento al siguiente nivel. 💻📚 #FinanzasConEstilo
-                        <br>                
-                                            
+                        <br>                                          
                         
                     </p>
                 </div>
@@ -253,31 +350,29 @@
            
 
             <div class="row text-center">
-                <div class="col-md-4">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 18px;" src="./img/revisa_tus_gastos.jpg" alt="Sabrina Serer">
+                <div class="col-md-4" id="oculto-2">
+                    <img class="flyer" style="width: 55%; height: auto; padding-bottom: 18px;" src="./img/revisa_tus_gastos.jpg" alt="Sabrina Serer">
                 </div>
                 
-                <div class="col-md-8" style="padding-top: 34px;">                    
+                <div class="col-md-8" id="oculto-2" style="padding-top: 34px;">                    
                     <p id="turismo">Establecé metas financieras claras: Definí objetivos específicos, como ahorrar para un viaje, pagar deudas o invertir 
                         en educación.🌎💰<br>
                         Tener metas claras te motivará a mantener el enfoque y disciplina en tu plan financiero.🚀<br>
                         💾 Descargá el libro gratis  y llevá tu emprendimiento al siguiente nivel. 💻📚<br>
                         #FinanzasConEstilo
-                        <br>                
-                                            
+                        <br>          
                         
                     </p>
-                </div>
-                
+                </div>                
             </div>
             
 
             <div class="row text-center">
-                <div class="col-md-4">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 18px;" src="./img/fijar_metas_claras.jpg" alt="Sabrina Serer">
+                <div class="col-md-4" id="oculto-2">
+                    <img class="flyer" style="width: 55%; height: auto; padding-bottom: 15px;" src="./img/fijar_metas_claras.jpg" alt="Sabrina Serer">
                 </div>
                 
-                <div class="col-md-8" style="padding-top: 36px;">                    
+                <div class="col-md-8" id="oculto-2" style="padding-top: 36px;">                    
                     <p id="turismo">¡Empezá el año con todo y tu presupuesto alineado! 💸✨<br>
                         1️⃣ Revisá tus gastos: Mirá hacia dónde va tu dinero y ajustá lo que no te suma. 🧐<br>
                         📉 ¿Utilizás maquinaria antigua en la producción? 🍐🍎 ➡️ Invertí en equipos más eficientes para reducir costos 
@@ -294,15 +389,29 @@
             <br>
             <br>
 
+            
 
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const leerMas3 = document.getElementById("toggleText3"); // Selecciona el span
+            const textosOcultos3 = document.querySelectorAll("#oculto-3"); // Selecciona los textos ocultos                
+            let visible3 = false; // Estado del contenido
 
+            // Ocultar textos inicialmente
+            textosOcultos3.forEach(texto3 => texto3.style.display = "none");
 
+            leerMas3.addEventListener("click", function () {
+                visible3 = !visible3; // Alternar estado
 
+                textosOcultos3.forEach(texto3 => {
+                    texto3.style.display = visible3 ? "block" : "none"; // Muestra u oculta los textos
+                });
 
-
-
-
-
+                leerMas3.textContent = visible3 ? "Leer menos..." : "Leer más...";
+            });
+        });
+        </script>
+        
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase" style="font-size: 140%;">HACIENDO PRÁCTICO LO TÉCNICO: UNA MIRADA HUMANA AL PRESUPUESTO 🤝</h2>
@@ -310,24 +419,26 @@
             </div>
             <br>
             <div class="row text-center">
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 40%; height: auto; padding-bottom: 18px;" src="./img/lo_tecnico.jpg" alt="Sabrina Serer">
+                </div>   
                 
-                <div class="col-md-7" style="padding-top: 15px;">                    
+                <div class="col-md-8" style="padding-top: 15px;">                    
                     <p id="turismo">Este año, asumí uno de los desafíos más significativos de mi carrera: <b>transformar herramientas técnicas presupuestarias 
                         en soluciones prácticas, accesibles y humanas</b>. Mi experiencia en organismos de contralor, como el Ministerio de Economía, me permitió 
                         ver la administración pública desde una perspectiva distinta, pero estar en el <b>Ministerio de Salud de Neuquén</b> me llevó a otro nivel. 
-                        Aquí no se trata solo de controlar, sino de gestionar con propósito. 🏥💡<br>
-                        <br>
-                        📌 <b>¿Qué hicimos?</b> Diseñamos una <b>estrategia presupuestaria adaptada al contexto del Ministerio de Salud</b>, basada en herramientas claras y 
+                        Aquí no se trata solo de controlar, sino de gestionar con propósito. 🏥💡<br>                                         
+                    </p><span id="toggleText3" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                    
+                </div>               
+                
+                <div class="col-md-12" id="oculto-3">
+                    <p id="turismo">📌 <b>¿Qué hicimos?</b> Diseñamos una <b>estrategia presupuestaria adaptada al contexto del Ministerio de Salud</b>, basada en herramientas claras y 
                         accesibles. Este enfoque nos permitió <b>prever necesidades, optimizar los recursos y garantizar la eficiencia del gasto público</b>. No se 
-                        trata solo de números, sino de entender que cada decisión presupuestaria impacta en la salud de las personas. 💊📈                  
+                        trata solo de números, sino de entender que cada decisión presupuestaria impacta en la salud de las personas. 💊📈
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 18px;" src="./img/lo_tecnico.jpg" alt="Sabrina Serer">
-                </div>             
-
-
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-3">
                     <p id="turismo">💬 <b>¿Qué aprendimos? </b> Que el control y la gestión no son lo mismo. Controlar es mirar desde afuera; gestionar es estar adentro, 
                         entendiendo cada necesidad en tiempo real. Y en un sector tan sensible como la salud, esto marca la diferencia. Por eso, impulsamos un 
                         <b>cambio cultural institucional</b> para fortalecer la seguridad presupuestaria del ministerio. No es una tarea de un día, es un proceso continuo 
@@ -335,18 +446,18 @@
                     </p>                    
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-3">
                     <p id="turismo">🚀 <b>¿El resultado?</b> Un sistema de gestión presupuestaria que no solo ordena los recursos, sino que los humaniza. No se trata de 
                         aplicar tecnicismos por cumplir, sino de hacerlos útiles, prácticos y accesibles para quienes están en la primera línea de la gestión 
                         pública. Este cambio impacta no solo en la eficiencia interna, sino en el servicio que se le brinda a la comunidad. 💙</p>                        
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-3">
                     <p id="turismo">Hoy puedo decir con orgullo que este proceso no termina aquí. <b>Cada paso suma en la construcción de una gestión más eficiente, 
                         humana y transparente</b>. Seguimos adelante con la certeza de que <b>hacer lo técnico práctico es posible</b>, y cuando se logra, los resultados se 
                         ven en la vida cotidiana de la gente. 🚀💪</p>
                 </div>
                 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-3">
                     <p id="turismo">#HaciendoLoTécnicoHumano #GestiónEficiente #PresupuestoConPropósito #Neuquén #CompromisoPúblico #TransformaciónCultural</p>                        
                 </div>
                 
@@ -357,7 +468,27 @@
 
 
 
-
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas4 = document.getElementById("toggleText4"); // Selecciona el span
+                const textosOcultos4 = document.querySelectorAll("#oculto-4"); // Selecciona los textos ocultos                
+                let visible4 = false; // Estado del contenido
+    
+                // Ocultar textos inicialmente
+                textosOcultos4.forEach(texto4 => texto4.style.display = "none");
+    
+                leerMas4.addEventListener("click", function () {
+                    visible4 = !visible4; // Alternar estado
+    
+                    textosOcultos4.forEach(texto4 => {
+                        texto4.style.display = visible4 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+    
+                    leerMas4.textContent = visible4 ? "Leer menos..." : "Leer más...";
+                });
+            });
+            </script>
+            
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase" style="font-size: 140%;"> CONSTRUYENDO CAPACIDADES DESDE ADENTRO 🛠️</h2>
@@ -365,22 +496,24 @@
             </div>
             <br>
             <div class="row text-center">
-                <div class="col-md-5">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 18px;" src="./img/construir.jpg" alt="Sabrina Serer">
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 40%; height: auto; padding-bottom: 18px;" src="./img/construir.jpg" alt="Sabrina Serer">
                 </div>
-                <div class="col-md-7" style="padding-top: 14px;">                    
+                <div class="col-md-8" style="padding-top: 14px;">                    
                     <p id="turismo">En <b>marzo de 2024</b>, asumí un rol que me llenó de orgullo y responsabilidad: <b>capacitar a los equipos internos del Ministerio de 
                         Salud de Neuquén en Presupuesto Orientado a Resultados (PoR)</b>. Esta tarea no fue solo una transmisión de conocimientos, sino una apuesta 
-                        por el cambio cultural en la forma de gestionar los recursos públicos. 🎓📊<br>
-                        <br> 
-                        💡 <b>El objetivo era claro:</b> fortalecer a los funcionarios con herramientas prácticas, accesibles y útiles para la toma de decisiones. 
+                        por el cambio cultural en la forma de gestionar los recursos públicos. 🎓📊<br>                     
+                        
+                    </p><span id="toggleText4" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                </div>
+
+                <div class="col-md-12" id="oculto-4">
+                    <p id="turismo">💡 <b>El objetivo era claro:</b> fortalecer a los funcionarios con herramientas prácticas, accesibles y útiles para la toma de decisiones. 
                         La planificación y la correcta asignación de recursos son claves para lograr un sistema de salud más eficiente, previsible y humano. Sabemos que la 
                         salud no espera y, por eso, contar con una metodología clara y orientada a resultados es fundamental para dar respuestas rápidas y efectivas. 💊💼                 
-                    </p>
-                </div>               
-
-
-                <div class="col-md-12">
+                    </p>                    
+                </div>
+                <div class="col-md-12" id="oculto-4">
                     <p id="turismo">La capacitación no se trató solo de números o cuadros de control. Fue una oportunidad para <b>construir capacidades colectivas</b> 
                         que trascienden el día a día. Los funcionarios no solo adquirieron nuevas herramientas, sino que también incorporaron una forma diferente 
                         de pensar la gestión pública. Esta mirada más estratégica y orientada a resultados permite abordar los desafíos con mayor previsión y 
@@ -388,17 +521,17 @@
                     </p>                    
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-4">
                     <p id="turismo">Este proceso no impacta solo al Ministerio de Salud.<b> Cada neuquino se ve beneficiado</b> por la mejora en la eficiencia de los 
                         recursos públicos. Cuando los equipos están preparados, la gestión se transforma y la comunidad recibe un servicio más eficaz, 
                         transparente y humano. 💙</p>                        
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-4">
                     <p id="turismo">Estoy convencida de que la capacitación no es solo formación técnica, es una inversión en el capital humano del Estado. 
                         Fortalecer a las personas es <b>fortalecer la gestión pública</b>. Seguimos apostando por una administración más eficiente, orientada a 
                         resultados y con una mirada puesta siempre en el bienestar de la comunidad. 🌱✨</p>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-4">
                     <p id="turismo">#Capacitación #SaludEficiente #Neuquén #GestiónConPropósito #CompromisoPúblico #DesarrolloInstitucional</p>                        
                 </div>
                 
@@ -410,7 +543,26 @@
 
 
 
-
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas5 = document.getElementById("toggleText5"); // Selecciona el span
+                const textosOcultos5 = document.querySelectorAll("#oculto-5"); // Selecciona los textos ocultos                
+                let visible5 = false; // Estado del contenido
+    
+                // Ocultar textos inicialmente
+                textosOcultos5.forEach(texto5 => texto5.style.display = "none");
+    
+                leerMas5.addEventListener("click", function () {
+                    visible5 = !visible5; // Alternar estado
+    
+                    textosOcultos5.forEach(texto5 => {
+                        texto5.style.display = visible5 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+    
+                    leerMas5.textContent = visible5 ? "Leer menos..." : "Leer más...";
+                });
+            });
+            </script>            
 
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -419,24 +571,29 @@
             </div>
             <br>
             <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 40%; height: auto; padding-bottom: 18px;" src="./img/desafio.jpg" alt="Sabrina Serer">
+                </div>
                 
-                <div class="col-md-7" style="padding-top: 24px;">                    
+                <div class="col-md-8" style="padding-top: 24px;">                    
                     <p id="turismo">📅 11 de diciembre de 2023: una fecha que quedará marcada en mi camino profesional y personal. Ese día comenzó una etapa llena 
                         de aprendizajes, desafíos y oportunidades. Fui elegida como Coordinadora de Administración Financiera del Ministerio de Salud de Neuquén, 
-                        un rol que asumí con compromiso, entusiasmo y la firme convicción de que "si se quiere, se puede". 🏥✨<br>
-                        <br>
-                        Este nuevo desafío llegó en un momento muy especial para mí, ya que en 2023 también cumplí 20 años de trayectoria en la función pública. 
+                        un rol que asumí con compromiso, entusiasmo y la firme convicción de que "si se quiere, se puede". 🏥✨<br>                                          
+                    </p><span id="toggleText5" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                </div>
+                 
+                
+                <div class="col-md-12" id="oculto-5">
+                    <p id="turismo">Este nuevo desafío llegó en un momento muy especial para mí, ya que en 2023 también cumplí 20 años de trayectoria en la función pública. 
                         Dos décadas dedicadas a la gestión estatal me han permitido aprender desde distintos frentes, desarrollando una perspectiva integral de 
                         la administración pública. Haber pasado por diferentes roles me dio una visión completa de la importancia de cada área y me preparó para 
-                        asumir este puesto con firmeza y claridad. 📈💪                   
-                    </p>
+                        asumir este puesto con firmeza y claridad. 📈💪
+                    </p>                    
                 </div>
-                <div class="col-md-5">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 18px;" src="./img/desafio.jpg" alt="Sabrina Serer">
-                </div>             
 
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-5">
                     <p id="turismo">💼 Desde el 11 de diciembre, cada día ha traído consigo nuevas experiencias. La gestión financiera en el ámbito de la salud 
                         no es tarea sencilla, pero es justamente ahí donde radica la importancia de este rol. Mi objetivo ha sido, y sigue siendo, impulsar la 
                         eficiencia y la transparencia en la administración de recursos públicos. Porque gestionar con propósito no solo optimiza los números, 
@@ -444,22 +601,22 @@
                     </p>                    
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-5">
                     <p id="turismo">Esta etapa no solo ha representado un crecimiento profesional, sino también personal. La experiencia me ha enseñado a confiar 
                         en mis capacidades, a valorar la colaboración con los equipos de trabajo y a mantener la mirada firme en la búsqueda de resultados concretos. 
                         Entender que los desafíos no se enfrentan en soledad, sino con la fuerza de un equipo comprometido, ha sido clave. 🤝</p>                        
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-5">
                     <p id="turismo">Hoy miro hacia atrás y siento orgullo por el camino recorrido. 20 años de servicio público no son solo una cifra, son el reflejo 
                         de compromiso, dedicación y aprendizaje continuo. Sé que esta nueva etapa no es un punto de llegada, sino un punto de partida hacia nuevas 
                         metas. Estoy segura de que los logros alcanzados son solo el comienzo de todo lo que aún está por venir. 🚀💪</p>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-5">
                     <p id="turismo">Porque cada desafío es una oportunidad de crecimiento y cada paso suma en la construcción de una gestión pública más eficiente, 
                         cercana y humana. Seguimos adelante con compromiso, pasión y la certeza de que los cambios significativos se logran con esfuerzo, dedicación 
                         y trabajo en equipo. 💙</p>                        
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-5">
                     <p id="turismo">#NuevosDesafíos #CrecimientoProfesional #Neuquén #GestiónEficiente #CompromisoPúblico</p>                        
                 </div>
                 
@@ -476,8 +633,27 @@
 
 
 
-
-
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas6 = document.getElementById("toggleText6"); // Selecciona el span
+                const textosOcultos6 = document.querySelectorAll("#oculto-6"); // Selecciona los textos ocultos                
+                let visible6 = false; // Estado del contenido
+    
+                // Ocultar textos inicialmente
+                textosOcultos6.forEach(texto6 => texto6.style.display = "none");
+    
+                leerMas6.addEventListener("click", function () {
+                    visible6 = !visible6; // Alternar estado
+    
+                    textosOcultos6.forEach(texto6 => {
+                        texto6.style.display = visible6 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+    
+                    leerMas6.textContent = visible6 ? "Leer menos..." : "Leer más...";
+                });
+            });
+            </script>
+            
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase" style="font-size: 140%;">Herramientas de Gestión para Transformar la Salud Pública: Una Experiencia 
@@ -486,19 +662,19 @@
             </div>
             <br>
             <div class="row text-center">
-                <div class="col-md-5">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 18px;" src="./img/formacion.jpg" alt="Sabrina Serer">
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 40%; height: auto; padding-bottom: 18px;" src="./img/formacion.jpg" alt="Sabrina Serer">
                 </div>
-                <div class="col-md-7" style="padding-top: 24px;">                    
+                <div class="col-md-8" style="padding-top: 10px;">                    
                     <p id="turismo">En un contexto donde la gestión eficiente de los recursos 💰 y la optimización de los procesos 🔄 son fundamentales para mejorar
                          la calidad de vida 🏥 de nuestra sociedad, se llevó a cabo una capacitación clave en administración financiera 📊 de las políticas públicas
                           sanitarias. Este espacio reunió a profesionales 👩‍💻👨‍💻 con un objetivo común: fortalecer las habilidades estratégicas y metodológicas 🛠️ que
                            permitan orientar efectivamente las acciones y los recursos en las instituciones y organizaciones de salud. 💪                    
-                    </p>
+                    </p><span id="toggleText6" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
                 </div>               
 
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-6">
                     <p id="turismo">Uno de los puntos destacados ⭐ fue el aprendizaje de herramientas como la Gestión para Resultados (GpR) 📈, una metodología que 
                         no solo optimiza el uso de los recursos ♻️, sino que también permite integrar la perspectiva de género 🙋‍♀️ en el diseño de programas y 
                         proyectos sanitarios. Este enfoque interdisciplinario 🔗 fomenta la colaboración entre el sector público y privado, fortaleciendo los 
@@ -506,18 +682,18 @@
                     </p>                    
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-6">
                     <p id="turismo">Además, como docente de la Universidad Nacional del Comahue (UNC) 🎓, siento un profundo orgullo al transmitir estos conocimientos 
                         y ver cómo esta capacitación transforma el compromiso y las capacidades 💡 de los participantes. La enseñanza no es solo una vocación 💬, 
                         sino una forma de contribuir a un país más justo ⚖️ y con mejores oportunidades para nuestras infancias. 👶🌱</p>                        
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-6">
                     <p id="turismo">El curso también abordó el uso de la Matriz de Marco Lógico 🗂️, un instrumento indispensable para quienes diseñan políticas 
                         públicas orientadas a resultados. 📜 Aprender a interpretar el presupuesto desde una visión estratégica 🔍 nos permite tomar decisiones 
                         basadas en evidencia 📊 y mejorar continuamente los servicios de salud. La evaluación constante ✅ de los resultados sanitarios garantiza 
                         que cada decisión esté sustentada en datos confiables, reforzando nuestro compromiso de ofrecer una atención de calidad y equitativa. ❤️</p>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-6">
                     <p id="turismo">Compartir estas inquietudes y conocimientos 📚 con colegas motivados por mejorar la eficacia en sus equipos técnicos 🧩 es un 
                         privilegio, y juntos, estamos construyendo los cimientos 🏗️ de una administración pública más justa y orientada a resultados, que pone a la 
                         salud y el bienestar en el centro de sus prioridades. 🌟💙</p>                        
@@ -531,14 +707,26 @@
 
 
 
-
-
-
-
-
-
-
-
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas7 = document.getElementById("toggleText7"); // Selecciona el span
+                const textosOcultos7 = document.querySelectorAll("#oculto-7"); // Selecciona los textos ocultos                
+                let visible7 = false; // Estado del contenido
+    
+                // Ocultar textos inicialmente
+                textosOcultos7.forEach(texto7 => texto7.style.display = "none");
+    
+                leerMas7.addEventListener("click", function () {
+                    visible7 = !visible7; // Alternar estado
+    
+                    textosOcultos7.forEach(texto7 => {
+                        texto7.style.display = visible7 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+    
+                    leerMas7.textContent = visible7 ? "Leer menos..." : "Leer más...";
+                });
+            });
+            </script>            
 
             <div class="row">
 
@@ -549,18 +737,23 @@
             <br>
             <div class="row text-center">
                 <div class="col-md-4">
+                    <img class="flyer" style="width: 40%; height: auto; padding-top: 10px;" src="./img/transparencia.jpg" alt="Sabrina Serer">
+                </div>
+                <div class="col-md-8">
                     <p id="turismo">Desde el Ministerio de Salud de Neuquén, estoy convencida de que estamos avanzando en la dirección correcta. Como especialista en 
                         administración financiera del sector público, celebro la reciente presentación de la Iniciativa de Transparencia y Optimización (ITO) que 
                         impulsaron el Ministro de Trabajo y Desarrollo Laboral, Lucas Castelli, y el Ministro de Economía, Producción e Industria, Guillermo Koenig.
                          Esta medida busca eliminar los sobreprecios en contratos y optimizar el uso de recursos públicos, generando un marco de previsibilidad y 
                          justicia para todas las partes involucradas. 🚀💡 <br>
-                         Creo firmemente que esta iniciativa no solo beneficia a los organismos públicos, sino que fortalece la relación de confianza con el sector
-                          privado, clave para mejorar el suministro de insumos en áreas críticas como salud.</p>
+                         </p><span id="toggleText7" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
                 </div>
-                <div class="col-md-4">
-                    <img class="flyer" style="width: 70%; height: auto; padding-top: 36px;" src="./img/transparencia.jpg" alt="Sabrina Serer">
+                
+                <div class="col-md-12" id="oculto-7">
+                    <p id="turismo">Creo firmemente que esta iniciativa no solo beneficia a los organismos públicos, sino que fortalece la relación de confianza con el sector
+                        privado, clave para mejorar el suministro de insumos en áreas críticas como salud.</p>
+                        
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12" id="oculto-7">
                     <p id="turismo">Una alianza de este tipo es fundamental para generar un entorno de inversión que impulse el desarrollo económico y social de 
                         nuestra provincia, al tiempo que se garantiza la transparencia en cada proceso de contratación. 🤝🌱<br>
                         Para nosotros en el Ministerio de Salud, la previsibilidad del presupuesto es esencial, ya que nos permite planificar de forma eficiente y 
@@ -578,9 +771,27 @@
 
 
 
-
-
-
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas8 = document.getElementById("toggleText8"); // Selecciona el span
+                const textosOcultos8 = document.querySelectorAll("#oculto-8"); // Selecciona los textos ocultos                
+                let visible8 = false; // Estado del contenido
+    
+                // Ocultar textos inicialmente
+                textosOcultos8.forEach(texto8 => texto8.style.display = "none");
+    
+                leerMas8.addEventListener("click", function () {
+                    visible8 = !visible8; // Alternar estado
+    
+                    textosOcultos8.forEach(texto8 => {
+                        texto8.style.display = visible8 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+    
+                    leerMas8.textContent = visible8 ? "Leer menos..." : "Leer más...";
+                });
+            });
+            </script>
+            
             <div class="row">
 
                 <div class="col-lg-12 text-center">
@@ -590,21 +801,21 @@
             <br>
             <div class="row text-center">
 
-                <div class="col-md-5">
-                    <img class="flyer" style="width: 50%; height: auto; padding-bottom: 18px;" src="./img/realidadNacional.jpg" alt="Sabrina Serer">
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 40%; height: auto; padding-bottom: 18px;" src="./img/realidadNacional.jpg" alt="Sabrina Serer">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     
                     <p id="turismo">💼 Como parte del equipo de administración financiera del Ministerio de Salud de Neuquén, es clave resaltar la importancia de una 
                         gestión eficiente de los fondos públicos para garantizar que los recursos lleguen a cada rincón de nuestra provincia. 🌍 En momentos donde las 
                         políticas nacionales imponen recortes en áreas esenciales como la salud, necesitamos un enfoque estratégico que maximice el impacto de cada 
                         peso invertido. 💸        
                     
-                    </p>
+                    </p><span id="toggleText8" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
                 </div>               
 
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-8">
                     <p id="turismo">⚖️ En contraste con la administración nacional, que ha recortado un 40% el presupuesto en salud, afectando gravemente programas 
                         vitales como el de VIH, nuestra provincia sigue una visión clara: redirigir los recursos hacia donde más se necesitan. 💊 El gobierno nacional 
                         ha dejado de lado a los más vulnerables, sin un plan que garantice la continuidad de tratamientos ni el acceso a medicamentos esenciales. 🏥 En 
@@ -613,16 +824,16 @@
                     </p>                    
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-8">
                     <p id="turismo">💪 Cada decisión que tomamos en el área financiera busca asegurar que ningún neuquino quede desprotegido. El Plan Invierno 2024, 
                         por ejemplo, ha demostrado ser un éxito, ampliando la cobertura en áreas críticas y optimizando el uso de camas y recursos. 🛌 Este tipo de 
                         planificación a largo plazo nos permite, como provincia, afrontar las adversidades que surgen desde el ámbito nacional. 🌟</p>                        
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-8">
                     <p id="turismo">🔍 La comparación es clara: mientras algunos eligen recortes sin dirección, en Neuquén apostamos por una administración eficaz que 
                         tiene como objetivo principal mejorar la calidad de vida de nuestra población. 💚</p>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" id="oculto-8">
                     <p id="turismo">— Sabrina Serer, Equipo de Administración Financiera, Ministerio de Salud de Neuquén 🌿</p>                        
                 </div>
                 
@@ -1385,3 +1596,47 @@
 
 
 </html>
+
+
+
+<!--
+
+<span id="toggleText" style="color: blue; cursor: pointer;">Leer más...</span>
+
+
+<script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas = document.getElementById("toggleText"); // Selecciona el span
+                const textosOcultos = document.querySelectorAll("#oculto-1"); // Selecciona los textos ocultos
+                let visible = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos.forEach(texto => texto.style.display = "none");
+
+                leerMas.addEventListener("click", function () {
+                    visible = !visible; // Alternar estado
+
+                    textosOcultos.forEach(texto => {
+                        texto.style.display = visible ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas.textContent = visible ? "Leer menos..." : "Leer más...";
+                });
+            });
+               
+            </script>
+            <style>              
+            #toggleText {
+                color: blue;
+                font-weight: bold;
+                cursor: pointer;
+                display: block;
+                margin-top: 1px;
+            }
+            
+            #toggleText:hover {
+                text-decoration: underline;
+            }
+            </style>
+            
+-->
