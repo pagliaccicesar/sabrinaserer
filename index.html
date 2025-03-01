@@ -164,6 +164,83 @@
   <section id="evento">
         <div class="container">
 
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas = document.getElementById("toggleText"); // Selecciona el span
+                const textosOcultos = document.querySelectorAll("#oculto-10"); // Selecciona los textos ocultos                
+                let visible = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos.forEach(texto => texto.style.display = "none");
+
+                leerMas.addEventListener("click", function () {
+                    visible = !visible; // Alternar estado
+
+                    textosOcultos.forEach(texto => {
+                        texto.style.display = visible ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas.textContent = visible ? "Mostrar menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">🔹 Planificación y gestión en salud: herramientas para transformar la práctica</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/sabri_sin.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 35px;">                   
+                        <p id="turismo">                            
+                            En el marco del Seminario “Planificación y Dirección Estratégica. Gestión por Resultados” de la Universidad Nacional del 
+                            Comahue (UNCo), abordamos herramientas fundamentales para mejorar la planificación y la gestión en salud.<br>                            
+                        </p> <span id="toggleText" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>                   
+                </div>
+                
+
+                <div class="col-md-12" id="oculto-10">
+                    <p id="turismo">📌 Planificación y Evaluación en la Gestión Pública
+                        En este espacio trabajamos sobre cómo diseñar e implementar planes estratégicos efectivos, incorporando herramientas de evaluación que 
+                        permitan medir el impacto de las decisiones en el ámbito sanitario. La gestión basada en evidencia es clave para optimizar recursos y 
+                        mejorar los resultados en salud.
+
+                    </p>
+                </div>               
+
+                <div class="col-md-12" id="oculto-10">
+                    <p id="turismo">📌 Implementación de la Gestión por Resultados (GpR)
+                        Aquí profundizamos en la ejecución y monitoreo de estrategias en salud, con un enfoque práctico en la toma de decisiones basada en datos, 
+                        el control de gestión y la mejora continua. Analizamos casos reales y metodologías que facilitan la implementación de políticas públicas 
+                        más eficientes.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-10">
+                    <p id="turismo">Además, quiero invitarlos a conocer la nueva carrera de posgrado “Especialización en Gestión y Dirección de Instituciones de 
+                        Salud”, que se dictará desde la Facultad de Ciencias Médicas de la UNCo. Esta especialización, dirigida por el Mg. Martín Regueiro, busca 
+                        fortalecer la formación de profesionales en la gestión del sistema de salud, brindando herramientas clave para la toma de decisiones 
+                        estratégicas y la dirección eficiente de instituciones sanitarias.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-10">
+                    <p id="turismo">Este seminario y la nueva especialización están dirigidos a profesionales de la salud, administradores y responsables de políticas 
+                        públicas que buscan fortalecer sus capacidades en planificación y gestión. ¡Los invito a sumarse a esta propuesta de formación en la UNCo y 
+                        a seguir construyendo juntos un sistema de salud más eficiente y equitativo! ¡Los espero!</p>                        
+                </div>              
+                
+                
+            </div>
+            <br>
+            <br>
+
+
+
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                 const leerMas = document.getElementById("toggleText"); // Selecciona el span
