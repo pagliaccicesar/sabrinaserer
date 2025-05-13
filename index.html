@@ -166,6 +166,106 @@
 
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
+                const leerMas12 = document.getElementById("toggleText12"); // Selecciona el span
+                const textosOcultos12 = document.querySelectorAll("#oculto-12"); // Selecciona los textos ocultos                
+                let visible12 = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos12.forEach(texto12 => texto12.style.display = "none");
+
+                leerMas12.addEventListener("click", function () {
+                    visible12 = !visible12; // Alternar estado
+
+                    textosOcultos12.forEach(texto12 => {
+                        texto12.style.display = visible12 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas12.textContent = visible12 ? "Mostrar menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Nuevo informe: ¿Cómo se gobierna en América Latina sin mayoría legislativa?</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                
+                
+                <div class="col-md-12" style="padding-top: 25px;">                   
+                        <p id="turismo">                            
+                            Desde que comencé a estudiar el fenómeno del impeachment en el contexto latinoamericano, me encontré con una realidad compleja y 
+                            profundamente política. Este procedimiento, que muchas veces se traduce como juicio político, no es simplemente una herramienta 
+                            jurídica para destituir a presidentes corruptos o ineficaces. Es, ante todo, un instrumento maleable que responde a crisis, escándalos, 
+                            relaciones de poder y alianzas parlamentarias.<br>
+                            En este informe, que surge como parte del proceso formativo del Máster en Análisis de Políticas Públicas, analizo el impeachment como 
+                            fenómeno latinoamericano contemporáneo. A partir de los aportes de autores como Aníbal Pérez Liñán y de un análisis comparado de escenarios 
+                            recientes en Argentina, Guatemala, Ecuador, Panamá, República Dominicana y México, busco responder una pregunta fundamental: 
+                            ¿qué tan viable es gobernar sin mayoría legislativa en América Latina?                          
+                        </p> <span id="toggleText12" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>                   
+                </div>
+                
+
+                <div class="col-md-12" id="oculto-12">
+                    <p id="turismo">Los casos que revisé muestran distintos grados de vulnerabilidad. Mientras Javier Milei en Argentina gobierna con el menor apoyo 
+                        parlamentario de la historia reciente, Claudia Sheinbaum en México cuenta con una mayoría calificada que le permite avanzar con reformas 
+                        constitucionales. En el medio, hay matices: presidentes que negocian, que pactan o que enfrentan bloqueos constantes. Esta diversidad de 
+                        scenarios pone en evidencia cómo la fragmentación política, el voto castigo y la hiperpolarización configuran hoy el terreno de juego de 
+                        nuestras democracias.
+
+                    </p>
+                </div>               
+
+                <div class="col-md-12" id="oculto-12">
+                    <p id="turismo">Desde el punto de vista institucional, el impeachment aparece como una amenaza latente para los ejecutivos sin respaldo legislativo 
+                        sólido. Aún cuando haya evidencia de corrupción o escándalos, el destino de un presidente depende de la capacidad de su coalición de 
+                        sostenerlo, al menos parcialmente. Por eso, la construcción de gobernabilidad se vuelve una tarea estratégica y dinámica, que exige 
+                        alianzas, gestión de imagen pública y mucha habilidad para navegar en contextos de alta volatilidad política.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-12">
+                    <p id="turismo">Los invito a descargar este informe completo desde mi web. Creo que, más allá del análisis académico, es una herramienta útil para 
+                        reflexionar sobre el rumbo de nuestras democracias. Y, sobre todo, para entender que la política no se juega solo en las urnas, sino en la 
+                        arena compleja de las instituciones, los partidos y la opinión pública.</p>                        
+                </div>
+                
+
+                <div class="col-md-12" id="oculto-12">
+                    <a href="./img/Como se gobierna en America Latina sin mayoría legislativa.pdf" target="_blank">👉 Descargá el informe completo acá</a>                    
+                </div>            
+                
+                
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
                 const leerMas11 = document.getElementById("toggleText11"); // Selecciona el span
                 const textosOcultos11 = document.querySelectorAll("#oculto-11"); // Selecciona los textos ocultos                
                 let visible11 = false; // Estado del contenido
