@@ -164,6 +164,85 @@
   <section id="evento">
         <div class="container">
 
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas13 = document.getElementById("toggleText13"); // Selecciona el span
+                const textosOcultos13 = document.querySelectorAll("#oculto-13"); // Selecciona los textos ocultos                
+                let visible13 = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos13.forEach(texto13 => texto13.style.display = "none");
+
+                leerMas13.addEventListener("click", function () {
+                    visible13 = !visible13; // Alternar estado
+
+                    textosOcultos13.forEach(texto13 => {
+                        texto13.style.display = visible13 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas13.textContent = visible13 ? "Mostrar menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">📘✨ Un reconocimiento que inspira</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/Novedades_GPR_(8).jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 35px;">                   
+                        <p id="turismo">                            
+                            La publicación del libro “Diseño y Monitoreo de Políticas Públicas” sigue generando encuentros y reflexiones profundas en quienes 
+                            trabajamos para fortalecer la gestión pública. Esta semana, recibí con enorme gratitud las palabras de Marcos Makón, especialista de 
+                            referencia y actual director de la Especialización en gestión para resultados de la UBA, que tengo el honor de estar cursando:<br>                            
+                        </p> <span id="toggleText13" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>                   
+                </div>
+                
+
+                <div class="col-md-12" id="oculto-13">
+                    <p id="turismo">🗣️ “Refleja un sólido proceso de investigación, de recopilación de antecedentes y de tratamiento de temas centrales 
+                        para el funcionamiento de la administración pública. Felicitaciones por el trabajo realizado.”
+
+                    </p>
+                </div>               
+
+                <div class="col-md-12" id="oculto-13">
+                    <p id="turismo">💜 Estas palabras no solo me emocionan, sino que confirman la importancia de escribir, sistematizar y compartir experiencias 
+                        desde lo público. La formación constante es clave para construir una administración estatal profesional, transparente y con capacidad 
+                        transformadora.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-13">
+                    <p id="turismo">📚 Si todavía no lo leíste, el libro está disponible de forma gratuita en este link 👉 <a href="./venta.html" target="_blank">www.sabrinaserer.ar/libro</a></p>                 
+                </div>
+                
+               
+                
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                 const leerMas12 = document.getElementById("toggleText12"); // Selecciona el span
