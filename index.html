@@ -167,6 +167,135 @@
 
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
+                const leerMas14 = document.getElementById("toggleText14"); // Selecciona el span
+                const textosOcultos14 = document.querySelectorAll("#oculto-14"); // Selecciona los textos ocultos                
+                let visible14 = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos14.forEach(texto14 => texto14.style.display = "none");
+
+                leerMas14.addEventListener("click", function () {
+                    visible14 = !visible14; // Alternar estado
+
+                    textosOcultos14.forEach(texto14 => {
+                        texto14.style.display = visible14 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas14.textContent = visible14 ? "Mostrar menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Un análisis  sobre los nuevos liderazgos de derecha radical que emergen en América Latina y sus implicancias para la democracia.</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/sabri_junio25.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 75px;">                   
+                        <p id="turismo">                            
+                            🖋️ Lo escribí con el objetivo de abrir preguntas, invitar a la reflexión colectiva y seguir fortaleciendo los espacios de pensamiento
+                             crítico.<br>
+                             <br>
+
+                             👉 Además, te invito a aprovechar la descarga gratuita del libro “Diseño y Monitoreo de las políticas públicas”, disponible en el siguiente link: <a href="./venta.html" target="_blank">www.sabrinaserer.ar/libro</a>                
+
+                        </p> <span id="toggleText14" style="color: rgb(255, 165, 0);display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        
+                        
+                </div>
+                
+
+                <div class="col-lg-12 text-center" id="oculto-14">
+                    <p id="turismo" style="text-align: center;" ><b>Milei y la nueva derecha latinoamericana: rupturas, liderazgos y riesgos democráticos</b>
+
+                    </p>
+                </div>               
+
+                <div class="col-md-12" id="oculto-14">
+                    <p id="turismo">La llegada de Javier Milei al poder en Argentina no es un hecho aislado. Es parte de un fenómeno regional más amplio: el ascenso 
+                        de liderazgos de derecha radical en América Latina que combinan discursos antipolíticos, pulsiones autoritarias y una promesa de 
+                        “restauración” frente a un orden político considerado agotado. Sin embargo, el caso argentino tiene matices propios que lo hacen 
+                        especialmente revelador para pensar los desafíos que enfrenta la democracia en la región.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-14">
+                    <p id="turismo">A diferencia de Bolsonaro en Brasil o de Bukele en El Salvador —dos figuras que también capitalizaron el descontento social 
+                        desde posiciones de derecha—, Milei no emergió desde las Fuerzas Armadas ni desde estructuras partidarias tradicionales, sino desde un 
+                        discurso de liberalismo extremo, fuertemente centrado en la deslegitimación del Estado. Su narrativa se ancla en una crítica radical a 
+                        la “casta política” y en una exaltación del mercado como única solución a los problemas nacionales. Pero su ejercicio del poder no ha 
+                        sido coherente con esa retórica liberal: desde el inicio de su mandato, ha acumulado poder por vía excepcional (decretos, emergencia 
+                        económica, ofensivas contra el Congreso) y ha promovido una concentración de atribuciones que contrasta con su discurso privatizador 
+                        y antiestatista.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-14">
+                    <p id="turismo">En términos comparativos, el gobierno de Milei comparte con Bolsonaro y Bukele una lógica de polarización permanente. 
+                        Todos ellos han construido su legitimidad sobre la base de una figura fuerte, que dice encarnar al “pueblo verdadero” y que desconfía 
+                        abiertamente de las instituciones representativas. También han recurrido a estrategias similares: uso intensivo de redes sociales para 
+                        desintermediar la comunicación, ataques a medios críticos, judicialización del conflicto político y creación de enemigos internos 
+                        (la “casta”, el progresismo, el feminismo, el ambientalismo).</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-14">
+                    <p id="turismo">El caso de Keiko Fujimori en Perú, aunque diferente en su acceso al poder, también permite trazar paralelismos. Su liderazgo 
+                        reivindica una tradición autoritaria (el fujimorismo original), aunque operando más dentro de los márgenes del sistema institucional. 
+                        La diferencia radica en que mientras Fujimori intenta conquistar el poder desde la competencia política tradicional, figuras como Milei 
+                        lo hacen desde la promesa de “destruir el sistema desde adentro”.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-14">
+                    <p id="turismo">La característica común de estos liderazgos es que, más que proponer un modelo de sociedad, encarnan una voluntad de ruptura. 
+                        Su legitimidad se construye desde la negación: del pasado, de la política, del pluralismo. En el caso argentino, este modelo de derecha 
+                        radical se superpone con una crisis estructural del Estado y del contrato social, lo que agrava los efectos de cada decisión política. 
+                        La desregulación, el desfinanciamiento del sector público y el conflicto permanente con actores sociales —desde universidades hasta 
+                        sindicatos y gobernadores— dibujan un escenario de gobernabilidad frágil y de institucionalidad en tensión.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-14">
+                    <p id="turismo">En este contexto, el caso de Bolivia funciona como contrapunto: allí, la crisis se da dentro de un partido que alguna vez fue 
+                        hegemónico (el MAS), y que hoy enfrenta una fragmentación interna que pone en jaque su continuidad. A diferencia de Argentina, donde el 
+                        liderazgo emergente busca romper con todo lo previo, en Bolivia la disputa es por la herencia del pasado reciente. Pero en ambos casos, 
+                        el resultado es similar: sistemas políticos debilitados, representación cuestionada y escenarios electorales abiertos.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-14">
+                    <p id="turismo">América Latina está atravesada por una reconfiguración de sus liderazgos, de sus partidos y, sobre todo, de sus formas de 
+                        representación. El caso Milei debe ser leído como síntoma y advertencia: cuando los partidos tradicionales no logran canalizar el malestar 
+                        social, surgen liderazgos que prometen orden y libertad, pero que terminan erosionando las bases mismas de la democracia. Frente a eso, 
+                        el desafío no es solo resistir, sino también construir alternativas capaces de combinar eficacia, legitimidad y justicia social.</p>                        
+                </div>       
+                
+                
+               
+                
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
                 const leerMas13 = document.getElementById("toggleText13"); // Selecciona el span
                 const textosOcultos13 = document.querySelectorAll("#oculto-13"); // Selecciona los textos ocultos                
                 let visible13 = false; // Estado del contenido
