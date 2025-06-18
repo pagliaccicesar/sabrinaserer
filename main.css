@@ -1,7 +1,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }  
 p {
   line-height: 1.75;
@@ -14,7 +14,8 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }  
 /*section {
   padding: 50px 0;
@@ -37,7 +38,8 @@ section h2.section-heading {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -45,7 +47,8 @@ section h3.section-subheading {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }  
 @media (min-width: 768px) {
   section {
@@ -58,7 +61,8 @@ section h3.section-subheading {
   }
 }  */
 .btn {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: 700;
 }  
 .btn-xl {
@@ -81,11 +85,13 @@ section h3.section-subheading {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }  
 ::-moz-selection {
-  background: #fed136;
+  background: #7E6BA0;
+  /*background: #fed136;*/
   text-shadow: none;
 }  
 ::selection {
-  background: #fed136;
+  background: #7E6BA0;
+  /*background: #fed136;*/
   text-shadow: none;
 }  
 img::selection {
@@ -95,7 +101,8 @@ img::-moz-selection {
   background: transparent;
 }  
 body {
-  -webkit-tap-highlight-color: #fed136;
+  -webkit-tap-highlight-color: #7E6BA0;
+  /*-webkit-tap-highlight-color: #fed136;*/
 }  
 #mainNav {
   background-color: #212529;
@@ -108,17 +115,21 @@ body {
   color: white;
   border: 0;
   background-color: rgb(37, 3, 254);
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 #mainNav .navbar-brand {
-  color: rgb(37, 3, 254);
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  color: #E3BFD6;
+  /*color: rgb(37, 3, 254);*/
+  font-family: "Lato", sans-serif;
+  /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-  color: rgb(37, 3, 254);
+  color: #E3BFD6;
+  /*color: rgb(37, 3, 254);*/
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
@@ -126,11 +137,13 @@ body {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: white;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(255, 165, 0);
+  color: #7E6BA0;
+  /*color: rgb(255, 165, 0);*/
   background: none;
 }
 
@@ -171,7 +184,8 @@ body {
 .botonera_libro .btn {
   font-size: small;
   font-weight: 600;
-  border: 2px orange solid;
+  color: #7E6BA0;
+  border: 3px #E3BFD6 solid;
   margin: 3px;
 }
 
@@ -179,7 +193,8 @@ body {
   background-color: white;
   font-size: small;
   font-weight: 600;
-  border: 2px orange solid;
+  color: #7E6BA0;
+  border: 3px #E3BFD6 solid;
   padding: 8px;
   margin: 3px;
 }
@@ -191,8 +206,9 @@ a:hover a:link a:visited {
 
 
 .home {
-background: linear-gradient(orange, rgb(153, 21, 204));
-  /*background-color:rgba(218,218,218,1) ;*/
+  /*background: linear-gradient(orange, rgb(153, 21, 204));*/
+  /*background:linear-gradient(rgb(153, 21, 204), #7E6BA0) ;*/
+  background: #7E6BA0;
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(2, 1fr);
@@ -233,7 +249,7 @@ margin-top: 35px;
   margin-top: 0px;
 }
 .home div .cards {
-  margin-top: 10px;
+  margin-top: 10px;  
 }
 .home p {
   font-size: smaller;
@@ -245,6 +261,9 @@ margin-top: 35px;
 /*.cards {
 background-color: orange;
 } */
+.cards a {
+  color: #E3BFD6;
+}
 .card{
 width: 350px;
 padding: 30px;  
@@ -266,7 +285,8 @@ background-size: 200%;
 background-position: 0 0;
 display: inline;
 transition: .5s ease-in-out;
-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Lato", sans-serif;
+/*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 text-transform: uppercase; 
 }
 a{
@@ -276,7 +296,8 @@ text-decoration: none;
 small{
 margin-top: 20px;
 display: block;
-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Lato", sans-serif;
+/*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 color: white;
 text-transform: uppercase;
 }
@@ -291,9 +312,10 @@ text-decoration: none;
 span{
 display: block;
 margin-top: 10px;
-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Lato", sans-serif;
+/*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 font-weight: 700;
-color: rgb(153, 51, 204);
+color: #FFFFFF;
 }
 
 a{color: white}
@@ -347,14 +369,16 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 @media (min-width: 768px) {
@@ -367,14 +391,16 @@ header.masthead .intro-text .intro-heading {
     font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", sans-serif;
+    /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", sans-serif;
+    /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   }
 }
 
@@ -604,7 +630,8 @@ iframe {
   font-size: 16px;
   font-style: italic;
   margin: 0;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+  font-family: "Lato", sans-serif;
+  /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;   */
 }
 
 #portfolio * {
@@ -638,7 +665,8 @@ iframe {
 .portfolio-modal .modal-content p.item-intro {    
   font-size: 16px;    
   margin: 5px 0 30px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-top: 0;
@@ -700,7 +728,7 @@ align-items: center;
 background-image: url("./img/fondo_redes.jpeg");
 background-size: cover;
 background-position: center;
-font-family: "Rajdhani", sans-serif;
+font-family: "Lato", sans-serif;
 }
 
 *, *:before, *:after {
@@ -732,33 +760,36 @@ section#contact .form-control:focus {
 section#contact ::-webkit-input-placeholder {
   font-weight: 700;
   color: rgb(181, 170, 251);
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 section#contact :-moz-placeholder {
   font-weight: 700;
   color: rgb(181, 170, 251);   
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 section#contact ::-moz-placeholder {
   font-weight: 700;
   color: rgb(181, 170, 251);   
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: rgb(181, 170, 251);
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 footer {    
   padding: 25px 0;
   text-align: center;
 }
+footer span {
+  color:#7E6BA0;
+}
 footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 footer a {
   text-decoration: none;
@@ -773,7 +804,7 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 ul.social-buttons {
   margin-bottom: 0;
@@ -810,17 +841,19 @@ ul.social-buttons li a:hover {
 /****************   css de sección privacidad    *******************/
 
 .avisolegal {
-  background-color: rgb(254, 193, 118);
+  background-color: #E3BFD6;
+  /*background-color: rgb(254, 193, 118);*/
 }
 
 article {   
   max-width: 100%;
   margin: 0 auto;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.1rem;
   line-height: 1.5;
   padding: 1.5rem;
   color: #0714f9;
+  /*color: #7E6BA0;*/
 }
 @media all and (min-width: 900px) {
   article {
@@ -839,7 +872,7 @@ article p {
   font-weight: 300;    
 }
 blockquote {
-  background: rgb(37, 3, 254);
+  background: #7E6BA0;
   color: #fff;
   border-radius: 12px;
   padding: 25px 0;
@@ -885,7 +918,7 @@ width: 100%;
   }
 }
 .modal {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   margin-top: 50px;
 }
 .modal a {    
