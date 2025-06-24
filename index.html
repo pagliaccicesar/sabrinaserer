@@ -77,11 +77,33 @@
      <img class="picself img-thumbnail" src="./img/sabrina_serer.png" alt="Sabrina Serer">
 
       <div>         
-         <p style="color: #E3BFD6; font-weight: 600;">¡Hola! 👋 Soy Sabrina, apasionada por construir un futuro mejor para todas las generaciones venideras. 
+         <p style="color: #E3BFD6; font-weight: 600; font-size: medium;">¡Hola! 👋 Soy Sabrina, apasionada por construir un futuro mejor para todas las generaciones venideras. 
             Para mí, ser buena profesional va de la mano de ser una buena persona. Mi objetivo es compartir conocimientos y experiencias, contribuyendo así a mejorar 
             la gestión pública desde cualquier rol que ocupemos. Sueño con un futuro mejor para nuestros niños y jóvenes, construyendo paso a paso una Argentina 
-            más próspera y justa para todos.</p>        
-          
+            más próspera y justa para todos.</p>
+            <!--<p class="titulo">Contadora Pública (UBA) | Especialista en Administración Financiera del Sector Público (UNCo) | Planificación, Gestión y 
+            Monitoreo de Políticas Públicas | Formación y asesoramiento técnico a gobiernos</p>
+           
+            <p class="subtitulo">📌 "La eficiencia en la administración pública es una forma de cuidado: del Estado, de lo colectivo y de lo humano."</p>
+            <p>Profesional con más de 15 años de trayectoria en gestión financiera pública, planificación estratégica y monitoreo de políticas públicas. Me especializo en el diseño e implementación de herramientas que mejoran la eficiencia de los procesos administrativos y promueven una gestión transparente, sustentable y con sentido federal.<br>
+                Actualmente coordino equipos técnicos que acompañan la planificación financiera de políticas sociales, sanitarias y territoriales, con foco en la articulación interinstitucional y el fortalecimiento de capacidades locales.<br>
+                Soy autora del libro <b>“Diseño y Monitoreo de Políticas Públicas”</b>, que sintetiza metodologías prácticas para equipos gubernamentales y organizaciones sociales. He dictado más de 70 talleres y espacios de formación técnica en gobiernos provinciales y municipales de la Patagonia, así como en universidades e instituciones estatales.</p>
+             
+                <p class="titulo">💼 Áreas de especialización:</p>
+                            <p>Administración financiera en el sector público <br>
+                            Planificación presupuestaria con enfoque de resultados <br>
+                            Monitoreo y evaluación de políticas públicas <br>
+                            Coordinación de equipos técnicos y procesos intersectoriales <br>
+                            Formación y asistencia técnica en gobiernos subnacionales
+                </p>         
+                <p class="titulo">📚 Formación académica: </p>
+                            <p>Contadora Pública – Universidad de Buenos Aires (UBA) <br>
+                            Especialista en Administración Financiera del Sector Público – Universidad Nacional del Comahue (UNCo)
+                </p>           
+                <p class="titulo">🤝 ¿Qué me diferencia?</p>
+                            <p>Trabajo desde una perspectiva colaborativa, con una fuerte vocación de lo público y el compromiso de profesionalizar la gestión estatal sin perder 
+                            de vista lo humano. Creo en el diseño de políticas que no solo funcionen, sino que <b>importen</b>. Que se midan, que se expliquen, que se compartan. 
+                            Y sobre todo: que <b>transformen realidades.</b></p>-->
 
           <div class="cards">
               <div style="background-color: rgb(38, 39, 39);" class="card">
@@ -166,6 +188,147 @@
 
   <section id="evento">
         <div class="container">
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas15 = document.getElementById("toggleText15"); // Selecciona el span
+                const textosOcultos15 = document.querySelectorAll("#oculto-15"); // Selecciona los textos ocultos                
+                let visible15 = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos15.forEach(texto15 => texto15.style.display = "none");
+
+                leerMas15.addEventListener("click", function () {
+                    visible15 = !visible15; // Alternar estado
+
+                    textosOcultos15.forEach(texto15 => {
+                        texto15.style.display = visible15 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas15.textContent = visible15 ? "Mostrar menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">🛡️ Neuquén tiene lo que la Nación necesita: Estado inteligente, liderazgo democrático y vocación pública.</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/Novedades_GPR_(13).jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 35px;">                   
+                        <p id="turismo">                            
+                            En una Argentina cruzada por la fragmentación, el miedo y el discurso del odio al Estado, la provincia del Neuquén emerge como una 
+                            referencia nacional de gobernanza responsable, moderna y humana.<br>
+                            Mientras el gobierno nacional liderado por Javier Milei se empeña en destruir las capacidades institucionales que sostienen la democracia, 
+                            el gobernador Rolando Figueroa está demostrando que es posible gobernar con austeridad sin vaciar el Estado, con firmeza sin autoritarismo, 
+                            y con innovación sin desmantelamiento.                         
+                        </p> <span id="toggleText15" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>                   
+                </div>
+                
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">Hoy más que nunca, la política argentina necesita mirar hacia Neuquén. No como un rincón aislado, sino como una usina de ideas, 
+                        prácticas y convicciones que pueden renovar el federalismo argentino con visión de futuro.
+                    </p>
+                </div>               
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">📌 Figueroa: gobernanza real en tiempos de simulacro
+                        Rolando Figueroa gobierna desde una lógica de articulación, no de imposición. Construye con intendentes, escucha a las comunidades, 
+                        respeta al personal técnico y jerarquiza la palabra de sus equipos. Esa es la gobernanza real, la que describe Renate Mayntz cuando habla 
+                        de “coordinación efectiva entre actores diversos”.
+                        No hace marketing de la antipolítica: hace política en serio.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">El gobernador entiende que la legitimidad no se compra con clics ni con cadenas de odio, sino que se construye día a día, con 
+                        decisiones que hacen posible la vida de la gente: desde un hospital que funciona, hasta un maestro que cobra en tiempo y forma, pasando 
+                        por un equipo técnico que planifica y ejecuta sin improvisaciones.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">🧱 Capacidad estatal con rostro humano
+                        Según Julián Bertranou, la capacidad estatal se mide en dos dimensiones: organizacional y política. Neuquén está avanzando en ambas.
+                        Figueroa está ordenando la administración, profesionalizando el empleo público, reduciendo gastos innecesarios sin dañar derechos. Pero so
+                        bre todo, está logrando algo que muy pocos logran: generar confianza en el aparato estatal.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">Y esa confianza no se decreta ni se terceriza. Se cultiva con políticas públicas diseñadas con datos, 
+                        con mirada territorial y con respeto por la ciudadanía.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">🌍 Un Estado neoweberiano en acción
+                    El modelo de Figueroa se parece mucho al Estado neoweberiano que describe Damien Larrouqué: combina el orden institucional y la legalidad con la agilidad, 
+                    la innovación y la orientación a resultados. No es un Estado paralizado ni capturado, pero tampoco es un Estado sin alma.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">Es un Estado que no se arrodilla ante el mercado, pero tampoco se encierra en sí mismo. Es un Estado que habla con voz firme, que 
+                        regula con criterio, y que se atreve a innovar sin perder el norte ético.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">🧑‍🏫 La función pública es el músculo del gobierno
+                    A contramano del relato nacional que desprecia a los y las trabajadoras del Estado, Neuquén reconoce que sin ellas no hay política pública posible.
+                    Nuestros equipos técnicos, nuestros agentes sanitarios, nuestros administrativos, nuestras docentes y planificadoras no son “carga pública”: 
+                    son soporte vital del Estado neuquino.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">La Carta Iberoamericana de la Función Pública lo dice con claridad: sin mérito, sin estabilidad y sin compromiso, no hay gobierno 
+                        que funcione. Y en Neuquén la política se ejerce con las personas, no contra ellas.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">📡 Innovación sin vacío: datos, participación y digitalización inteligente
+                    La modernización del Estado no es solo una consigna en los discursos del gobierno provincial: es una política en marcha.
+                    Desde la mejora en los sistemas de gestión, hasta el impulso incipiente a la apertura de datos, pasando por el diálogo interministerial y 
+                    territorial, Neuquén está construyendo una Administración pública inteligente, como la que plantea Carles Ramió: sólida y ágil, predecible pero 
+                    abierta, legalista pero creativa.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">📣 Llamado a la acción: ¡Miren a Neuquén!
+                    El Estado nacional hoy representa un proyecto destructivo, sin ética pública ni horizonte institucional. Pero en el sur, una provincia está sembrando otra posibilidad. 
+                    Y no es casualidad: es liderazgo, es equipo, es visión.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">Por eso convoco a quienes construyen política en todo el país —funcionarios, legisladores, intendentes, trabajadores estatales, 
+                        referentes sociales— a mirar a Neuquén no como excepción, sino como ejemplo.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">👉 Porque el Estado no es el problema, sino la condición para resolverlos.<br>
+                        👉 Porque la función pública no es enemiga, sino herramienta de equidad.<br>
+                        👉 Porque la democracia no se defiende sola: se gobierna bien, o se pierde.</p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-15">
+                    <p id="turismo">Neuquén está demostrando que es posible. Y lo está haciendo con política de verdad. Que nadie mire para otro lado.</p>                 
+                </div>
+                
+               
+                
+            </div>
+            <br>
+            <br>
+
+
+
+
+
 
 
             <script>
@@ -1643,7 +1806,7 @@
   <br>
   <br>    
    
-  <!-- Contact -->   <!--Aca eeta el viejo formulario que se va a reactivar cuando esten aviso legal y privacidad-->
+  <!-- Contact -->   <!--Aca esta el viejo formulario que se va a reactivar cuando esten aviso legal y privacidad-->
 
   <div id="contactame" ></div>
   <br>
@@ -1672,6 +1835,13 @@
                                   <input class="form-control" id="phone" name="telephone" type="tel" placeholder="Tu telefono" required data-validation-required-message="Please enter your phone number.">
                                   <p class="help-block text-danger"></p>
                               </div>
+
+                              <!--<div class="form-group">
+                                  <input class="form-control" id="phone" name="telephone" type="tel" placeholder="Queres recibir nuestro Newsletter?" required data-validation-required-message="Please enter your phone number.">
+                                  <p class="help-block text-danger"></p>
+                              </div>-->
+
+
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">

@@ -212,12 +212,25 @@ a:hover a:link a:visited {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 5rem;
+  padding: 3rem;
 }
 .home p {
-  font-size:smaller;
+  font-size:x-small;
   text-align: justify;
+  color: #E3BFD6;
+  font-weight: 600;
 }
+.home .titulo {
+  font-size: smaller;  
+  color: #E3BFD6;
+  font-weight: 500;
+}
+.home .subtitulo {
+  font-style: italic;
+  font-size: small;
+  font-weight: 500;
+}
+
 .home img {
 width: 80%;
 min-width: 300px; /* Ajusta este valor según el tamaño deseado de la imagen */
