@@ -192,6 +192,81 @@
 
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
+                const leerMas16 = document.getElementById("toggleText16"); // Selecciona el span
+                const textosOcultos16 = document.querySelectorAll("#oculto-16"); // Selecciona los textos ocultos                
+                let visible16 = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos16.forEach(texto16 => texto16.style.display = "none");
+
+                leerMas16.addEventListener("click", function () {
+                    visible16 = !visible16; // Alternar estado
+
+                    textosOcultos16.forEach(texto16 => {
+                        texto16.style.display = visible16 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas16.textContent = visible16 ? "Mostrar menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">📢 ¿Se puede gobernar mejor en tiempos difíciles? Yo creo que sí.</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/Novedades_GPR_(16).jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 25px;">                   
+                        <p id="turismo">                            
+                            En mi nuevo informe, “Gobernar con evidencia: la oportunidad estratégica de Neuquén en tiempos de incertidumbre”, reflexiono sobre cómo, 
+                            en medio de un país donde prima el ajuste sin diagnóstico, Neuquén puede trazar otro rumbo: uno basado en datos reales, decisiones justas 
+                            y gestión con sentido. 📊<br>
+                             <br>
+                             💡 Frente a un modelo nacional que recorta sin medir, nosotros apostamos por planificar, descentralizar y monitorear desde el territorio. 
+                             Porque creo profundamente que el Estado tiene que estar cerca, actuar con inteligencia y construir confianza. 📍                                  
+                        </p>
+                        <span id="toggleText16" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                       
+                        
+                </div>                              
+
+                <div class="col-md-12" id="oculto-16">
+                    <p id="turismo">🌎 En el informe también analizo el caso de Chile, que desde los años 90 consolidó un sistema ejemplar de evaluación de políticas 
+                        públicas. Nos demuestra que es posible transformar lo público con evidencia, participación y estrategia.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-16">
+                    <p id="turismo">🔍 Si te interesa mejorar la gestión pública, pensar políticas con impacto o simplemente entender cómo podemos hacerlo mejor desde 
+                        las provincias, te invito a leer este trabajo que hice con compromiso y mirada crítica. 📥</p>                        
+                </div>
+                
+              
+                <div class="col-md-12" id="oculto-16">
+                    <p id="turismo">👉 Leelo completo y descargalo desde <a href="./venta.html" target="_blank">www.sabrinaserer.ar</a>. Gobernar con evidencia no es 
+                        un lujo: es una forma ética de transformar realidades.</p>                        
+                </div>       
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
                 const leerMas15 = document.getElementById("toggleText15"); // Selecciona el span
                 const textosOcultos15 = document.querySelectorAll("#oculto-15"); // Selecciona los textos ocultos                
                 let visible15 = false; // Estado del contenido
