@@ -1,23 +1,12 @@
 <?php 
 if(isset($_POST['email'])) { 
-    $email_to = "info@sabrinaserer.ar"; 
-    $email_subject = "Me contacto desde sabrinaserer.ar";   
- 
-    /*function died($error) {
-        echo '<body style="background-color:sandybrown;text-align:center;font-family: Trebuchet MS, sans-serif";>';
-        echo '<img src="img/logoexpandidotrans.png" width="250" height="130" />';        
-        echo "<h1>SACHA ACADEMIA ITINERANTE</h1><h2>Existe un error en alguno de los datos ingresados.</h2>"; 
-        echo "<h2>Los siguientes datos están erroneamente cargados:</h2><br />"; 
-        echo $error."<br /><br />"; 
-        echo "<h2>Presione aquí debajo para volver al formulario.</h2><br />";
-		echo "<button style=background-color:gold;border-radius:20%><p><a href='https://sachaacademia.ar/formulario.html'>VOLVER</a></p></button>";  
-    
-        die(); 
-    }*/
+    $email_to = "info@sabrinaserer.ar, pagliaccicesar@gmail.com"; 
+    $email_subject = "Me contacto desde sabrinaserer.ar";    
     $first_name = $_POST['first_name']; // required   
     $email_from = $_POST['email']; // required    
     $telephone = $_POST['telephone']; // not required   
-    $comments = $_POST['comments']; // required 
+    $comments = $_POST['comments']; // required
+     $newsletter = isset($_POST['newsletter']) ? "Sí desea recibir el Newsletter" : "No desea recibir el Newsletter";
     $error_message = ""; 
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
@@ -45,8 +34,11 @@ if(isset($_POST['email'])) {
     $email_message .= "Email Adress: ".clean_string($email_from)."\n";    
     $email_message .= "Telefono: ".clean_string($telephone)."\n";   
     $email_message .= "Comments: ".clean_string($comments)."\n";
+    $email_message .= "Newsletter: " . $newsletter . "\n";
+
+$headers = "From: Sabrina <no-reply@sabrinaserer.ar>\r\n";    
  
-$headers = 'From: '.$email_from."\r\n". 
+//$headers = 'From: '.$email_from."\r\n". 
 'Reply-To: '.$email_from."\r\n" . 
 'X-Mailer: PHP/' . phpversion(); 
 @mail($email_to, $email_subject, $email_message, $headers);   
@@ -66,3 +58,4 @@ exit(); //terminamos la ejecución del script php, ya que si redirecionamos ya n
 //<?php 
 }
  //?>
+

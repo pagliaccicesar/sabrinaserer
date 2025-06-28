@@ -217,17 +217,22 @@ a:hover a:link a:visited {
 .home p {
   font-size:x-small;
   text-align: justify;
-  color: #E3BFD6;
+  color: white;
   font-weight: 600;
 }
 .home .titulo {
-  font-size: smaller;  
-  color: #E3BFD6;
-  font-weight: 500;
+  font-size: small;  
+  color: white;
+  font-weight: 600;
 }
-.home .subtitulo {
-  font-style: italic;
+.home .subtitulo {  
   font-size: small;
+  font-weight: 400;
+}
+.home .frase_1 {
+  color: #E3BFD6;
+  font-style: italic;
+  font-size: smaller;
   font-weight: 500;
 }
 
@@ -764,7 +769,7 @@ section#contact .form-group input.form-control {
   height: auto;
 }
 section#contact .form-group textarea.form-control {
-  height: 248px;
+  height: 338px;
 }
 section#contact .form-control:focus {
   border-color: rgb(37, 3, 254);
@@ -786,6 +791,16 @@ section#contact ::-moz-placeholder {
   font-family: "Lato", sans-serif;
 }
 section#contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: rgb(181, 170, 251);
+  font-family: "Lato", sans-serif;
+}
+section#contact .form-check-input { 
+  padding-right: 20px;
+}
+section#contact .form-check-label {
+  margin-top: 13px;
+  margin-left: 20px;
   font-weight: 700;
   color: rgb(181, 170, 251);
   font-family: "Lato", sans-serif;
