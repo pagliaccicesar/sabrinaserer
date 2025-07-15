@@ -237,7 +237,7 @@ a:hover a:link a:visited {
 }
 
 .home img {
-width: 80%;
+width: 60%;
 min-width: 300px; /* Ajusta este valor según el tamaño deseado de la imagen */
 margin: 45px auto; 
 }
