@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['email'])) { 
-    $email_to = "info@sabrinaserer.ar, pagliaccicesar@gmail.com"; 
+    $email_to = "info@sabrinaserer.ar, contacto@azagile.com.ar"; 
     $email_subject = "Me contacto desde sabrinaserer.ar";    
     $first_name = $_POST['first_name']; // required   
     $email_from = $_POST['email']; // required    
