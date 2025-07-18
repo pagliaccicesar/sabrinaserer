@@ -38,8 +38,7 @@ section h2.section-heading {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: "Lato", sans-serif;
-  /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Lato", sans-serif;  
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -47,8 +46,7 @@ section h3.section-subheading {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: "Lato", sans-serif;
-  /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Lato", sans-serif; 
 }  
 @media (min-width: 768px) {
   section {
@@ -215,24 +213,24 @@ a:hover a:link a:visited {
   padding: 3rem;
 }
 .home p {
-  font-size:x-small;
+  font-size:small;
   text-align: justify;
   color: white;
   font-weight: 600;
 }
 .home .titulo {
-  font-size: small;  
+  font-size: large;  
   color: white;
   font-weight: 600;
 }
-.home .subtitulo {  
+.subtitulo {  
   font-size: small;
-  font-weight: 400;
+  font-weight: 300;
 }
 .home .frase_1 {
   color: #E3BFD6;
   font-style: italic;
-  font-size: smaller;
+  font-size: medium;
   font-weight: 500;
 }
 
@@ -242,7 +240,7 @@ min-width: 300px; /* Ajusta este valor según el tamaño deseado de la imagen */
 margin: 45px auto; 
 }
 .home div {
-margin-top: 35px;
+margin-top: 125px;
 }
 /* Media query para dispositivos móviles */
 @media (max-width: 800px) {
@@ -362,6 +360,19 @@ a{color: white}
 /***************  sobre mi   *************/ 
 #about {
   margin-top: 40px;
+}
+.section-subheading .subtitulo {
+  font-size: medium;
+  text-align: justify;
+  color: black;
+  font-weight: 600;
+
+}
+.section-subheading p { 
+  font-size:small;
+  text-align: justify;
+  color: black;
+  font-weight: 400;
 }
 
 /***************   continua viejo codigo   *************/  
