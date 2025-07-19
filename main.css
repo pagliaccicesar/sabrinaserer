@@ -573,6 +573,8 @@ header.masthead .intro-text .intro-heading {
 }
 .notification p {
   text-align: left;
+  padding-top: 25px;
+  padding-right: 25px;
 }
 .notification h3 {
   padding-top: 5px;
@@ -601,6 +603,26 @@ header.masthead .intro-text .intro-heading {
 	100% {
 		transform: scaleX(0);
 	}
+}
+@media (max-width: 768px) {
+  .notification {
+    
+    top: 450px;
+    width: 20rem;
+  }
+  .notification p {
+    text-align: left;
+    padding-top: 25px;
+    font-size: smaller;    
+}
+  .notification h3 {
+    font-size: small;
+  }
+  .popover_libro {
+    width: 20%;
+    height: auto;
+    padding-left: 10px;	
+  }
 }
 
 
