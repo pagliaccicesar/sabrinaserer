@@ -605,9 +605,8 @@ header.masthead .intro-text .intro-heading {
 	}
 }
 @media (max-width: 768px) {
-  .notification {
-    
-    top: 450px;
+  .notification {    
+    top: 580px;
     width: 20rem;
   }
   .notification p {
@@ -619,7 +618,7 @@ header.masthead .intro-text .intro-heading {
     font-size: small;
   }
   .popover_libro {
-    width: 20%;
+    width: 30%;
     height: auto;
     padding-left: 10px;	
   }
