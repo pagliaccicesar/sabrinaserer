@@ -573,10 +573,14 @@ header.masthead .intro-text .intro-heading {
 }
 .notification p {
   text-align: left;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
   padding-top: 25px;
   padding-right: 25px;
 }
 .notification h3 {
+  color: #7E6BA0;
+  /*text-shadow: 2px 2px 4px #000000;*/
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
   padding-top: 5px;
   font-size: medium;
 }
