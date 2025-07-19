@@ -108,6 +108,29 @@ $(document).ready( function () {
     });
   });
 
+  // js del popover
+  
+document.addEventListener("DOMContentLoaded", () => {
+    const notification = document.getElementById("notification");
+    const closeButton = notification.querySelector("button");
+
+    // Mostrar solo si no se mostró antes
+    if (!localStorage.getItem("notificationShown")) {
+        notification.style.transform = "translateX(0)";
+        localStorage.setItem("notificationShown", "true");
+
+        // Ocultarlo automáticamente después de 4 segundos (opcional)
+        setTimeout(() => {
+            notification.style.transform = "translateX(100%)";
+        }, 4000);
+    }
+
+    // Cerrar al hacer clic en el botón
+    closeButton.addEventListener("click", () => {
+        notification.style.transform = "translateX(100%)";
+    });
+});
+
 
 
 

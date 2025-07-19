@@ -480,6 +480,130 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
+/***************   popover     ************************/
+:root {
+	--accent-900: #E3BFD6;
+	--accent-800: #E3BFD6;
+	--check-svg: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24' fill='%23ffffff'%3E%3Cpath d='M400-314.46 250.46-464 296-509.54l104 104 264-264L709.54-624 400-314.46Z'/%3E%3C/svg%3E");
+
+	--notification-inset: 2rem;
+
+	 font-family: "Lato", sans-serif;
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
+
+.notification {
+	color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	display: flex;
+	font-size: 0.8rem;
+	letter-spacing: 1.4px;
+	line-height: 1.4;
+	gap: 1.45rem;
+	top: 340px;
+	right: 0;
+	margin: var(--notification-inset);
+	width: 24rem;
+	background-color: white;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+	border-radius: 0.5rem;
+	max-width: calc(100% - 6rem);
+	z-index: 2;
+	padding: 1.05rem 1.25rem 1.25rem;
+	overflow: clip;
+	animation: slideInOut 6s cubic-bezier(0.33, 0, 0.66, 1.33);
+	transform: translateX(calc(100% + var(--notification-inset)));
+	/*animation: slideInOut 4s infinite cubic-bezier(0.33, 0, 0.66, 1.33);*/
+	animation-play-state: var(--animation-play-state);
+
+	&:hover {
+		--animation-play-state: paused;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		inset: 0 0 auto;
+		height: 0.5rem;
+		background-color: var(--accent-900);
+		transform-origin: left;
+		position: absolute;
+		animation: countdown 4s infinite linear;
+		animation-play-state: var(--animation-play-state);
+	}
+
+	&__text {
+		margin: 0.3rem 0 0;
+	}
+
+	&__header {
+		color: black;
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	&__action {
+		margin-left: auto;
+	}
+
+	&__icon {
+		border-radius: 50%;
+		display: block;
+		aspect-ratio: 1;
+		background-size: 3rem;
+		background-color: var(--accent-900);
+		background-image: var(--check-svg);
+		background-repeat: no-repeat;
+		background-position: 50% 100%;
+		width: 3.2rem;
+		margin-bottom: auto;
+		flex-shrink: 0;
+	}
+}
+.popover_libro {
+	width: 30%;
+	height: auto;
+	/*padding-left: 40px;	*/
+}
+.notification p {
+  text-align: left;
+}
+.notification h3 {
+  padding-top: 5px;
+  font-size: medium;
+}
+
+.button {
+	appearance: none;
+	background: no-repeat;
+	border: none;
+	font: inherit;
+	margin: 0;
+	color: currentColor;
+	padding: 0;
+}
+
+@keyframes slideInOut {
+	15%,
+	66% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes countdown {
+	66%,
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+
 
 /***************   publicacion  (libro)   *************/
 
