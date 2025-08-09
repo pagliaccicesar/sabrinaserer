@@ -44,6 +44,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#publicaciones">Publicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="./venta.html">Libro</a>
                         </li>                        
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#contactame">Contacto</a>
@@ -61,7 +64,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#publicaciones">Publicaciones</a>
-                        </li>                        
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="./venta.html">Libro</a>
+                        </li>                          
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#contactame">Contacto</a>
                         </li>
@@ -204,7 +210,7 @@
                   </div>
 
                   <div class="botonera_libro">
-                          <a href="./libro.html" class="btn">Más sobre el libro</a>                                
+                          <!--<a href="./libro.html" class="btn">Más sobre el libro</a>-->
                           <a href="./venta.html" class="btn">Comprar el libro</a>
                   </div>                
                 
@@ -218,6 +224,90 @@
 
   <section id="evento">
         <div class="container">
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const leerMas18 = document.getElementById("toggleText18"); // Selecciona el span
+                const textosOcultos18 = document.querySelectorAll("#oculto-18"); // Selecciona los textos ocultos                
+                let visible18 = false; // Estado del contenido
+
+                // Ocultar textos inicialmente
+                textosOcultos18.forEach(texto18 => texto18.style.display = "none");
+
+                leerMas18.addEventListener("click", function () {
+                    visible18 = !visible18; // Alternar estado
+
+                    textosOcultos18.forEach(texto18 => {
+                        texto18.style.display = visible18 ? "block" : "none"; // Muestra u oculta los textos
+                    });
+
+                    leerMas18.textContent = visible18 ? "Mostrar menos..." : "Leer más...";
+                });
+            });
+               
+            </script>            
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;"> Del Potrero al Presupuesto Inteligente: Cómo la IA puede transformar el Deporte en Neuquén</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/deportes.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 30px;">                   
+                        <p id="turismo">En un contexto de recursos escasos y demandas crecientes, gobernar sin vincular el presupuesto a los resultados reales de las 
+                            políticas públicas es una irresponsabilidad técnica y política. Como plantea Oszlak (2021), los Estados contemporáneos enfrentan la 
+                            necesidad de adoptar sistemas de gobernanza más inteligentes, basados en evidencia, datos abiertos y algoritmos que apoyen decisiones 
+                            oportunas.<br>                            
+                            Hoy, la inteligencia artificial (IA) no es una moda ni un lujo: es una herramienta estratégica para que cada peso invertido por el Estado 
+                            tenga sentido, dirección y efecto.
+                                                               
+                        </p>
+                        <span id="toggleText18" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>          
+                
+                <div class="col-md-12" id="oculto-18">
+                    <p id="turismo">
+                        En la Provincia del Neuquén, donde conviven desafíos sociales complejos y una fuerte impronta planificadora, la IA puede jugar un rol clave 
+                        en conectar el presupuesto con los planes provinciales e institucionales, optimizando el gasto público y fortaleciendo la transparencia. 
+                        Según Pignarre y Stengers (2019), el problema no es solo la eficiencia de los recursos, sino la capacidad del Estado de sostener procesos 
+                        colectivos de transformación, algo que la IA, bien orientada, puede potenciar en clave democrática. Un ejemplo concreto: desde la Secretaría 
+                        de Deportes de Neuquén, se podría aplicar IA para analizar datos históricos de participación deportiva por territorio, evaluar impactos 
+                        sanitarios vinculados a la actividad física, y proyectar demandas futuras de infraestructura o programas según grupos etarios, climáticos 
+                        o socioculturales. Esto permitiría no solo diseñar mejores políticas deportivas, sino también alinearlas al Plan Provincial de 
+                        Salud 2024–2027, a los Objetivos de Desarrollo Sostenible (especialmente el ODS 3 y ODS 5) y al Presupuesto por Resultados del Programa 74, 
+                        que ya trabaja con un enfoque orientado a la equidad territorial.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-18">
+                    <p id="turismo">
+                        De esta forma, un programa deportivo deja de ser una actividad aislada y pasa a formar parte de una estrategia integral de salud pública, 
+                        inclusión y prevención. Además, como sostiene Aguilar Villanueva (2012), las buenas políticas públicas no son solo las que resuelven 
+                        problemas, sino aquellas que están sustentadas en procesos legítimos de formulación, monitoreo y evaluación. La IA, en este sentido, 
+                        puede contribuir a consolidar un sistema de monitoreo transversal que actúe como faro estratégico para toda la administración 
+                        pública neuquina.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-18">
+                    <p id="turismo">
+                        Esto implica crear una Unidad Provincial de Inteligencia Presupuestaria con capacidad analítica, prospectiva y territorial, que colabore 
+                        con cada ministerio y secretaría para vincular sus presupuestos con los planes institucionales. Neuquén tiene una oportunidad única: ser 
+                        la primera provincia del país que gobierna con algoritmos al servicio del bien común, con datos abiertos, inteligencia artificial y 
+                        presupuesto con sentido. No se trata de robotizar la política, sino de humanizarla con decisiones más inteligentes, más transparentes 
+                        y más justas.</p>                        
+                </div>               
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
 
 
 

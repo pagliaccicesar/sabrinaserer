@@ -131,6 +131,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+ // js del formulario de PDF del libro
+                            document.getElementById("libroForm").addEventListener("submit", function(e){
+                              e.preventDefault(); // Evita recargar la página
+
+                              const formData = new FormData(this);
+
+                              fetch("enviar_formulario.php", {
+                                  method: "POST",
+                                  body: formData
+                              })
+                              .then(response => response.text())
+                              .then(data => {
+                                  document.getElementById("mensaje").textContent = "En breve enviaremos el libro, gracias!";
+                                  document.getElementById("libroForm").reset();
+                              })
+                              .catch(error => {
+                                  document.getElementById("mensaje").textContent = "Error al enviar el formulario";
+                                  console.error(error);
+                              });
+                            });
+
+
 
 
 
