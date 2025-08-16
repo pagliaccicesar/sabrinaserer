@@ -929,11 +929,13 @@ iframe {
 
 .banner-boton {
   display: inline-block;
-  background: #fff;
+  background: #fac6c6;
   color: #7E57C2;
   font-weight: bold;
-  padding: 14px 30px;
-  border-radius: 30px;
+  padding: 10px 26px;
+  /*border: #8823fb solid 3px;*/
+  border: white solid 3px;
+  border-radius: 4px;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -965,6 +967,9 @@ iframe {
 
   .banner-texto h2 {
     font-size: 2rem;
+  }
+  .banner-boton {
+    padding: 8px 20px;
   }
 
   .banner-imagen img {
