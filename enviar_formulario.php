@@ -1,20 +1,37 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = strip_tags(trim($_POST["name"]));
-    $email  = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    // Cambia por tu correo
-    $destinatario = "pagliaccicesar@gmail.com";
-    $asunto = "Solicitud de libro PDF";
-    $mensaje = "Nombre: $nombre\nCorreo: $email";
+require './PHPMailer-master/src/Exception.php';
+require './PHPMailer-master/src/PHPMailer.php';
+require './PHPMailer-master/src/SMTP.php;';
 
-    $headers = "From: no-reply@tusitio.com\r\n";
-    $headers .= "Reply-To: $email\r\n";
 
-    if (mail($destinatario, $asunto, $mensaje, $headers)) {
-        echo "OK";
-    } else {
-        echo "Error";
-    }
+
+$mail = new PHPMailer(true);
+
+try {
+    // Configuración SMTP
+    $mail->isSMTP();
+    $mail->Host = 'smtp.hostinger.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'info@sabrinaserer.ar'; // Tu correo
+    $mail->Password = 'Serer/2025'; // Tu contraseña
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
+
+    // Remitente y destinatario
+    $mail->setFrom('info@sabrinaserer.ar', 'Formulario Web');
+    $mail->addAddress('pagliaccicesar@gmail.com'); // Destinatario
+
+    // Contenido
+    $mail->isHTML(true);
+    $mail->Subject = 'Nuevo mensaje del formulario';
+    $mail->Body    = 'Nombre: ' . $_POST['name'] . '<br>Correo: ' . $_POST['email'];
+
+    $mail->send();
+    echo 'Mensaje enviado correctamente';
+} catch (Exception $e) {
+    echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
 }
 ?>

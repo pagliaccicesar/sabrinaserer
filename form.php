@@ -1,11 +1,171 @@
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+header('Content-Type: application/json');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre     = $_POST['first_name'] ?? '';
+    $email      = $_POST['email'] ?? '';
+    $telefono   = $_POST['telephone'] ?? '';
+    $mensaje    = $_POST['comments'] ?? '';
+    $newsletter = isset($_POST['newsletter']) ? "Sí" : "No";
+
+    $mail = new PHPMailer(true);
+
+    try {
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.hostinger.com';     
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'info@sabrinaserer.ar';
+        $mail->Password   = 'Monitoreo-1905';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
+
+        $mail->setFrom('info@sabrinaserer.ar', 'Formulario Web');
+        $mail->addAddress('info@sabrinaserer.ar');
+        $mail->addAddress('timonazo@gmail.com');
+
+        $mail->isHTML(true);
+        $mail->Subject = 'Nuevo mensaje desde sabrinaserer.ar';
+        $mail->Body    = "
+            <h3>Nuevo contacto desde la web</h3>
+            <p><b>Nombre:</b> {$nombre}</p>
+            <p><b>Email:</b> {$email}</p>
+            <p><b>Telefono:</b> {$telefono}</p>
+            <p><b>Mensaje:</b><br>{$mensaje}</p>
+            <p><b>Newsletter:</b> {$newsletter}</p>
+        ";
+
+        $mail->send();
+        echo json_encode(["success" => true]);
+    } catch (Exception $e) {
+        echo json_encode(["success" => false, "error" => $mail->ErrorInfo]);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre     = $_POST['first_name'] ?? '';
+    $email      = $_POST['email'] ?? '';
+    $telefono   = $_POST['telephone'] ?? '';
+    $mensaje    = $_POST['comments'] ?? '';
+    $newsletter = isset($_POST['newsletter']) ? "Sí" : "No";
+
+    $mail = new PHPMailer(true);
+
+    try {
+        // CONFIGURACIÓN SMTP (Hostinger)
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.hostinger.com';     
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'info@cesarpagliacci.com.ar'; // Tu correo completo
+        $mail->Password   = 'Brasil819$';                // Tu contraseña real
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
+
+        // REMITENTE y DESTINATARIOS
+        $mail->setFrom('info@cesarpagliacci.com.ar', 'Formulario Web');
+        $mail->addAddress('info@cesarpagliacci.com.ar'); // A tu casilla
+        $mail->addAddress('pagliaccicesar@gmail.com');   // Y también a Gmail
+
+        // CONTENIDO DEL MAIL
+        $mail->isHTML(true);
+        $mail->Subject = 'Nuevo mensaje desde la web de Sabrina';
+        $mail->Body    = "
+            <h3>Nuevo contacto desde la web</h3>
+            <p><b>Nombre:</b> {$nombre}</p>
+            <p><b>Email:</b> {$email}</p>
+            <p><b>Telefono:</b> {$telefono}</p>
+            <p><b>Mensaje:</b><br>{$mensaje}</p>
+            <p><b>Newsletter:</b> {$newsletter}</p>
+        ";
+
+        $mail->send();
+
+        // Respuesta en la misma página
+        echo "<script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const successDiv = document.getElementById('success');
+                    successDiv.innerHTML = '<p style=\"color:green;font-weight:bold;\">Nos contactaremos a la brevedad</p>';
+                });
+              </script>";
+
+    } catch (Exception $e) {
+        echo "<script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const successDiv = document.getElementById('success');
+                    successDiv.innerHTML = '<p style=\"color:red;font-weight:bold;\">Error al enviar el mensaje: " . addslashes($mail->ErrorInfo) . "</p>';
+                });
+              </script>";
+    }
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php 
-if(isset($_POST['email'])) { 
+/*if(isset($_POST['email'])) { 
     $email_to = "info@sabrinaserer.ar, contacto@azagile.com.ar"; 
     $email_subject = "Me contacto desde sabrinaserer.ar";    
-    $first_name = $_POST['first_name']; // required   
-    $email_from = $_POST['email']; // required    
-    $telephone = $_POST['telephone']; // not required   
-    $comments = $_POST['comments']; // required
+    $first_name = $_POST['first_name'];   
+    $email_from = $_POST['email'];    
+    $telephone = $_POST['telephone'];   
+    $comments = $_POST['comments']; 
      $newsletter = isset($_POST['newsletter']) ? "Sí desea recibir el Newsletter" : "No desea recibir el Newsletter";
     $error_message = ""; 
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -45,17 +205,8 @@ $headers = "From: Sabrina <no-reply@sabrinaserer.ar>\r\n";
 ?>
 
 <?php
-header("Location: https://www.sabrinaserer.ar/respuesta.html"); // Redirecionamos a Baulphp
-exit(); //terminamos la ejecución del script php, ya que si redirecionamos ya no nos interesa seguir con el codigo PHP anterior.
- 
-//<!-- include your own success html here --> 
-//<!--<h1 style="backgrund-color: red">Thank you for your message!</h1> <h2>We will contact you as soon as possible.</h2>-->
-//<br>//
-//<br>//
-
-//<button><a href="./index.html">Home</a></button> 
- 
-//<?php 
+header("Location: https://www.sabrinaserer.ar/respuesta.html");
+exit(); 
 }
- //?>
+ //?>*/
 

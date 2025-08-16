@@ -110,9 +110,10 @@
            
             <p class="frase_1">📌 "La eficiencia en la administración pública es una forma de cuidado: del Estado, de lo colectivo y de lo humano."</p>
             <br>
-            <p>Profesional con más de 15 años de trayectoria en gestión financiera pública, planificación estratégica y monitoreo de políticas públicas. Me especializo en el diseño e implementación de herramientas que mejoran la eficiencia de los procesos administrativos y promueven una gestión transparente, sustentable y con sentido federal.<br>
-                Actualmente coordino equipos técnicos que acompañan la planificación financiera de políticas sociales, sanitarias y territoriales, con foco en la articulación interinstitucional y el fortalecimiento de capacidades locales.<br>
-                Soy autora del libro <b>“Diseño y Monitoreo de Políticas Públicas”</b>, que sintetiza metodologías prácticas para equipos gubernamentales y organizaciones sociales. He dictado más de 70 talleres y espacios de formación técnica en gobiernos provinciales y municipales de la Patagonia, así como en universidades e instituciones estatales.</p>
+            <p><i>"Donde otros ven números, yo veo decisiones de vida."</i><br>
+                Soy Sabrina Serer y llevo más de dos décadas haciendo algo que me apasiona: transformar el presupuesto público en impacto real para la gente. No trabajo 
+                con cifras frías: trabajo con historias, con necesidades, con sueños colectivos. Desde la coordinación de la Administración Financiera del Ministerio 
+                de Salud de Neuquén, lidero equipos y procesos que convierten recursos en soluciones, con datos, estrategia y transparencia.</p>
              
                 
 
@@ -180,7 +181,7 @@
                 <!--<div class="col-md-4"><img class="picself img-thumbnail"></div>-->
 
               <div class="botonera_libro">
-                      <a href="./soy.html" class="btn">Más de mi trayectoria</a>                               
+                      <a href="./soy.html" class="btn">Mis resultados</a>                               
                       <a href="./vision.html" class="btn">Misión y Visión</a>
               </div>
   
@@ -225,7 +226,7 @@
   <section id="evento">
         <div class="container">
 
-            <script>
+            <!--<script>
                 document.addEventListener("DOMContentLoaded", function () {
                 const leerMas18 = document.getElementById("toggleText18"); // Selecciona el span
                 const textosOcultos18 = document.querySelectorAll("#oculto-18"); // Selecciona los textos ocultos                
@@ -245,7 +246,41 @@
                 });
             });
                
-            </script>            
+            </script>-->
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas18 = document.getElementById("toggleText18");
+                    const leerMenos18 = document.getElementById("leermenos18");
+                    const textosOcultos18 = document.querySelectorAll("#oculto-18");
+                    let visible18 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos18.forEach(texto18 => texto18.style.display = "none");
+                    leerMenos18.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas18.addEventListener("click", function () {
+                        visible18 = true;
+
+                        textosOcultos18.forEach(texto18 => texto18.style.display = "block");
+                        leerMas18.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos18.textContent = "Mostrar menos...";
+                        leerMenos18.style.color = "#7E6BA0";
+                        leerMenos18.style.display = "block";
+                        leerMenos18.style.cursor = "pointer";
+                        leerMenos18.style.fontWeight = "bold";
+                    });
+
+                    leerMenos18.addEventListener("click", function () {
+                        visible18 = false;
+
+                        textosOcultos18.forEach(texto18 => texto18.style.display = "none");
+                        leerMas18.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos18.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
 
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -259,7 +294,7 @@
                     <img class="flyer" style="width: 50%; height: auto;padding-top: 18px; padding-bottom: 18px;" src="./img/deportes.png" alt="Sabrina Serer">
                 </div>
                 
-                <div class="col-md-8" style="padding-top: 30px;">                   
+                <div class="col-md-8" style="padding-top: 20px;">                   
                         <p id="turismo">En un contexto de recursos escasos y demandas crecientes, gobernar sin vincular el presupuesto a los resultados reales de las 
                             políticas públicas es una irresponsabilidad técnica y política. Como plantea Oszlak (2021), los Estados contemporáneos enfrentan la 
                             necesidad de adoptar sistemas de gobernanza más inteligentes, basados en evidencia, datos abiertos y algoritmos que apoyen decisiones 
@@ -299,7 +334,9 @@
                         la primera provincia del país que gobierna con algoritmos al servicio del bien común, con datos abiertos, inteligencia artificial y 
                         presupuesto con sentido. No se trata de robotizar la política, sino de humanizarla con decisiones más inteligentes, más transparentes 
                         y más justas.</p>                        
-                </div>               
+                </div>
+                
+                <span id="leermenos18"></span>
                                
             </div>
             <br>
@@ -312,24 +349,36 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas17 = document.getElementById("toggleText17"); // Selecciona el span
-                const textosOcultos17 = document.querySelectorAll("#oculto-17"); // Selecciona los textos ocultos                
-                let visible17 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas17 = document.getElementById("toggleText17");
+                    const leerMenos17 = document.getElementById("leermenos17");
+                    const textosOcultos17 = document.querySelectorAll("#oculto-17");
+                    let visible17 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos17.forEach(texto17 => texto17.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos17.forEach(texto17 => texto17.style.display = "none");
+                    leerMenos17.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas17.addEventListener("click", function () {
-                    visible17 = !visible17; // Alternar estado
+                    leerMas17.addEventListener("click", function () {
+                        visible17 = true;
 
-                    textosOcultos17.forEach(texto17 => {
-                        texto17.style.display = visible17 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos17.forEach(texto17 => texto17.style.display = "block");
+                        leerMas17.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos17.textContent = "Mostrar menos...";
+                        leerMenos17.style.color = "#7E6BA0";
+                        leerMenos17.style.display = "block";
+                        leerMenos17.style.cursor = "pointer";
+                        leerMenos17.style.fontWeight = "bold";
                     });
 
-                    leerMas17.textContent = visible17 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos17.addEventListener("click", function () {
+                        visible17 = false;
+
+                        textosOcultos17.forEach(texto17 => texto17.style.display = "none");
+                        leerMas17.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos17.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -403,6 +452,7 @@
                 <div class="col-md-12" id="oculto-17">
                     <p id="turismo">Lo que Neuquén haga en los próximos dos años no será sólo gestión: será legado. <b>Gobernar es decidir. Y hoy, decidir es evaluar.</b></p>                        
                 </div>
+                <span id="leermenos17"></span>
                                
             </div>
             <br>
@@ -410,51 +460,37 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas16 = document.getElementById("toggleText16"); // Selecciona el span
-                const textosOcultos16 = document.querySelectorAll("#oculto-16"); // Selecciona los textos ocultos                
-                let visible16 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas16 = document.getElementById("toggleText16");
+                    const leerMenos16 = document.getElementById("leermenos16");
+                    const textosOcultos16 = document.querySelectorAll("#oculto-16");
+                    let visible16 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos16.forEach(texto16 => texto16.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos16.forEach(texto16 => texto16.style.display = "none");
+                    leerMenos16.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas16.addEventListener("click", function () {
-                    visible16 = !visible16; // Alternar estado
+                    leerMas16.addEventListener("click", function () {
+                        visible16 = true;
 
-                    textosOcultos16.forEach(texto16 => {
-                        texto16.style.display = visible16 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos16.forEach(texto16 => texto16.style.display = "block");
+                        leerMas16.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos16.textContent = "Mostrar menos...";
+                        leerMenos16.style.color = "#7E6BA0";
+                        leerMenos16.style.display = "block";
+                        leerMenos16.style.cursor = "pointer";
+                        leerMenos16.style.fontWeight = "bold";
                     });
 
-                    leerMas16.textContent = visible16 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos16.addEventListener("click", function () {
+                        visible16 = false;
+
+                        textosOcultos16.forEach(texto16 => texto16.style.display = "none");
+                        leerMas16.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos16.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -543,6 +579,7 @@
                         Porque evaluar no es auditar: es gobernar con inteligencia. Y cuando eso se hace desde el territorio, con liderazgo y con estrategia, lo 
                         público deja de ser promesa y se convierte en presente.</p>                        
                 </div>
+                <span id="leermenos16"></span>
                                
             </div>
             <br>
@@ -557,26 +594,38 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas15 = document.getElementById("toggleText15"); // Selecciona el span
-                const textosOcultos15 = document.querySelectorAll("#oculto-15"); // Selecciona los textos ocultos                
-                let visible15 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas15 = document.getElementById("toggleText15");
+                    const leerMenos15 = document.getElementById("leermenos15");
+                    const textosOcultos15 = document.querySelectorAll("#oculto-15");
+                    let visible15 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos15.forEach(texto15 => texto15.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos15.forEach(texto15 => texto15.style.display = "none");
+                    leerMenos15.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas15.addEventListener("click", function () {
-                    visible15 = !visible15; // Alternar estado
+                    leerMas15.addEventListener("click", function () {
+                        visible15 = true;
 
-                    textosOcultos15.forEach(texto15 => {
-                        texto15.style.display = visible15 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos15.forEach(texto15 => texto15.style.display = "block");
+                        leerMas15.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos15.textContent = "Mostrar menos...";
+                        leerMenos15.style.color = "#7E6BA0";
+                        leerMenos15.style.display = "block";
+                        leerMenos15.style.cursor = "pointer";
+                        leerMenos15.style.fontWeight = "bold";
                     });
 
-                    leerMas15.textContent = visible15 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos15.addEventListener("click", function () {
+                        visible15 = false;
+
+                        textosOcultos15.forEach(texto15 => texto15.style.display = "none");
+                        leerMas15.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos15.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
-            </script>            
+            </script>                        
 
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -686,7 +735,7 @@
                 </div>
                 
                
-                
+                <span id="leermenos15"></span>   
             </div>
             <br>
             <br>
@@ -698,24 +747,36 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas14 = document.getElementById("toggleText14"); // Selecciona el span
-                const textosOcultos14 = document.querySelectorAll("#oculto-14"); // Selecciona los textos ocultos                
-                let visible14 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas14 = document.getElementById("toggleText14");
+                    const leerMenos14 = document.getElementById("leermenos14");
+                    const textosOcultos14 = document.querySelectorAll("#oculto-14");
+                    let visible14 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos14.forEach(texto14 => texto14.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos14.forEach(texto14 => texto14.style.display = "none");
+                    leerMenos14.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas14.addEventListener("click", function () {
-                    visible14 = !visible14; // Alternar estado
+                    leerMas14.addEventListener("click", function () {
+                        visible14 = true;
 
-                    textosOcultos14.forEach(texto14 => {
-                        texto14.style.display = visible14 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos14.forEach(texto14 => texto14.style.display = "block");
+                        leerMas14.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos14.textContent = "Mostrar menos...";
+                        leerMenos14.style.color = "#7E6BA0";
+                        leerMenos14.style.display = "block";
+                        leerMenos14.style.cursor = "pointer";
+                        leerMenos14.style.fontWeight = "bold";
                     });
 
-                    leerMas14.textContent = visible14 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos14.addEventListener("click", function () {
+                        visible14 = false;
+
+                        textosOcultos14.forEach(texto14 => texto14.style.display = "none");
+                        leerMas14.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos14.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -802,7 +863,7 @@
                 </div>       
                 
                 
-               
+            <span id="leermenos14"></span>   
                 
             </div>
             <br>
@@ -811,42 +872,37 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas13 = document.getElementById("toggleText13"); // Selecciona el span
-                const textosOcultos13 = document.querySelectorAll("#oculto-13"); // Selecciona los textos ocultos                
-                let visible13 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas13 = document.getElementById("toggleText13");
+                    const leerMenos13 = document.getElementById("leermenos13");
+                    const textosOcultos13 = document.querySelectorAll("#oculto-13");
+                    let visible13 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos13.forEach(texto13 => texto13.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos13.forEach(texto13 => texto13.style.display = "none");
+                    leerMenos13.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas13.addEventListener("click", function () {
-                    visible13 = !visible13; // Alternar estado
+                    leerMas13.addEventListener("click", function () {
+                        visible13 = true;
 
-                    textosOcultos13.forEach(texto13 => {
-                        texto13.style.display = visible13 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos13.forEach(texto13 => texto13.style.display = "block");
+                        leerMas13.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos13.textContent = "Mostrar menos...";
+                        leerMenos13.style.color = "#7E6BA0";
+                        leerMenos13.style.display = "block";
+                        leerMenos13.style.cursor = "pointer";
+                        leerMenos13.style.fontWeight = "bold";
                     });
 
-                    leerMas13.textContent = visible13 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos13.addEventListener("click", function () {
+                        visible13 = false;
+
+                        textosOcultos13.forEach(texto13 => texto13.style.display = "none");
+                        leerMas13.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos13.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -885,46 +941,45 @@
                 </div>
                 <div class="col-md-12" id="oculto-13">
                     <p id="turismo">📚 Si todavía no lo leíste, el libro está disponible de forma gratuita en este link 👉 <a href="./venta.html" target="_blank">www.sabrinaserer.ar/libro</a></p>                 
-                </div>
-                
-               
+                </div>                
+                <span id="leermenos13"></span>   
                 
             </div>
             <br>
             <br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas12 = document.getElementById("toggleText12"); // Selecciona el span
-                const textosOcultos12 = document.querySelectorAll("#oculto-12"); // Selecciona los textos ocultos                
-                let visible12 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas12 = document.getElementById("toggleText12");
+                    const leerMenos12 = document.getElementById("leermenos12");
+                    const textosOcultos12 = document.querySelectorAll("#oculto-12");
+                    let visible12 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos12.forEach(texto12 => texto12.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos12.forEach(texto12 => texto12.style.display = "none");
+                    leerMenos12.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas12.addEventListener("click", function () {
-                    visible12 = !visible12; // Alternar estado
+                    leerMas12.addEventListener("click", function () {
+                        visible12 = true;
 
-                    textosOcultos12.forEach(texto12 => {
-                        texto12.style.display = visible12 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos12.forEach(texto12 => texto12.style.display = "block");
+                        leerMas12.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos12.textContent = "Mostrar menos...";
+                        leerMenos12.style.color = "#7E6BA0";
+                        leerMenos12.style.display = "block";
+                        leerMenos12.style.cursor = "pointer";
+                        leerMenos12.style.fontWeight = "bold";
                     });
 
-                    leerMas12.textContent = visible12 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos12.addEventListener("click", function () {
+                        visible12 = false;
+
+                        textosOcultos12.forEach(texto12 => texto12.style.display = "none");
+                        leerMas12.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos12.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -977,54 +1032,47 @@
 
                 <div class="col-md-12" id="oculto-12">
                     <a href="./img/Como se gobierna en America Latina sin mayoría legislativa.pdf" target="_blank">👉 Descargá el informe completo acá</a>                    
-                </div>            
+                </div>
+                <span id="leermenos12"></span>            
                 
-                
+
             </div>
             <br>
             <br>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas11 = document.getElementById("toggleText11"); // Selecciona el span
-                const textosOcultos11 = document.querySelectorAll("#oculto-11"); // Selecciona los textos ocultos                
-                let visible11 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas11 = document.getElementById("toggleText11");
+                    const leerMenos11 = document.getElementById("leermenos11");
+                    const textosOcultos11 = document.querySelectorAll("#oculto-11");
+                    let visible11 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos11.forEach(texto11 => texto11.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos11.forEach(texto11 => texto11.style.display = "none");
+                    leerMenos11.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas11.addEventListener("click", function () {
-                    visible11 = !visible11; // Alternar estado
+                    leerMas11.addEventListener("click", function () {
+                        visible11 = true;
 
-                    textosOcultos11.forEach(texto11 => {
-                        texto11.style.display = visible11 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos11.forEach(texto11 => texto11.style.display = "block");
+                        leerMas11.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos11.textContent = "Mostrar menos...";
+                        leerMenos11.style.color = "#7E6BA0";
+                        leerMenos11.style.display = "block";
+                        leerMenos11.style.cursor = "pointer";
+                        leerMenos11.style.fontWeight = "bold";
                     });
 
-                    leerMas11.textContent = visible11 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos11.addEventListener("click", function () {
+                        visible11 = false;
+
+                        textosOcultos11.forEach(texto11 => texto11.style.display = "none");
+                        leerMas11.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos11.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -1074,7 +1122,8 @@
                 </div>
                 <div class="col-md-12" id="oculto-11">
                     <p id="turismo">#Evaluar #PolíticasPúblicas #DesarrolloSocial #SabrinaSerer #Argentina #GpR</p>                        
-                </div>             
+                </div>
+                <span id="leermenos11"></span>               
                 
                 
             </div>
@@ -1083,33 +1132,37 @@
 
 
 
-
-
-
-
-
-
-
-
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas10 = document.getElementById("toggleText10"); // Selecciona el span
-                const textosOcultos10 = document.querySelectorAll("#oculto-10"); // Selecciona los textos ocultos                
-                let visible10 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas10 = document.getElementById("toggleText10");
+                    const leerMenos10 = document.getElementById("leermenos10");
+                    const textosOcultos10 = document.querySelectorAll("#oculto-10");
+                    let visible10 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos10.forEach(texto10 => texto10.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos10.forEach(texto10 => texto10.style.display = "none");
+                    leerMenos10.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas10.addEventListener("click", function () {
-                    visible10 = !visible10; // Alternar estado
+                    leerMas10.addEventListener("click", function () {
+                        visible10 = true;
 
-                    textosOcultos10.forEach(texto10 => {
-                        texto10.style.display = visible10 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos10.forEach(texto10 => texto10.style.display = "block");
+                        leerMas10.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos10.textContent = "Mostrar menos...";
+                        leerMenos10.style.color = "#7E6BA0";
+                        leerMenos10.style.display = "block";
+                        leerMenos10.style.cursor = "pointer";
+                        leerMenos10.style.fontWeight = "bold";
                     });
 
-                    leerMas10.textContent = visible10 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos10.addEventListener("click", function () {
+                        visible10 = false;
+
+                        textosOcultos10.forEach(texto10 => texto10.style.display = "none");
+                        leerMas10.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos10.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -1158,7 +1211,8 @@
                     <p id="turismo">Este seminario y la nueva especialización están dirigidos a profesionales de la salud, administradores y responsables de políticas 
                         públicas que buscan fortalecer sus capacidades en planificación y gestión. ¡Los invito a sumarse a esta propuesta de formación en la UNCo y 
                         a seguir construyendo juntos un sistema de salud más eficiente y equitativo! ¡Los espero!</p>                        
-                </div>              
+                </div>
+                <span id="leermenos10"></span>               
                 
                 
             </div>
@@ -1168,24 +1222,36 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas1 = document.getElementById("toggleText1"); // Selecciona el span
-                const textosOcultos1 = document.querySelectorAll("#oculto-1"); // Selecciona los textos ocultos                
-                let visible1 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas1 = document.getElementById("toggleText1");
+                    const leerMenos1 = document.getElementById("leermenos1");
+                    const textosOcultos1 = document.querySelectorAll("#oculto-1");
+                    let visible1 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos1.forEach(texto1 => texto1.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos1.forEach(texto1 => texto1.style.display = "none");
+                    leerMenos1.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas1.addEventListener("click", function () {
-                    visible1 = !visible1; // Alternar estado
+                    leerMas1.addEventListener("click", function () {
+                        visible1 = true;
 
-                    textosOcultos1.forEach(texto1=> {
-                        texto1.style.display = visible1 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos1.forEach(texto1 => texto1.style.display = "block");
+                        leerMas1.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos1.textContent = "Mostrar menos...";
+                        leerMenos1.style.color = "#7E6BA0";
+                        leerMenos1.style.display = "block";
+                        leerMenos1.style.cursor = "pointer";
+                        leerMenos1.style.fontWeight = "bold";
                     });
 
-                    leerMas1.textContent = visible1 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos1.addEventListener("click", function () {
+                        visible1 = false;
+
+                        textosOcultos1.forEach(texto1 => texto1.style.display = "none");
+                        leerMas1.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos1.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>            
 
@@ -1233,31 +1299,43 @@
                 <div class="col-md-12" id="oculto-1">
                     <a href="./img/Serer_Transversalidad_.pdf" target="_blank">💾  Enlace al documento PDF</a>                    
                 </div>  
-                
+                <span id="leermenos1"></span>
                 
             </div>
             <br>
             <br>            
             
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas2 = document.getElementById("toggleText2"); // Selecciona el span
-                const textosOcultos2 = document.querySelectorAll("#oculto-2"); // Selecciona los textos ocultos                
-                let visible2 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas2 = document.getElementById("toggleText2");
+                    const leerMenos2 = document.getElementById("leermenos2");
+                    const textosOcultos2 = document.querySelectorAll("#oculto-2");
+                    let visible2 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos2.forEach(texto2 => texto2.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos2.forEach(texto2 => texto2.style.display = "none");
+                    leerMenos2.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas2.addEventListener("click", function () {
-                    visible2 = !visible2; // Alternar estado
+                    leerMas2.addEventListener("click", function () {
+                        visible2 = true;
 
-                    textosOcultos2.forEach(texto2 => {
-                        texto2.style.display = visible2 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos2.forEach(texto2 => texto2.style.display = "block");
+                        leerMas2.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos2.textContent = "Mostrar menos...";
+                        leerMenos2.style.color = "#7E6BA0";
+                        leerMenos2.style.display = "block";
+                        leerMenos2.style.cursor = "pointer";
+                        leerMenos2.style.fontWeight = "bold";
                     });
 
-                    leerMas2.textContent = visible2 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos2.addEventListener("click", function () {
+                        visible2 = false;
+
+                        textosOcultos2.forEach(texto2 => texto2.style.display = "none");
+                        leerMas2.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos2.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
                
             </script>
 
@@ -1324,10 +1402,10 @@
                         los resultados se materialicen en los distintos ministerios. Nuestra responsabilidad es ofrecer herramientas que aporten previsibilidad al 
                         gasto y hagan un uso eficiente de los recursos públicos, con una visión integral y comprensiva del contexto ministerial al que pertenecemos.
                         </p>                                                
-                </div>          
+                </div>
+                <span id="leermenos2"></span>        
             
-          </div>  
-           
+          </div>          
             <br>
             <br>
 
@@ -1395,25 +1473,38 @@
             
 
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-            const leerMas3 = document.getElementById("toggleText3"); // Selecciona el span
-            const textosOcultos3 = document.querySelectorAll("#oculto-3"); // Selecciona los textos ocultos                
-            let visible3 = false; // Estado del contenido
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas3 = document.getElementById("toggleText3");
+                    const leerMenos3 = document.getElementById("leermenos3");
+                    const textosOcultos3 = document.querySelectorAll("#oculto-3");
+                    let visible3 = false;
 
-            // Ocultar textos inicialmente
-            textosOcultos3.forEach(texto3 => texto3.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos3.forEach(texto3 => texto3.style.display = "none");
+                    leerMenos3.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-            leerMas3.addEventListener("click", function () {
-                visible3 = !visible3; // Alternar estado
+                    leerMas3.addEventListener("click", function () {
+                        visible3 = true;
 
-                textosOcultos3.forEach(texto3 => {
-                    texto3.style.display = visible3 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos3.forEach(texto3 => texto3.style.display = "block");
+                        leerMas3.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos3.textContent = "Mostrar menos...";
+                        leerMenos3.style.color = "#7E6BA0";
+                        leerMenos3.style.display = "block";
+                        leerMenos3.style.cursor = "pointer";
+                        leerMenos3.style.fontWeight = "bold";
+                    });
+
+                    leerMenos3.addEventListener("click", function () {
+                        visible3 = false;
+
+                        textosOcultos3.forEach(texto3 => texto3.style.display = "none");
+                        leerMas3.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos3.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-
-                leerMas3.textContent = visible3 ? "Mostrar menos..." : "Leer más...";
-            });
-        });
-        </script>
+               
+            </script>
         
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -1465,6 +1556,7 @@
                 <div class="col-md-12" id="oculto-3">
                     <p id="turismo">#HaciendoLoTécnicoHumano #GestiónEficiente #PresupuestoConPropósito #Neuquén #CompromisoPúblico #TransformaciónCultural</p>                        
                 </div>
+                <span id="leermenos3"></span> 
                 
             </div>
             <br>
@@ -1474,24 +1566,37 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas4 = document.getElementById("toggleText4"); // Selecciona el span
-                const textosOcultos4 = document.querySelectorAll("#oculto-4"); // Selecciona los textos ocultos                
-                let visible4 = false; // Estado del contenido
-    
-                // Ocultar textos inicialmente
-                textosOcultos4.forEach(texto4 => texto4.style.display = "none");
-    
-                leerMas4.addEventListener("click", function () {
-                    visible4 = !visible4; // Alternar estado
-    
-                    textosOcultos4.forEach(texto4 => {
-                        texto4.style.display = visible4 ? "block" : "none"; // Muestra u oculta los textos
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas4 = document.getElementById("toggleText4");
+                    const leerMenos4 = document.getElementById("leermenos4");
+                    const textosOcultos4 = document.querySelectorAll("#oculto-4");
+                    let visible4 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos4.forEach(texto4 => texto4.style.display = "none");
+                    leerMenos4.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas4.addEventListener("click", function () {
+                        visible4 = true;
+
+                        textosOcultos4.forEach(texto4 => texto4.style.display = "block");
+                        leerMas4.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos4.textContent = "Mostrar menos...";
+                        leerMenos4.style.color = "#7E6BA0";
+                        leerMenos4.style.display = "block";
+                        leerMenos4.style.cursor = "pointer";
+                        leerMenos4.style.fontWeight = "bold";
                     });
-    
-                    leerMas4.textContent = visible4 ? "Mostrar menos..." : "Leer más...";
+
+                    leerMenos4.addEventListener("click", function () {
+                        visible4 = false;
+
+                        textosOcultos4.forEach(texto4 => texto4.style.display = "none");
+                        leerMas4.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos4.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
+               
             </script>
             
             <div class="row">
@@ -1539,6 +1644,7 @@
                 <div class="col-md-12" id="oculto-4">
                     <p id="turismo">#Capacitación #SaludEficiente #Neuquén #GestiónConPropósito #CompromisoPúblico #DesarrolloInstitucional</p>                        
                 </div>
+                <span id="leermenos4"></span>
                 
             </div>
             <br>
@@ -1549,24 +1655,37 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas5 = document.getElementById("toggleText5"); // Selecciona el span
-                const textosOcultos5 = document.querySelectorAll("#oculto-5"); // Selecciona los textos ocultos                
-                let visible5 = false; // Estado del contenido
-    
-                // Ocultar textos inicialmente
-                textosOcultos5.forEach(texto5 => texto5.style.display = "none");
-    
-                leerMas5.addEventListener("click", function () {
-                    visible5 = !visible5; // Alternar estado
-    
-                    textosOcultos5.forEach(texto5 => {
-                        texto5.style.display = visible5 ? "block" : "none"; // Muestra u oculta los textos
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas5 = document.getElementById("toggleText5");
+                    const leerMenos5 = document.getElementById("leermenos5");
+                    const textosOcultos5 = document.querySelectorAll("#oculto-5");
+                    let visible5 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos5.forEach(texto5 => texto5.style.display = "none");
+                    leerMenos5.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas5.addEventListener("click", function () {
+                        visible5 = true;
+
+                        textosOcultos5.forEach(texto5 => texto5.style.display = "block");
+                        leerMas5.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos5.textContent = "Mostrar menos...";
+                        leerMenos5.style.color = "#7E6BA0";
+                        leerMenos5.style.display = "block";
+                        leerMenos5.style.cursor = "pointer";
+                        leerMenos5.style.fontWeight = "bold";
                     });
-    
-                    leerMas5.textContent = visible5 ? "Mostrar menos..." : "Leer más...";
+
+                    leerMenos5.addEventListener("click", function () {
+                        visible5 = false;
+
+                        textosOcultos5.forEach(texto5 => texto5.style.display = "none");
+                        leerMas5.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos5.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
+               
             </script>            
 
             <div class="row">
@@ -1624,6 +1743,7 @@
                 <div class="col-md-12" id="oculto-5">
                     <p id="turismo">#NuevosDesafíos #CrecimientoProfesional #Neuquén #GestiónEficiente #CompromisoPúblico</p>                        
                 </div>
+                <span id="leermenos5"></span>
                 
             </div>
             <br>
@@ -1639,24 +1759,37 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas6 = document.getElementById("toggleText6"); // Selecciona el span
-                const textosOcultos6 = document.querySelectorAll("#oculto-6"); // Selecciona los textos ocultos                
-                let visible6 = false; // Estado del contenido
-    
-                // Ocultar textos inicialmente
-                textosOcultos6.forEach(texto6 => texto6.style.display = "none");
-    
-                leerMas6.addEventListener("click", function () {
-                    visible6 = !visible6; // Alternar estado
-    
-                    textosOcultos6.forEach(texto6 => {
-                        texto6.style.display = visible6 ? "block" : "none"; // Muestra u oculta los textos
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas6 = document.getElementById("toggleText6");
+                    const leerMenos6 = document.getElementById("leermenos6");
+                    const textosOcultos6 = document.querySelectorAll("#oculto-6");
+                    let visible6 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos6.forEach(texto6 => texto6.style.display = "none");
+                    leerMenos6.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas6.addEventListener("click", function () {
+                        visible6 = true;
+
+                        textosOcultos6.forEach(texto6 => texto6.style.display = "block");
+                        leerMas6.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos6.textContent = "Mostrar menos...";
+                        leerMenos6.style.color = "#7E6BA0";
+                        leerMenos6.style.display = "block";
+                        leerMenos6.style.cursor = "pointer";
+                        leerMenos6.style.fontWeight = "bold";
                     });
-    
-                    leerMas6.textContent = visible6 ? "Mostrar menos..." : "Leer más...";
+
+                    leerMenos6.addEventListener("click", function () {
+                        visible6 = false;
+
+                        textosOcultos6.forEach(texto6 => texto6.style.display = "none");
+                        leerMas6.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos6.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
+               
             </script>
             
             <div class="row">
@@ -1705,6 +1838,8 @@
                         privilegio, y juntos, estamos construyendo los cimientos 🏗️ de una administración pública más justa y orientada a resultados, que pone a la 
                         salud y el bienestar en el centro de sus prioridades. 🌟💙</p>                        
                 </div>
+
+                <span id="leermenos6"></span>
                 
             </div>
             <br>
@@ -1715,24 +1850,37 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas7 = document.getElementById("toggleText7"); // Selecciona el span
-                const textosOcultos7 = document.querySelectorAll("#oculto-7"); // Selecciona los textos ocultos                
-                let visible7 = false; // Estado del contenido
-    
-                // Ocultar textos inicialmente
-                textosOcultos7.forEach(texto7 => texto7.style.display = "none");
-    
-                leerMas7.addEventListener("click", function () {
-                    visible7 = !visible7; // Alternar estado
-    
-                    textosOcultos7.forEach(texto7 => {
-                        texto7.style.display = visible7 ? "block" : "none"; // Muestra u oculta los textos
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas7 = document.getElementById("toggleText7");
+                    const leerMenos7 = document.getElementById("leermenos7");
+                    const textosOcultos7 = document.querySelectorAll("#oculto-7");
+                    let visible7 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos7.forEach(texto7 => texto7.style.display = "none");
+                    leerMenos7.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas7.addEventListener("click", function () {
+                        visible7 = true;
+
+                        textosOcultos7.forEach(texto7 => texto7.style.display = "block");
+                        leerMas7.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos7.textContent = "Mostrar menos...";
+                        leerMenos7.style.color = "#7E6BA0";
+                        leerMenos7.style.display = "block";
+                        leerMenos7.style.cursor = "pointer";
+                        leerMenos7.style.fontWeight = "bold";
                     });
-    
-                    leerMas7.textContent = visible7 ? "Mostrar menos..." : "Leer más...";
+
+                    leerMenos7.addEventListener("click", function () {
+                        visible7 = false;
+
+                        textosOcultos7.forEach(texto7 => texto7.style.display = "none");
+                        leerMas7.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos7.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
+               
             </script>            
 
             <div class="row">
@@ -1770,6 +1918,7 @@
                         uno de sus habitantes.</p>
                         
                 </div>
+                <span id="leermenos7"></span>
             </div>
             <br>
             <br>
@@ -1779,24 +1928,37 @@
 
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas8 = document.getElementById("toggleText8"); // Selecciona el span
-                const textosOcultos8 = document.querySelectorAll("#oculto-8"); // Selecciona los textos ocultos                
-                let visible8 = false; // Estado del contenido
-    
-                // Ocultar textos inicialmente
-                textosOcultos8.forEach(texto8 => texto8.style.display = "none");
-    
-                leerMas8.addEventListener("click", function () {
-                    visible8 = !visible8; // Alternar estado
-    
-                    textosOcultos8.forEach(texto8 => {
-                        texto8.style.display = visible8 ? "block" : "none"; // Muestra u oculta los textos
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas8 = document.getElementById("toggleText8");
+                    const leerMenos8 = document.getElementById("leermenos8");
+                    const textosOcultos8 = document.querySelectorAll("#oculto-8");
+                    let visible8 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos8.forEach(texto8 => texto8.style.display = "none");
+                    leerMenos8.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas8.addEventListener("click", function () {
+                        visible8 = true;
+
+                        textosOcultos8.forEach(texto8 => texto8.style.display = "block");
+                        leerMas8.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos8.textContent = "Mostrar menos...";
+                        leerMenos8.style.color = "#7E6BA0";
+                        leerMenos8.style.display = "block";
+                        leerMenos8.style.cursor = "pointer";
+                        leerMenos8.style.fontWeight = "bold";
                     });
-    
-                    leerMas8.textContent = visible8 ? "Mostrar menos..." : "Leer más...";
+
+                    leerMenos8.addEventListener("click", function () {
+                        visible8 = false;
+
+                        textosOcultos8.forEach(texto8 => texto8.style.display = "none");
+                        leerMas8.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos8.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
+               
             </script>
             
             <div class="row">
@@ -1843,6 +2005,7 @@
                 <div class="col-md-12" id="oculto-8">
                     <p id="turismo">— Sabrina Serer, Equipo de Administración Financiera, Ministerio de Salud de Neuquén 🌿</p>                        
                 </div>
+                <span id="leermenos8"></span>
                 
             </div>
             <br>
@@ -2167,10 +2330,108 @@
           </div>
       </div>
   </section>      
-  <br>
-  <br>
-  <br>
-  <br>    
+
+  
+  <!--banner-->
+  <style>
+  .banner-libro {
+  width: 100%;
+  background: linear-gradient(135deg, #7E57C2, #F48FB1);
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.banner-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.banner-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.banner-texto p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.banner-boton {
+  display: inline-block;
+  background: #fff;
+  color: #7E57C2;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.banner-boton:hover {
+  background: #F48FB1;
+  color: #fff;
+}
+
+.banner-imagen {
+  flex: 1.2; /* más espacio para la imagen */
+  text-align: center;
+}
+
+.banner-imagen img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transform: scale(1.1); /* hace que se vea más grande */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-texto h2 {
+    font-size: 2rem;
+  }
+
+  .banner-imagen img {
+    max-width: 40%;
+    transform: scale(1.05);
+  }
+}
+
+
+  </style>
+  <section class="banner-libro">
+  <div class="banner-container">
+    <div class="banner-texto">
+      <h2>El conocimiento transforma la gestión pública</h2>
+      <p>
+        Descubrí cómo mejorar el diseño y monitoreo de las políticas públicas con 
+        <b>"Diseño y Monitoreo de las Políticas Públicas en el marco de la Gestión para Resultados"</b>.
+      </p>
+      <a href="./venta.html" class="banner-boton">Saber más!</a>
+    </div>
+    <div class="banner-imagen">
+      <img src="./img/tapa-libro-seccion.png" alt="Libro Diseño y Monitoreo de Políticas Públicas">
+    </div>
+  </div>
+</section>
+
+
    
   <!-- Contact -->   <!--Aca esta el viejo formulario que se va a reactivar cuando esten aviso legal y privacidad-->
 
@@ -2186,7 +2447,62 @@
           </div>
           <div class="row">
               <div class="col-lg-12">
-                  <form action="form.php" method="post" name="contactform" id="contactForm" novalidate>
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6">                                    
+                        <div class="form-group">
+                            <input class="form-control" id="name" name="first_name" type="text" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" name="email" type="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="phone" name="telephone" type="tel" placeholder="Tu telefono" required>
+                        </div>                            
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                            <label class="form-check-label" for="newsletter">Si, quiero recibir el Newsletter</label>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" name="comments" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                        <div id="success"></div>                           
+                        <button id="sendMessageButton" class="botonera_form" type="submit">Enviar mensaje</button>
+                        </div>
+                    </div>
+                    </form>
+
+                    <script>
+                    document.getElementById("contactForm").addEventListener("submit", async function(e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(this);
+
+                    try {
+                        const response = await fetch("form.php", {
+                        method: "POST",
+                        body: formData
+                        });
+                        const result = await response.json();
+
+                        const successDiv = document.getElementById("success");
+                        if (result.success) {
+                        successDiv.innerHTML = "<p style='color:violet;font-size:small;font-weight:bold;'>Nos contactaremos a la brevedad!</p>";
+                        document.getElementById("contactForm").reset();
+                        } else {
+                        successDiv.innerHTML = "<p style='color:red;font-weight:bold;'>Error: " + result.error + "</p>";
+                        }
+                    } catch (err) {
+                        document.getElementById("success").innerHTML = "<p style='color:red;font-weight:bold;'>Error al conectar con el servidor</p>";
+                    }
+                    });
+                    </script>
+
+                    <!--<form action="form.php" method="post" name="contactform" id="contactForm" novalidate>
                       <div class="row">
                           <div class="col-md-6">                                    
                               <div class="form-group">
@@ -2200,18 +2516,11 @@
                               <div class="form-group">
                                   <input class="form-control" id="phone" name="telephone" type="tel" placeholder="Tu telefono" required data-validation-required-message="Please enter your phone number.">
                                   <p class="help-block text-danger"></p>
-                              </div>
-
-                              <!--<div class="form-group">
-                                  <input class="form-control" id="phone" name="telephone" type="tel" placeholder="Queres recibir nuestro Newsletter?" required data-validation-required-message="Please enter your phone number.">
-                                  <p class="help-block text-danger"></p>
-                              </div>-->
+                              </div>                            
                               <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
-                                    <label class="form-check-label" for="newsletter">Sí, quiero recibir el Newsletter</label>
+                                    <label class="form-check-label" for="newsletter">Si, quiero recibir el Newsletter</label>
                                 </div>
-
-
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">
@@ -2221,13 +2530,13 @@
                           </div>
                           <div class="clearfix"></div>
                           <div class="col-lg-12 text-center">
-                              <div id="success"></div>                            
+                              <div id="success"></div>                           
 
                               <button id="sendMessageButton" class="botonera_form" type="submit" value="Submit">Enviar mensaje</button>
                               
                           </div>
                       </div>
-                  </form>
+                    </form>-->
               </div>
           </div>
       </div>
