@@ -893,6 +893,87 @@ iframe {
   background-color: rgb(37, 3, 254);
 }
 
+/******    seccion banner   ******/
+.banner-libro {
+  width: 100%;
+  background: linear-gradient(135deg, #7E57C2, #F48FB1);
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.banner-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.banner-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.banner-texto p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.banner-boton {
+  display: inline-block;
+  background: #fff;
+  color: #7E57C2;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.banner-boton:hover {
+  background: #F48FB1;
+  color: #fff;
+}
+
+.banner-imagen {
+  flex: 1.2; /* más espacio para la imagen */
+  text-align: center;
+}
+
+.banner-imagen img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transform: scale(1.1); /* hace que se vea más grande */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-texto h2 {
+    font-size: 2rem;
+  }
+
+  .banner-imagen img {
+    max-width: 40%;
+    transform: scale(1.05);
+  }
+}
+
+
 
 
 /******    seccion contacto   ******/
