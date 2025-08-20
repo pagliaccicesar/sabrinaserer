@@ -960,16 +960,29 @@ iframe {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .banner-libro {
+    padding: 30px 30px;
+}
   .banner-container {
     flex-direction: column-reverse;
     text-align: center;
+    max-height: 320px;
+  }
+  .banner-imagen img {
+    max-width: 25%;
   }
 
   .banner-texto h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
+  .banner-texto p {
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
   .banner-boton {
-    padding: 8px 20px;
+    padding: 5px 11px;
+    font-size: small;
   }
 
   .banner-imagen img {
