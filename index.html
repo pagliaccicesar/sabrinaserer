@@ -226,27 +226,253 @@
   <section id="evento">
         <div class="container">
 
-            <!--<script>
+            <script> 
                 document.addEventListener("DOMContentLoaded", function () {
-                const leerMas18 = document.getElementById("toggleText18"); // Selecciona el span
-                const textosOcultos18 = document.querySelectorAll("#oculto-18"); // Selecciona los textos ocultos                
-                let visible18 = false; // Estado del contenido
+                    const leerMas20 = document.getElementById("toggleText20");
+                    const leerMenos20 = document.getElementById("leermenos20");
+                    const textosOcultos20 = document.querySelectorAll("#oculto-20");
+                    let visible20 = false;
 
-                // Ocultar textos inicialmente
-                textosOcultos18.forEach(texto18 => texto18.style.display = "none");
+                    // Ocultar textos inicialmente
+                    textosOcultos20.forEach(texto20 => texto20.style.display = "none");
+                    leerMenos20.style.display = "none"; // ocultar "Mostrar menos..." al inicio
 
-                leerMas18.addEventListener("click", function () {
-                    visible18 = !visible18; // Alternar estado
+                    leerMas20.addEventListener("click", function () {
+                        visible20 = true;
 
-                    textosOcultos18.forEach(texto18 => {
-                        texto18.style.display = visible18 ? "block" : "none"; // Muestra u oculta los textos
+                        textosOcultos20.forEach(texto20 => texto20.style.display = "block");
+                        leerMas20.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos20.textContent = "Mostrar menos...";
+                        leerMenos20.style.color = "#7E6BA0";
+                        leerMenos20.style.display = "block";
+                        leerMenos20.style.cursor = "pointer";
+                        leerMenos20.style.fontWeight = "bold";
                     });
 
-                    leerMas18.textContent = visible18 ? "Mostrar menos..." : "Leer más...";
+                    leerMenos20.addEventListener("click", function () {
+                        visible20 = false;
+
+                        textosOcultos20.forEach(texto20 => texto20.style.display = "none");
+                        leerMas20.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos20.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
                 });
-            });
-               
-            </script>-->
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">¿Qué nos dice la derrota de Milei sobre la legitimidad y el futuro de la 
+                        gestión pública en Argentina?</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 5px; padding-bottom: 18px;" src="./img/uultimo.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 20px;">                   
+                        <p id="turismo">La gestión pública no se mide solo en términos de eficiencia o recorte del gasto. Se mide en legitimidad, en gobernabilidad 
+                            y en la capacidad del Estado de sostener un rumbo en medio de la incertidumbre. <b>Neuquén</b>, con sus avances en planificación, regionalización 
+                            y gestión por resultados, encarna hoy un modelo de gobernanza territorial sólido. En cambio, <b>Javier Milei</b>, tras el golpe electoral 
+                            del 7 de septiembre, enfrenta una crisis que va más allá de lo legislativo: es una crisis de legitimidad que amenaza con vaciar de 
+                            poder a su gobierno.                                                               
+                        </p>                        
+                        <span id="toggleText20" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-20">
+                    <p id="turismo">
+                        <b>Legitimidad en caída: el costo de gobernar sin consensos</b><br>La derrota en la provincia de Buenos Aires —47 % a 34 % contra la oposición 
+                        peronista— no solo evidencia un traspié electoral: marca el inicio de un ciclo de pérdida de autoridad política. La gobernabilidad se resiente 
+                        cuando un presidente carece de mayoría legislativa, enfrenta a gobernadores hostiles y ve resquebrajarse su relato refundacional.<br>
+                        Peter Evans lo advertía: la efectividad estatal depende de la capacidad de hibridar burocracia, mercado y democracia. Milei ha privilegiado 
+                        al mercado y despreciado las otras dimensiones. El resultado: pérdida de apoyo social y aislamiento institucional.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-20">
+                    <p id="turismo">
+                        <b>Gobernabilidad: de la imposición al bloqueo</b><br>El Senado argentino ya dio un golpe institucional contundente al revertir el veto 
+                        presidencial sobre ayudas a las personas con discapacidad: 63 votos contra su imposición. Este episodio desnuda el futuro inmediato: un 
+                        Congreso dispuesto a bloquear, un Ejecutivo debilitado y un capital político en descenso.<br>
+                        Como advierte Guillermo Fuentes, “el paradigma jerárquico-burocrático se volvió insuficiente para dar respuesta a sociedades más complejas”. 
+                        Pero el “paradigma de choque” de Milei, que margina al Congreso y desprecia el diálogo, resulta aún más insuficiente: erosiona la legitimidad 
+                        y deja a la gobernabilidad pendiendo de un hilo.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-20">
+                    <p id="turismo">
+                        <b>Neuquén: un contraste de institucionalidad y gobernanza</b><br>
+
+                            Mientras Milei se encierra en un modelo personalista, Neuquén avanza con una lógica diferente:<br>
+
+                            1.&ensp;Regionalización del gasto, que acerca las decisiones al territorio.<br>
+                            2.&ensp;Programas interministeriales, que abordan problemáticas complejas como la salud mental desde una perspectiva de gestión por 
+                            resultados.<br>
+                            3.&ensp;Participación ciudadana creciente, que legitima las decisiones y fortalece el contrato social.<br>
+                        Neuquén aplica, en los hechos, lo que Evans llamó estrategias híbridas: capacidad burocrática profesional, lectura de señales del mercado y 
+                        legitimidad democrática. Esa fórmula, que el gobierno nacional ignora, es la que garantiza gobernabilidad real en el tiempo.
+                        </p>                        
+                </div>
+                <div class="col-md-12" id="oculto-20">
+                    <p id="turismo">
+                       <b>Proyección a futuro: entre erosión y construcción</b><br>
+
+                        La legitimidad es la fuente primera del poder político. Sin ella, la gobernabilidad se reduce a un ejercicio de resistencia y aislamiento. 
+                        Milei, tras su derrota, enfrenta el riesgo de convertirse en un presidente formal, pero sin capacidad efectiva de conducir el rumbo del país.<br>
+
+                        Neuquén, en cambio, muestra que la gobernabilidad se construye desde la solidez institucional, la articulación intersectorial y la orientación
+                         al ciudadano. En tiempos donde el país se tambalea entre mercados volátiles y liderazgos que se desgastan rápidamente, Neuquén ofrece un 
+                         mensaje claro: la legitimidad no se decreta, se construye.<br>
+
+                        La derrota de Milei no es solo una anécdota electoral. Es un síntoma de un modelo de gestión que, al despreciar la democracia y la 
+                        institucionalidad, pierde legitimidad y compromete su propia gobernabilidad. En contraste, Neuquén demuestra que la verdadera modernización 
+                        del Estado no se mide en cuánto se recorta, sino en cuánta legitimidad se gana para gobernar el futuro.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-20">
+                    <p id="turismo">
+                        <b>Reflexión final</b><br> 
+
+                        La pregunta no es solo si Milei podrá sostener la gobernabilidad tras su derrota electoral. La pregunta es más profunda: ¿qué modelo de Estado 
+                        queremos construir? Uno que se refugia en dogmas de mercado, aislado y sin legitimidad social, o uno que, como Neuquén, apuesta a la 
+                        institucionalidad, la planificación y la participación ciudadana.<br>
+
+                        Milei enfrenta un futuro de poder erosionado, gobernando contra todos y con legitimidad decreciente. Neuquén, en cambio, demuestra que la 
+                        fortaleza del Estado no radica en gritar más fuerte, sino en construir consensos, articular políticas y sostener la confianza ciudadana.<br>
+
+                        En definitiva, la historia enseña que los liderazgos personalistas se consumen rápido, mientras que las instituciones sólidas perduran. Y en
+                         esa diferencia se juega no solo el presente, sino el futuro político de la Argentina.</p>                        
+                </div>
+                
+                
+                <span id="leermenos20"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas19 = document.getElementById("toggleText19");
+                    const leerMenos19 = document.getElementById("leermenos19");
+                    const textosOcultos19 = document.querySelectorAll("#oculto-19");
+                    let visible19 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos19.forEach(texto19 => texto19.style.display = "none");
+                    leerMenos19.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas19.addEventListener("click", function () {
+                        visible19 = true;
+
+                        textosOcultos19.forEach(texto19 => texto19.style.display = "block");
+                        leerMas19.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos19.textContent = "Mostrar menos...";
+                        leerMenos19.style.color = "#7E6BA0";
+                        leerMenos19.style.display = "block";
+                        leerMenos19.style.cursor = "pointer";
+                        leerMenos19.style.fontWeight = "bold";
+                    });
+
+                    leerMenos19.addEventListener("click", function () {
+                        visible19 = false;
+
+                        textosOcultos19.forEach(texto19 => texto19.style.display = "none");
+                        leerMas19.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos19.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">El arte de gobernar con números: el presupuesto como poder y destino</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 11px; padding-bottom: 18px;" src="./img/Novedades28.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 20px;">                   
+                        <p id="turismo">Decía Aristóteles que “la política es el arte de lo posible”. Y si hay un instrumento que define lo posible en la acción 
+                            de gobierno, ese es el presupuesto público. No es un simple registro contable: es la materialización de la voluntad política en cifras. 
+                            Allí se expresa, con la fuerza de la técnica y la economía, la dirección de un proyecto de país.                                                               
+                        </p>
+                        <p id="turismo">El presupuesto es, en términos modernos, la brújula del Estado. Define hacia dónde se orientan los recursos, qué se prioriza, qué se posterga y 
+                        qué se sacrifica. Y como señala la Ley 24.156, es un instrumento de planificación, de política económica y social, de administración y de control. 
+                        En otras palabras: el presupuesto es gobierno.                                                               
+                        </p>
+                        <span id="toggleText19" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-19">
+                    <p id="turismo">
+                        Ahora bien, en tiempos de incertidumbre, cuando se prorroga un presupuesto en lugar de diseñar uno nuevo, entramos en un terreno donde la 
+                        técnica cede ante la política. Lo que en teoría debería ser un proceso de asignación racional de recursos para producir bienes, resultados 
+                        e impactos sociales, se convierte en un mecanismo de poder concentrado y discrecionalidad ejecutiva.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-19">
+                    <p id="turismo">
+                        Aquí entra en juego Maquiavelo: el príncipe moderno no solo gobierna con la espada de las decisiones, sino con la pluma que define cuánto y a quién 
+                        se destina. La prórroga presupuestaria, al evitar la negociación parlamentaria, fortalece al Ejecutivo en su capacidad de decidir unilateralmente. 
+                        Pero también erosiona la base de consenso que sostiene la legitimidad de cualquier poder duradero. Porque, como advertía el propio Maquiavelo, 
+                        el arte de gobernar no está en vencer coyunturas, sino en construir estabilidad en el tiempo.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-19">
+                    <p id="turismo">
+                        La decisión del presidente Javier Milei de gobernar con presupuestos prorrogados desde que asumió no es neutra:<br>
+
+                        1.&ensp;Políticamente, expresa una estrategia de aislamiento deliberado del Congreso.<br>
+
+                        2.&ensp;Administrativamente, congela prioridades en un contexto inflacionario y cambiante.<br>
+
+                        3.&ensp;Socialmente, se traduce en un ajuste real sobre programas esenciales, con impactos regresivos en salud, educación y políticas sociales.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-19">
+                    <p id="turismo">
+                        Desde la perspectiva filosófica, podemos preguntarnos con Weber: ¿es esta la “ética de la convicción” (cumplir con la promesa de ajuste sin 
+                        concesiones) o la “ética de la responsabilidad” (gobernar considerando las consecuencias sociales de las decisiones)? El presupuesto, en este 
+                        caso, se transforma en la arena donde chocan esas dos éticas.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-19">
+                    <p id="turismo">
+                        La teoría del Presupuesto por Programas nos enseña que los recursos deben vincularse con productos, resultados e impactos. Pero cuando se 
+                        gobierna sin un presupuesto propio, se rompe esa lógica de planificación y evaluación. Lo que queda no es una política pública orientada a 
+                        resultados, sino una administración del presente que posterga el futuro.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-19">
+                    <p id="turismo">
+                        En definitiva, el presupuesto es el verdadero “contrato social” del Estado moderno. Y como bien enseñaba Aristóteles, “el fin de la política 
+                        es el bien común”. Sin un presupuesto debatido, aprobado y orientado a resultados, no hay bien común posible, solo voluntad de poder.</p>                        
+                </div>
+                <div class="col-md-12" id="oculto-19">
+                    <p id="turismo">
+                        El desafío no es técnico, es filosófico y político: recuperar el presupuesto como acto soberano de construcción colectiva, como espacio de 
+                        consenso, como herramienta de transformación. Porque sin presupuesto no hay proyecto. Y sin proyecto, no hay destino.</p>                        
+                </div>
+                
+                <span id="leermenos19"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+            
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
                     const leerMas18 = document.getElementById("toggleText18");
