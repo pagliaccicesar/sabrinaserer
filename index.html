@@ -228,6 +228,167 @@
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas21 = document.getElementById("toggleText21");
+                    const leerMenos21 = document.getElementById("leermenos21");
+                    const textosOcultos21 = document.querySelectorAll("#oculto-21");
+                    let visible21 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos21.forEach(texto21 => texto21.style.display = "none");
+                    leerMenos21.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas21.addEventListener("click", function () {
+                        visible21 = true;
+
+                        textosOcultos21.forEach(texto21 => texto21.style.display = "block");
+                        leerMas21.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos21.textContent = "Mostrar menos...";
+                        leerMenos21.style.color = "#7E6BA0";
+                        leerMenos21.style.display = "block";
+                        leerMenos21.style.cursor = "pointer";
+                        leerMenos21.style.fontWeight = "bold";
+                    });
+
+                    leerMenos21.addEventListener("click", function () {
+                        visible21 = false;
+
+                        textosOcultos21.forEach(texto21 => texto21.style.display = "none");
+                        leerMas21.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos21.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">La niñez en riesgo: cuando el ajuste arrasa con lo más sagrado</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/Ninez.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 40px;">                   
+                        <p id="turismo">Convertirme en mamá me cambió la forma de mirar la realidad. Las cifras de pobreza dejaron de ser solo números para 
+                            transformarse en imágenes concretas: un plato vacío, una escuela sin calefacción, un hospital sin turnos. Hoy en la Argentina 
+                            más de la mitad de las niñas y niños crecen en hogares pobres, y las políticas de ajuste que se aplican bajo la lógica de la 
+                            “motosierra” están profundizando esa vulnerabilidad.                                                              
+                        </p>                        
+                        <span id="toggleText21" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-21">
+                    <p id="turismo">
+                        <b>Infancias argentinas: cinco años de retroceso</b><br>En el último lustro atravesamos dos modelos de gestión distintos. Uno, con sus 
+                        falencias, buscó sostener redes de protección social. El otro priorizó la austeridad fiscal como meta central. El resultado está a la 
+                        vista: provincias enteras —sobre todo en el NOA y el NEA— quedaron aún más expuestas, y en el conurbano bonaerense los recortes se 
+                        sienten en comedores, escuelas y hospitales.<br>
+                        Las consecuencias son directas:<br>
+
+                            1.&ensp;En salud, menos insumos, vacunas y atención primaria.<br>
+                            2.&ensp;En educación, recortes en programas y comedores que sostienen la asistencia escolar.<br>
+                            3.&ensp;En la psiquis infantil, la exposición constante al estrés de la pobreza genera daños neurológicos y emocionales irreversibles.<br>
+                        La niñez no puede esperar. La infancia es una ventana única: lo que no se garantiza en esos años, no se recupera jamás.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-21">
+                    <p id="turismo">
+                        <b>Comparación internacional: el caso de Uruguay</b><br>Uruguay comparte con Argentina desafíos como economías pequeñas y alta dependencia 
+                        de contextos internacionales. Sin embargo, en materia de niñez marcó una diferencia clave: construyó políticas de Estado que trascienden 
+                        los gobiernos.<br>
+                        Algunas políticas que le dieron resultados:<br>
+
+                            1.&ensp;Sistema Nacional Integrado de Cuidados (SNIC): ofrece atención y estimulación temprana a la primera infancia con centros de 
+                            calidad, combinando educación, salud y cuidado comunitario.<br>
+                            2.&ensp;Asignaciones familiares y transferencias focalizadas: garantizan un ingreso mínimo para hogares con niños, con condicionalidades 
+                            en salud y educación.<br>
+                            3.&ensp;Centros CAIF (Centros de Atención a la Infancia y la Familia): espacios comunitarios que combinan cuidado, nutrición y 
+                            estimulación temprana en barrios vulnerables.<br>
+                            4.&ensp;Inversión sostenida en salud y vacunación universal: aun en contextos de restricción fiscal, la cobertura de vacunación 
+                            infantil se mantuvo como prioridad.<br>
+
+                        El contraste con Argentina es claro: mientras acá los vaivenes políticos recortan y reinstalan programas, en Uruguay se consolidaron 
+                        estructuras permanentes que no dependen del signo político de turno.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-21">
+                    <p id="turismo">
+                        <b>Hacia un modelo argentino para la niñez</b><br>De esta comparación se desprende una lección evidente: lo que funciona es la 
+                        continuidad, la previsibilidad y la integralidad. Argentina podría avanzar en un modelo que combine:<br>                        
+
+                            1.&ensp;Presupuesto espejo y protegido para la infancia, con fondos coparticipables y priorizados según necesidades provinciales.<br>
+                            2.&ensp;Centros integrados de cuidado y desarrollo infantil, inspirados en la experiencia uruguaya de los CAIF, que articulen salud, 
+                            nutrición y educación en cada territorio.<br>
+                            3.&ensp;Transferencias universales y sostenidas, con foco en la primera infancia, ajustadas por inflación para no perder poder adquisitivo.<br>
+                            4.&ensp;Blindaje sanitario y educativo, asegurando que vacunación, comedores escolares y programas de salud mental no sean variables de ajuste.<br>
+                            5.&ensp;Monitoreo y evaluación con transparencia, para medir impacto y corregir políticas en tiempo real.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-21">
+                    <p id="turismo">
+                        <b>¿Por qué invertir en la niñez es la decisión más sabia?</b><br>Cuando hablamos de cuidar a las infancias, no se trata solo de un imperativo 
+                        ético. También es una apuesta estratégica al futuro de la Argentina. Los estudios muestran que cada peso invertido en la primera infancia 
+                        retorna multiplicado en desarrollo humano, productividad y cohesión social.<br>                        
+
+                            1.&ensp;Mejor salud a lo largo de la vida: niños bien alimentados y vacunados hoy serán adultos más sanos, con menos costos en el sistema 
+                            de salud.<br>
+                            2.&ensp;Mayor rendimiento educativo y laboral: una infancia con estimulación temprana y educación de calidad desarrolla más capacidades 
+                            cognitivas y socioemocionales, lo que se traduce en mayor empleabilidad y mejores ingresos en la adultez.<br>
+                            3.&ensp;Reducción de la desigualdad estructural: invertir en niñez corta la transmisión intergeneracional de la pobreza. Los hijos de 
+                            hogares vulnerables tienen una oportunidad real de movilidad social.<br>
+                            4.&ensp;Más cohesión social y menos violencia: entornos de cuidado y apoyo reducen la exposición a contextos de violencia, adicciones 
+                            y marginalidad.<br>
+                            5.&ensp;Crecimiento económico sostenido: países que sostienen políticas universales de infancia logran mayor productividad futura y 
+                            estabilidad macroeconómica.<br>
+                            En palabras simples: cada niña y niño cuidado hoy es un adulto con más oportunidades mañana. Y esa es la diferencia entre un país que 
+                            se empobrece generación tras generación y uno que construye progreso sostenido.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-21">
+                    <p id="turismo">
+                       <b>Un cierre desde la esperanza</b><br>
+
+                        Mientras escribo estas líneas, miro a mi bebé y pienso que su futuro —y el de millones de chicos— depende de nuestras decisiones 
+                        colectivas. Invertir en las infancias no es gasto: es sembrar las raíces de un país más justo, humano y próspero. Si realmente queremos 
+                        transformar la Argentina, tenemos que empezar por lo más esencial: dar a cada niña y niño la oportunidad de crecer con salud, educación, 
+                        amor y dignidad.</p>                        
+                </div>              
+                
+                
+                <span id="leermenos21"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
                     const leerMas20 = document.getElementById("toggleText20");
                     const leerMenos20 = document.getElementById("leermenos20");
                     const textosOcultos20 = document.querySelectorAll("#oculto-20");
