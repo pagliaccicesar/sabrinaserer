@@ -228,6 +228,175 @@
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas22 = document.getElementById("toggleText22");
+                    const leerMenos22 = document.getElementById("leermenos22");
+                    const textosOcultos22 = document.querySelectorAll("#oculto-22");
+                    let visible22 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos22.forEach(texto22 => texto22.style.display = "none");
+                    leerMenos22.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas22.addEventListener("click", function () {
+                        visible22 = true;
+
+                        textosOcultos22.forEach(texto22 => texto22.style.display = "block");
+                        leerMas22.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos22.textContent = "Mostrar menos...";
+                        leerMenos22.style.color = "#7E6BA0";
+                        leerMenos22.style.display = "block";
+                        leerMenos22.style.cursor = "pointer";
+                        leerMenos22.style.fontWeight = "bold";
+                    });
+
+                    leerMenos22.addEventListener("click", function () {
+                        visible22 = false;
+
+                        textosOcultos22.forEach(texto22 => texto22.style.display = "none");
+                        leerMas22.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos22.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Argentina en la encrucijada: entre la refundación o el agotamiento del sistema político</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/pais.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 20px;">                   
+                        <p id="turismo">Un análisis sobre las proyecciones sociales, económicas y democráticas en tiempos de ruptura<br>
+                            <i>Por Sabrina Serer</i><br>
+                            <br>
+                            <b>Un país frente al espejo</b><br>
+                            Argentina atraviesa un punto de inflexión. La discusión sobre si el gobierno de Javier Milei puede —o no— sostener su proyecto económico 
+                            y político trasciende a la figura del presidente: interpela a toda la dirigencia, al sistema político y a la cultura institucional del 
+                            país.                                                                              
+                        </p>                        
+                        <span id="toggleText22" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-22">
+                    <p id="turismo">
+                        Detrás de cada dato económico y de cada disputa parlamentaria, se esconde una pregunta de fondo: ¿tenemos, como Nación, la madurez necesaria para 
+                        realizar los cambios estructurales que hace décadas postergamos? ¿O seguiremos repitiendo el ciclo eterno de promesas, crisis y frustraciones 
+                        colectivas?  
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-22">
+                    <p id="turismo">
+                        <b>Entre la austeridad y la pobreza: luces y sombras de un experimento</b><br>Si bien el actual gobierno, muestra una tendencia descendente 
+                        con relación a la inflación —flagelo histórico del país—, los costos sociales han sido altos: aumento de la pobreza, caída del empleo formal 
+                        y reducción de la capacidad adquisitiva de los sectores medios y bajos.<br>
+                        El modelo libertario se consolidó en torno a un eje claro: ajuste del gasto, eliminación de subsidios y reconfiguración drástica del Estado. 
+                        Pero detrás de esa aparente “eficiencia fiscal” se esconde un deterioro profundo del tejido social, que amenaza la estabilidad política.<br>
+                        Argentina corre el riesgo de repetir un viejo patrón: estabilidad económica efímera, sostenida sobre una inestabilidad social y política 
+                        creciente.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-22">
+                    <p id="turismo">
+                        <b>Escenarios posibles: continuidad o reacción</b><br>El escenario de corto y mediano plazo puede bifurcarse en dos direcciones:<br>
+                        Si Milei logra sostener el control político y legislativo, su proyecto continuará bajo un esquema de austeridad y liberalización, 
+                        con inflación controlada, pero sin crecimiento sólido.<br>
+                        Si pierde poder o enfrenta un Congreso adverso, podría surgir un escenario de recomposición política: concesiones al peronismo o 
+                        a sectores provinciales, mayor gasto público y un retorno parcial al intervencionismo estatal.<br>
+                        Ambas alternativas enfrentan el mismo desafío: la falta de consenso estructural sobre un modelo de desarrollo. Argentina oscila entre dos 
+                        paradigmas —mercado y Estado— sin resolver cómo construir instituciones que garanticen previsibilidad, transparencia y justicia social 
+                        simultáneamente.<br>
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-22">
+                    <p id="turismo">
+                        <b>Los “políticos de siempre”: ¿inercia o transformación?</b><br>Esta es, quizás, la cuestión más incómoda.<br>
+                        ¿Realmente los políticos de siempre desean cambiar el sistema que los sostiene?<br>
+                        La respuesta, lamentablemente, sigue siendo ambigua.<br>
+                        Argentina tiene una dirigencia con alta capacidad de adaptación, pero baja vocación de transformación. Los partidos tradicionales no suelen 
+                        reformar estructuras que amenazan sus propias fuentes de poder: clientelismo, redes provinciales, empleo público sobredimensionado, 
+                        entre otras.<br>
+                        El problema no es solo económico. Es cultural. La cultura del privilegio, la impunidad y la lógica de la “lealtad política” por 
+                        encima de la competencia y la transparencia son los verdaderos obstáculos al desarrollo.<br>
+                    </p>                        
+                </div>
+
+
+                <div class="col-md-12" id="oculto-22">
+                    <p id="turismo">
+                        <b>Democracia: ¿resiste o se degrada?</b><br>
+                        Según los indicadores internacionales, Argentina sigue siendo una democracia libre (Freedom House), pero defectuosa 
+                        (The Economist Democracy Index).<br>
+                        Esto significa que mantiene elecciones limpias, libertad de prensa y derechos civiles, pero sufre de instituciones 
+                        débiles, justicia politizada y escasa confianza social.<br>
+                        La democracia argentina, más que amenazada por un golpe o una autocracia, está siendo corroída lentamente por la 
+                        ineficacia, la desconfianza y la polarización.<br>
+                        Y esa degradación silenciosa es más peligrosa que cualquier crisis visible.<br>                        
+                    </p>                        
+                </div>
+
+
+
+                <div class="col-md-12" id="oculto-22">
+                    <p id="turismo">
+                        <b>La gran deuda: cambiar el modo de gobernar</b><br>El país necesita una refundación, pero no desde la destrucción, sino desde la reconstrucción 
+                            institucional. Para ello, se requieren cinco consensos urgentes:<br>                        
+
+                            ·&ensp;&ensp;Un diagnóstico común sobre los problemas estructurales: inflación, educación, pobreza e ineficiencia estatal.<br>
+                            ·&ensp;&ensp;Reforma profunda del Estado, no solo ajuste: profesionalización, meritocracia, evaluación de políticas públicas y transparencia presupuestaria.<br>
+                            ·&ensp;&ensp;Política económica sostenible, que combine disciplina fiscal con justicia social.<br>
+                            ·&ensp;&ensp;Transformación cultural, que promueva responsabilidad ciudadana, respeto a la ley y cultura del mérito.<br>
+                            ·&ensp;&ensp;Instituciones fuertes, que sobrevivan a los gobiernos y garanticen rendición de cuentas.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-22">
+                    <p id="turismo">
+                        <b>El mensaje a la dirigencia</b><br>
+                        A la clase política —de ayer y de hoy— hay que decirle con claridad: no hay destino posible sin coraje. Argentina no necesita más discursos 
+                        de coyuntura. Necesita estadistas capaces de pensar a veinte años, no a la próxima elección.<br>
+                        Los cambios estructurales y culturales que el país demanda no se resuelven desde el marketing ni desde el enojo. Se resuelven con políticas 
+                        públicas sostenidas, con instituciones estables, con planificación, con evaluación, y con una ética pública que deje de ser una palabra 
+                        vacía.<br>
+                        <br>
+                        Epílogo: refundar la esperanza<br>
+                        La historia muestra que los países que lograron salir de su espiral de crisis —España, Chile, Corea del Sur, Irlanda— lo hicieron cuando 
+                        lograron un pacto entre política, sociedad y conocimiento.<br>
+                        Quizás esa sea nuestra oportunidad: transformar la indignación en inteligencia colectiva.<br>
+                        Y convertir, de una vez por todas, el “que se vayan todos” en <b>“que lleguen los mejores”</b>.<br>
+                        Dejar llegar a los mejores es, también, un acto de justicia generacional.<br>
+                        Porque el mérito, la formación y la ética no pueden seguir siendo enemigos del poder, sino su condición de existencia.<br>
+                        Argentina no necesita más líderes mesiánicos, ni outsiders sin preparación.<br>
+                        Necesita gobernantes competentes, evaluables, responsables y comprometidos con el bien común.<br>
+                        Que lleguen los mejores.<br>
+                        Pero, sobre todo: <b>que los dejen llegar.</b>                        
+                    </p>                        
+                </div>               
+                
+                <span id="leermenos22"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
                     const leerMas21 = document.getElementById("toggleText21");
                     const leerMenos21 = document.getElementById("leermenos21");
                     const textosOcultos21 = document.querySelectorAll("#oculto-21");
