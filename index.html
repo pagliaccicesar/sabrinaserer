@@ -228,6 +228,132 @@
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas23 = document.getElementById("toggleText23");
+                    const leerMenos23 = document.getElementById("leermenos23");
+                    const textosOcultos23 = document.querySelectorAll("#oculto-23");
+                    let visible23 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos23.forEach(texto23 => texto23.style.display = "none");
+                    leerMenos23.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas23.addEventListener("click", function () {
+                        visible23 = true;
+
+                        textosOcultos23.forEach(texto23 => texto23.style.display = "block");
+                        leerMas23.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos23.textContent = "Mostrar menos...";
+                        leerMenos23.style.color = "#7E6BA0";
+                        leerMenos23.style.display = "block";
+                        leerMenos23.style.cursor = "pointer";
+                        leerMenos23.style.fontWeight = "bold";
+                    });
+
+                    leerMenos23.addEventListener("click", function () {
+                        visible23 = false;
+
+                        textosOcultos23.forEach(texto23 => texto23.style.display = "none");
+                        leerMas23.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos23.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Del dolor a la gestión: una política con coraje para salvar vidas</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/Novedades_53.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 20px;">                   
+                        <p id="turismo">                            
+                            En la Argentina de hoy, cada femicidio y cada transfemicidio nos enfrenta con la misma pregunta: ¿cuántas vidas más estamos dispuestos 
+                            a perder antes de hacer política con coraje y resultados?<br>
+                            <br>
+                            El transfemicidio ocurrido ayer en Neuquén no es un caso más. Es el reflejo de una sociedad que, por momentos, parece anestesiada 
+                            frente a la violencia. Pero también es el punto de partida para una nueva generación de políticas públicas que no quieren hablar del 
+                            problema: quieren resolverlo.                                                                            
+                        </p>                        
+                        <span id="toggleText23" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-23">
+                    <p id="turismo">
+                        Como mujer, como funcionaria y como profesional de la gestión pública, sé que el dolor necesita transformarse en política efectiva. La 
+                        respuesta no está solo en más leyes, sino en una nueva forma de gobernar, basada en la Gestión para Resultados (GpR): una metodología que 
+                        obliga a planificar, medir, corregir y rendir cuentas. 
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-23">
+                    <p id="turismo">
+                        Porque no se trata de gastar más: se trata de gastar mejor, con propósito y evidencia.<br>
+                        <br>
+                        1·&ensp;La política que se mide en vidas salvadas<br>
+                        <br>
+                        La violencia de género no es un hecho aislado: es un patrón estructural. Rita Segato lo explica con crudeza: los femicidios no surgen del 
+                        impulso, sino de una pedagogía de la crueldad que reproduce dominio y poder.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-23">
+                    <p id="turismo">
+                        En Argentina, el Observatorio “Ahora que Sí Nos Ven” registró 267 femicidios en 2024, mientras que la Corte Suprema contabilizó más de 250 
+                        causas judiciales con víctimas mujeres o trans asesinadas por razones de género. Cada número es una vida truncada y una política que llegó 
+                        tarde.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-23">
+                    <p id="turismo">
+                        Por eso, propongo una estrategia provincial de Gestión para Resultados en Violencia de Género y Diversidad, que ponga a Neuquén a la 
+                        vanguardia nacional.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-23">
+                    <p id="turismo">
+                        Un plan integral, interministerial y evaluable, donde cada peso del presupuesto tenga un destino claro, cada acción un indicador, y cada meta 
+                        un plazo de cumplimiento.                        
+                    </p>                        
+                </div> 
+                                
+                <span id="leermenos23"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
                     const leerMas22 = document.getElementById("toggleText22");
                     const leerMenos22 = document.getElementById("leermenos22");
                     const textosOcultos22 = document.querySelectorAll("#oculto-22");
