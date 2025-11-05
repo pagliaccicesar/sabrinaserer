@@ -228,6 +228,198 @@
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas24 = document.getElementById("toggleText24");
+                    const leerMenos24 = document.getElementById("leermenos24");
+                    const textosOcultos24 = document.querySelectorAll("#oculto-24");
+                    let visible24 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos24.forEach(texto24 => texto24.style.display = "none");
+                    leerMenos24.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas24.addEventListener("click", function () {
+                        visible24 = true;
+
+                        textosOcultos24.forEach(texto24 => texto24.style.display = "block");
+                        leerMas24.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos24.textContent = "Mostrar menos...";
+                        leerMenos24.style.color = "#7E6BA0";
+                        leerMenos24.style.display = "block";
+                        leerMenos24.style.cursor = "pointer";
+                        leerMenos24.style.fontWeight = "bold";
+                    });
+
+                    leerMenos24.addEventListener("click", function () {
+                        visible24 = false;
+
+                        textosOcultos24.forEach(texto24 => texto24.style.display = "none");
+                        leerMas24.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos24.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Peronismo por Resultados: del relato del pasado a la gestión del futuro</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/zz.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 10px;">                   
+                        <p id="turismo">
+                           <b>I.&ensp;El peronismo en su encrucijada histórica</b><br>                           
+                           El peronismo nació como un proyecto profundamente transformador: organizó el Estado, integró a las y los trabajadores y construyó movilidad 
+                           social. Durante décadas, fue el vehículo político del ascenso y la protección social de las mayorías. Sin embargo, el país y la sociedad 
+                           cambiaron a una velocidad que el partido no logró acompañar.<br>                           
+                            Hoy, esa matriz doctrinaria de justicia social, soberanía e inclusión enfrenta un dilema existencial: cómo seguir representando a un pueblo 
+                            diverso en una sociedad que transformó sus códigos culturales, sus aspiraciones y su modo de decidir.                                                                           
+                        </p>                        
+                        <span id="toggleText24" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">
+                        El diagnóstico no requiere dramatismo, sino precisión. La debacle no fue súbita: fue la consecuencia de un divorcio progresivo entre discurso, 
+                        gestión y resultados. Un movimiento que históricamente se definió por su eficacia política terminó siendo percibido como ineficiente, 
+                        autorreferencial y desconectado de la agenda real de la ciudadanía. 
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">                       
+                        <b>II.&ensp;Causas estructurales de la decadencia</b><br>
+                        <i>1. Desalineación entre relato e impacto.</i><br>                   
+                        El peronismo supo construir un relato potente en torno al bienestar, pero perdió la capacidad de demostrarlo con datos y resultados. 
+                        La gestión sin métricas se volvió discurso sin credibilidad.<br>
+
+                        <i>2. Envejecimiento institucional.</i><br>
+                        Las estructuras partidarias, pensadas para un país industrial y sindicalizado, hoy funcionan en un entorno de economía fragmentada, 
+                        digital y atravesada por desigualdades de género y territorio. El modelo de representación envejeció; ya no intermedia demandas, sino 
+                        que las demora.<br>
+
+                        <i>3. Déficit de transparencia y profesionalización.Envejecimiento institucional.</i><br>
+                        La ciudadanía exige integridad, eficiencia y rendición de cuentas. El partido, atrapado en lógicas de lealtades personales, no generó 
+                        mecanismos de evaluación ni de selección basados en mérito. La consecuencia: pérdida de confianza transversal.<br>
+
+                        <i>4. Falta de renovación generacional, paritaria y narrativa.</i><br>
+                        El liderazgo político no se transfiere solo por biología ni por apellido; se legitima en la capacidad de planificar, escuchar y demostrar 
+                        resultados tangibles. El peronismo, atrapado entre la nostalgia y la interna, no formó la cantera de cuadros técnicos, políticos y feministas
+                         que exige el siglo XXI.<br>                
+                       
+                                        
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">
+                        <b>III.&ensp;Un cambio de paradigma: del control político al gobierno basado en evidencia</b><br>
+                        La respuesta no está en un cambio cosmético ni en un nuevo eslogan. Está en una refundación metodológica: gobernar desde la evidencia, con 
+                        planificación estratégica, presupuesto orientado a resultados y evaluación de impacto.<br>
+                        En otras palabras, pasar de la “gestión política” a la política gestionada con evidencia.<br>
+                        Carol Weiss, una de las voces más reconocidas en análisis de políticas públicas, sostenía que “las políticas efectivas no se imponen: se 
+                        aprenden, se prueban y se corrigen.” Esa es la transición pendiente: que el peronismo deje de defender el pasado y empiece a aprender del 
+                        futuro.<br>
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">                       
+                        <b>IV.&ensp;Hacia un nuevo peronismo: “Peronismo por Resultados”</b><br>
+                        Propongo una hoja de ruta que combine los valores históricos del movimiento con herramientas contemporáneas de gestión:<br>
+                        <i>1. Redefinir el contrato social en clave medible y equitativa.</i><br>                   
+                        Cada promesa política debe traducirse en un indicador verificable: reducción de la pobreza, cobertura de primera infancia, acceso a salud 
+                        integral, empleo joven, inclusión de mujeres y diversidades. No más consignas vacías: metas, líneas base y resultados públicos.<br>
+
+                        <i>2. Modernizar la arquitectura de gestión.</i><br>
+                        Implementar una Agenda Nacional de Resultados vinculada al presupuesto por programas, donde cada peso invertido tenga un impacto 
+                        verificable y comunicable.<br>
+
+                        <i>3. Instituir un “Dashboard de Resultados Peronistas”</i><br>
+                        Formar nuevas generaciones —con paridad de género y enfoque federal— en planificación, análisis de datos, evaluación y gestión de 
+                        políticas públicas. Profesionalizar la política no es tecnocratizarla: es volverla competente y ética.<br>
+
+                        <i>4. Instituir un “Dashboard de Resultados Peronistas”</i><br>
+                        Una plataforma pública que muestre, programa por programa, qué se prometió, cuánto se ejecutó y qué se logró. Transparencia activa y 
+                        credibilidad en tiempo real.<br>                
+                       
+                        <i>5. Reformar la gobernanza interna.</i><br>
+                        Promover mecanismos de competencia interna basados en desempeño y compromiso con los resultados. La lealtad al proyecto no se mide 
+                        por obediencia ni silencio, sino por la eficacia colectiva.<br>  
+                                        
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">
+                        <b>V.&ensp;Aprender del mundo sin perder la identidad</b><br>
+                        El <i>New Labour</i> británico logró reconfigurar la socialdemocracia con una combinación de ética pública, comunicación moderna y gestión profesional. 
+                        Los países nórdicos consolidaron pactos sociales basados en eficiencia estatal y bajo conflicto distributivo.<br>
+                        Ambos modelos demostraron que la eficiencia no es enemiga de la justicia social, sino su garante.<br>
+                        Argentina no necesita copiar modelos ajenos, sino reinterpretar sus lógicas desde nuestra identidad latinoamericana: políticas sostenibles, 
+                        evaluadas y fiscalmente responsables. Un peronismo que hable con datos, que mida, que rinda cuentas y vuelva a generar confianza desde su propio 
+                        territorio cultural.<br>
+                    </p>                        
+                </div>
+                
+                 <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">
+                        <b>VI.&ensp;Leer el nuevo voto argentino</b><br>
+                        El votante argentino ya no elige por identidad, sino por desempeño percibido y coherencia. La volatilidad electoral refleja una ciudadanía 
+                        que castiga la ineficiencia y premia la autenticidad.<br>
+                        Las juventudes no votan por ideología, sino por expectativas: trabajo digno, estabilidad, inclusión digital y un Estado que no las trate como 
+                        enemigas, sino como protagonistas.<br>
+                        El desafío es comprender que la gente no vota por nostalgia, sino por esperanza viable.<br>
+                    </p>                        
+                </div>
+                
+                 <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">
+                        <b>VII.&ensp;Conclusión: reconstruir el peronismo desde la eficacia, la integridad y la equidad</b><br>
+                        El peronismo debe dejar de discutir quién conduce y empezar a discutir qué resultados ofrece.<br>
+                        Su futuro no dependerá de un nuevo liderazgo carismático, sino de una generación de dirigentas y 
+                        dirigentes capaces de planificar, ejecutar y evaluar con rigor técnico, ética pública y sensibilidad social.<br>
+                        El liderazgo contemporáneo se construye demostrando resultados, no acumulando cargos.<br>
+                        Si el movimiento logra dar este salto —de la retórica a la evidencia, del relato a la gestión— volverá a 
+                        ser lo que alguna vez fue: la fuerza más poderosa de transformación social y emancipación colectiva de la Argentina.<br>
+                    </p>                        
+                </div>
+                
+                 <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">
+                        <b>Epílogo</b><br>
+                       No se trata de abandonar las banderas históricas, sino de rediseñarlas con indicadores, integridad, equidad y método.<br>
+                        El peronismo del siglo XXI será aquel que se mida, se audite y rinda cuentas con orgullo.<br>
+                        Ese será el verdadero acto de justicia social contemporánea.<br>                        
+                    </p>                        
+                </div>
+                <div class="col-md-12" id="oculto-24">
+                    <p id="turismo">
+                        <b>Cra. Sabrina Serer</b><br>
+                                
+                    </p>                        
+                </div>    
+           
+                                
+                <span id="leermenos24"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
                     const leerMas23 = document.getElementById("toggleText23");
                     const leerMenos23 = document.getElementById("leermenos23");
                     const textosOcultos23 = document.querySelectorAll("#oculto-23");
