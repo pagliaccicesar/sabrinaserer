@@ -226,6 +226,150 @@
   <section id="evento">
         <div class="container">
 
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas25 = document.getElementById("toggleText25");
+                    const leerMenos25 = document.getElementById("leermenos25");
+                    const textosOcultos25 = document.querySelectorAll("#oculto-25");
+                    let visible25 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos25.forEach(texto25 => texto25.style.display = "none");
+                    leerMenos25.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas25.addEventListener("click", function () {
+                        visible25 = true;
+
+                        textosOcultos25.forEach(texto25 => texto25.style.display = "block");
+                        leerMas25.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos25.textContent = "Mostrar menos...";
+                        leerMenos25.style.color = "#7E6BA0";
+                        leerMenos25.style.display = "block";
+                        leerMenos25.style.cursor = "pointer";
+                        leerMenos25.style.fontWeight = "bold";
+                    });
+
+                    leerMenos25.addEventListener("click", function () {
+                        visible25 = false;
+
+                        textosOcultos25.forEach(texto25 => texto25.style.display = "none");
+                        leerMas25.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos25.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Un liderazgo capaz de transformar la gestión pública y marcar el rumbo del próximo ciclo político</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/N7.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 35px;">                   
+                        <p id="turismo">
+                           1️⃣<b>La nueva política ya llegó (y vino con calculadora en mano) </b>🧮✨<br>                           
+                           La reciente decisión del alcalde de Nueva York de nombrar a una experta en presupuesto como su principal colaboradora no es un gesto 
+                           tecnocrático: es una señal global de cambio 🌍. El mundo político comienza a comprender que los Estados, para recuperar su capacidad 
+                           de acción, necesitan dirigencias que combinen sensibilidad social con dominio técnico.                                                                           
+                        </p>                        
+                        <span id="toggleText25" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-25">
+                    <p id="turismo">
+                        Esta intuición coincide con lo que Oscar Oszlak plantea desde hace décadas: la capacidad estatal no se construye con discursos 🎙️, sino 
+                        con instituciones capaces de “producir orden y bienes públicos” a través de decisiones coherentes y ejecutables. Gobernar implica articular 
+                        voluntad política con soporte técnico, administrativo y financiero 📑.<br>
+                        El humor político de la época lo resume bien: después de años de épica sin planillas 📊, la política global descubrió que sin presupuesto 
+                        no hay épica que sobreviva. La calculadora —y su correlato metodológico— se transformó en un instrumento político de primer orden, incluso 
+                        para quienes antes la veían como símbolo de frialdad. Hoy, planificar es un acto de justicia ⚖️.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-25">
+                    <p id="turismo">                       
+                        2️⃣ <b>Liderazgos híbridos para una ciudadanía cansada de promesas vacías</b> 🤝🌎<br>
+                        La sociedad contemporánea, especialmente en América Latina, ya no compra humo 🚫. Busca liderazgos que sepan combinar empatía con resultados. 
+                        Dirigentas y dirigentes capaces de escuchar, pero también de ejecutar. En este punto, las teorías de Luis F. Aguilar Villanueva y Guy Peters 
+                        se vuelven centrales: gobernar ya no es solo decidir, sino coordinar actores, gestionar complejidades y asegurar resultados verificables 🧩.<br>
+                        A esto se suma la mirada crítica de Charles Lindblom, quien nos recuerda que la toma de decisiones públicas es incremental, y que los sistemas 
+                        políticos avanzan mediante pasos sucesivos guiados por evidencia 🔍. En ese marco, las dirigencias capaces de traducir planificación 
+                        estratégica y presupuesto en políticas reales —con impacto social y territorial— se vuelven indispensables.<br>
+                        América Latina está dejando atrás el vaivén entre líderes carismáticos sin gestión y tecnócratas sin legitimidad 🌱. Las sociedades piden algo 
+                        más profundo: una dirigencia ética, plural y diversa, capaz de transformar el presupuesto en una herramienta para redistribuir oportunidades, 
+                        garantizar derechos y reducir desigualdades históricas 💜, especialmente las que afectan a mujeres, disidencias y niñeces.                     
+                                        
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-25">
+                    <p id="turismo">
+                       3️⃣ <b>Presupuesto: la piedra angular de la política que viene</b> 💰📈<br>
+                        Lindblom nos enseñó que las políticas se construyen paso a paso 🚶‍♀️. Oszlak, que la capacidad estatal es el corazón de cualquier proceso 
+                        transformador ❤️. De esa articulación se desprende una verdad contundente: sin presupuesto, no hay política; y sin capacidad para gestionarlo, 
+                        no hay Estado que sostenga la promesa de desarrollo 🏛️.<br>
+                        Por eso, la designación de perfiles con formación en presupuesto, planificación y gestión de resultados está dejando de ser una excepción para 
+                        convertirse en una tendencia 🔄. Las sociedades comienzan a entender que la eficiencia, la transparencia y la orientación a resultados no son 
+                        lujos tecnocráticos: son la nueva infraestructura de la legitimidad democrática 💡.<br>
+                        En este escenario, América Latina tiene una oportunidad única 🌎. Sus mujeres líderes —desde ministras y gobernadoras hasta gestoras 
+                        comunitarias— están demostrando que se puede administrar con sensibilidad, firmeza y visión estratégica 👩‍💼. Que planificar también es cuidar.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-25">
+                    <p id="turismo">                       
+                        4️⃣ <b>Un liderazgo con rostro humano y mirada regional</b> 👁️🤲<br>
+                        Para el ciclo político que se abre hacia 2027, Argentina necesita liderazgos con mirada integral, solvencia técnica, sensibilidad social y 
+                        ética pública 🇦🇷. Personas capaces de convertir restricciones en decisiones inteligentes y decisiones en resultados que mejoren vidas reales, 
+                        especialmente las de las infancias y juventudes que siguen siendo la deuda moral más evidente de la región 👧🏽🧒🏻.<br>
+                        Reconstruir la confianza en las instituciones implica una tarea colectiva 🤲: fortalecer el Estado, modernizar su gestión y hacerlo más 
+                        transparente y participativo. Significa entender que el presupuesto no es un documento contable, sino el mapa de nuestras prioridades como 
+                        sociedad 🗺️.                                        
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-25">
+                    <p id="turismo">
+                        <b>✨ Reflexión final</b><br>
+                        <b>💬 Liderar con conocimiento, cuidar con estrategia</b>
+                        Argentina enfrenta un desafío estructural: conducir la transformación del Estado con visión de futuro y responsabilidad social 🌅. Para lograrlo, 
+                        las áreas críticas —desde Economía hasta Políticas de Género y Diversidad— deberán estar en manos de dirigencias que integren conocimiento técnico, 
+                        mirada humana y compromiso ético 💪.<br>
+                        Como sostiene Oscar Oszlak, la capacidad estatal es una construcción histórica 🏗️. Esa construcción requiere de liderazgos preparados para 
+                        gobernar el país real, no el país discursivo. Liderazgos que comprendan que gestionar no es solo administrar recursos, sino construir 
+                        confianza, redistribuir poder y garantizar derechos ⚖️.<br>
+                        El próximo ciclo político no demandará improvisación. Demandará conducción 🚀.<br>
+                        Conducción capaz de transformar la planificación y el presupuesto en políticas que dignifiquen vidas 💜.<br>
+                        Conducción que sepa mirar al sur y pensar desde América Latina.<br>
+                        Porque gobernar bien también es un acto de amor 💖.
+                        
+                    </p>                        
+                </div>                   
+                
+           
+                                
+                <span id="leermenos25"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
                     const leerMas24 = document.getElementById("toggleText24");
