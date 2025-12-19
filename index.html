@@ -229,6 +229,131 @@
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas26 = document.getElementById("toggleText26");
+                    const leerMenos26 = document.getElementById("leermenos26");
+                    const textosOcultos26 = document.querySelectorAll("#oculto-26");
+                    let visible26 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos26.forEach(texto26 => texto26.style.display = "none");
+                    leerMenos26.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas26.addEventListener("click", function () {
+                        visible26 = true;
+
+                        textosOcultos26.forEach(texto26 => texto26.style.display = "block");
+                        leerMas26.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos26.textContent = "Mostrar menos...";
+                        leerMenos26.style.color = "#7E6BA0";
+                        leerMenos26.style.display = "block";
+                        leerMenos26.style.cursor = "pointer";
+                        leerMenos26.style.fontWeight = "bold";
+                    });
+
+                    leerMenos26.addEventListener("click", function () {
+                        visible26 = false;
+
+                        textosOcultos26.forEach(texto26 => texto26.style.display = "none");
+                        leerMas26.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos26.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Del dato al impacto: transformar el presupuesto para proteger la vida</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/sabri-26.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 24px;">                   
+                        <p id="turismo">
+                           El cierre de este año representa un hito fundamental en mi trayectoria, donde la formación académica y el trabajo en territorio se 
+                           unieron para consolidar una visión clara del Estado. Como profesional de Ciencias Económicas, culminé la Especialización en Gestión 
+                           Pública para Resultados (UBA-ASAP), una decisión estratégica para entender el presupuesto no sólo como un recurso financiero, sino 
+                           como una herramienta ética y política orientada al bienestar real de las personas. Soy hoy la única profesional en Río Negro y Neuquén 
+                           con esta especialización, lo que refuerza mi compromiso de poner este rigor técnico al servicio de nuestra provincia.                                                                         
+                        </p>                        
+                        <span id="toggleText26" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-26">
+                    <p id="turismo">
+                        Durante los últimos meses, el trabajo de campo en la comunidad de Ruca Choroy permitió traducir la interculturalidad en datos concretos, 
+                        asegurando que el presupuesto responda a las necesidades territoriales reales 🏔️. Esta experiencia fue el motor para desarrollar los 
+                        <b>"Programas Espejo"</b>, una metodología innovadora en Argentina que busca integrar la planificación y los resultados de forma 
+                        interministerial. Aplicamos esta lógica a la prevención del suicidio, una política pública crítica en una provincia donde la tasa de 
+                        mortalidad por esta causa demanda una gestión de excelencia y una coordinación inmediata entre salud mental y administración.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-26">
+                    <p id="turismo">                       
+                       La validación de este trabajo por parte de <b>Marcos Makón</b>, referente indiscutido de la administración financiera en América Latina, y de 
+                       <b>Nora Garrochategui</b>, marca un antes y un después en mi carrera ✨. El hecho de que expertos de este calibre consideren mi propuesta de 
+                       "Presupuesto Espejo" como un insumo valioso para el desarrollo de políticas actuales confirma que vamos por el camino correcto: el de la 
+                       técnica con sensibilidad. Gestionar con evidencia permite que el Estado deje de reaccionar ante las crisis y empiece a conducir los procesos 
+                       de cambio con responsabilidad.                   
+                                        
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-26">
+                    <p id="turismo">
+                       De cara al futuro inmediato, el objetivo para el 2026 es ambicioso pero posible: avanzar en la creación de una Secretaría Provincial de 
+                       Monitoreo y Evaluación 📈. Buscamos instalar una arquitectura de gobernanza que permita medir el gasto público, territorializar las decisiones 
+                       y consolidar modelos que puedan replicarse en otras problemáticas sociales transversales. No se trata simplemente de invertir más, sino de 
+                       hacerlo con inteligencia para que cada indicador se traduzca en una oportunidad de vida para nuestros vecinos.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-26">
+                    <p id="turismo">                       
+                       Cierro el 2025 con la convicción de que el conocimiento cobra sentido cuando se pone al servicio del bien común 🚀. Agradezco a quienes 
+                       confiaron en esta mirada estratégica y a quienes me acompañaron en cada kilómetro recorrido por el interior de nuestra provincia. El desafío 
+                       que viene nos encontrará preparados para liderar una gestión moderna, transparente y, por sobre todo, profundamente humana.                                       
+                    </p>                        
+                </div>                         
+                
+           
+                                
+                <span id="leermenos26"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
                     const leerMas25 = document.getElementById("toggleText25");
                     const leerMenos25 = document.getElementById("leermenos25");
                     const textosOcultos25 = document.querySelectorAll("#oculto-25");
