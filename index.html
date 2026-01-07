@@ -226,6 +226,183 @@
   <section id="evento">
         <div class="container">
 
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas27 = document.getElementById("toggleText27");
+                    const leerMenos27 = document.getElementById("leermenos27");
+                    const textosOcultos27 = document.querySelectorAll("#oculto-27");
+                    let visible27 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos27.forEach(texto27 => texto27.style.display = "none");
+                    leerMenos27.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas27.addEventListener("click", function () {
+                        visible27 = true;
+
+                        textosOcultos27.forEach(texto27 => texto27.style.display = "block");
+                        leerMas27.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos27.textContent = "Mostrar menos...";
+                        leerMenos27.style.color = "#7E6BA0";
+                        leerMenos27.style.display = "block";
+                        leerMenos27.style.cursor = "pointer";
+                        leerMenos27.style.fontWeight = "bold";
+                    });
+
+                    leerMenos27.addEventListener("click", function () {
+                        visible27 = false;
+
+                        textosOcultos27.forEach(texto27 => texto27.style.display = "none");
+                        leerMas27.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos27.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Venezuela, petróleo y un nuevo tablero geopolítico en América Latina</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/2027.jpg" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 24px;">                   
+                        <p id="turismo">
+                           En los primeros días de enero de 2026, una operación militar liderada por Estados Unidos resultó en la captura de <b>Nicolás Maduro, quien 
+                           fuera presidente de la República Bolivariana de Venezuela</b>, y su traslado a territorio estadounidense para enfrentar cargos por narcotráfico. 
+                           <b>Esta acción, sin precedentes en la región</b> —y comparada por analistas con la invasión estadounidense a Panamá en 1989—, desencadenó una 
+                           reacción global crítica, con países aliados y adversarios denunciando la intervención como una violación de la soberanía venezolana e 
+                           incluso como un “<b>crimen de agresión</b>” ante las Naciones Unidas.                                                                        
+                        </p>                        
+                        <span id="toggleText27" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">
+                        <b style="font-size: large;">Petróleo: la razón subyacente de una crisis con efectos geopolíticos</b><br>                  
+                        Venezuela continúa siendo poseedora de las <b>mayores reservas de petróleo probadas del planeta</b>. Sin embargo, la producción ha colapsado desde 
+                        niveles superiores a los 3 millones de barriles diarios en décadas anteriores hasta poco menos de 1 millón en la actualidad, como consecuencia 
+                        de la mala gestión, las sanciones internacionales y el progresivo deterioro de la infraestructura petrolera.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       Aunque el volumen actual de petróleo venezolano en el mercado global es relativamente marginal, <b>su enorme potencial sigue pesando sobre las 
+                       estrategias de las potencias energéticas</b>. Poco después de la captura de Maduro, el presidente estadounidense <b>Donald Trump</b> declaró que Estados 
+                       Unidos planea “administrar temporalmente” Venezuela y permitir que grandes empresas petroleras estadounidenses reconstruyan y exploten sus 
+                       reservas, en un intento por recuperar riqueza para el país y, supuestamente, <b>“revitalizar” la industria petrolera venezolana</b>.                   
+                                        
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">
+                       Este discurso reactivó los debates sobre las verdaderas motivaciones del gobierno de Trump. Si bien se esgrimen razones vinculadas a la 
+                       seguridad —como la lucha contra el narcotráfico y la restauración de la democracia—, <b>la relevancia estratégica del petróleo venezolano y los 
+                       intereses de las grandes petroleras aparecen como factores constantes en la narrativa política y económica del caso</b>.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Donald Trump: ¿estrategia regional o intereses energéticos?</b><br>                   
+                       La intervención se produce en un contexto en el que Trump ha señalado de manera reiterada que su administración busca asegurar recursos 
+                       energéticos y <b>posicionar a Estados Unidos como potencia dominante en el mercado petrolero global</b>. Sus declaraciones posteriores a la 
+                       operación subrayaron la intención de que empresas como Chevron, ExxonMobil o ConocoPhillips ingresen al sector venezolano para reconstruir 
+                       su capacidad productiva, incluso sugiriendo mecanismos para compensar costos o inversiones de estas firmas con ingresos petroleros futuros.                                       
+                    </p>                        
+                </div>                         
+                
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       Este enfoque —defendido por sectores de la base política de Trump como coherente con la defensa de los intereses estadounidenses— representa 
+                       una <b>reinterpretación del discurso “America First”</b>, que ahora habilita la intervención directa para asegurar activos estratégicos. Como 
+                       consecuencia, se han generado tensiones con gobiernos latinoamericanos, particularmente con aquellos críticos de la intervención directa, y se 
+                       han reavivado las preocupaciones sobre una <b>renovada influencia estadounidense en la región</b>.                                      
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Impactos en el mercado petrolero global y el precio del crudo</b><br>                       
+                       En el mercado energético internacional, los efectos de la crisis venezolana han sido mixtos. En el corto plazo, el repunte de precios fue 
+                       moderado y algunas referencias petroleras globales —como el Brent— registraron ajustes al alza ante expectativas de una mayor oferta futura. 
+                       Sin embargo, <b>el potencial de una oferta adicional significativa desde Venezuela dependerá de décadas de inversión y reconstrucción de 
+                       infraestructura</b>, lo que limita cualquier impacto inmediato.                                       
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       Analistas advierten que, si bien los movimientos geopolíticos pueden generar episodios de volatilidad, <b>el equilibrio estructural del mercado 
+                       energético global sigue dominado por múltiples fuentes de producción</b>, así como por la transición hacia energías alternativas. En ese marco, 
+                       los efectos sobre los precios no necesariamente serán disruptivos en el corto plazo.                                       
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Vaca Muerta: riesgos y oportunidades para Neuquén</b>
+                       <br>
+                       Para Neuquén y la Argentina, la caída de Maduro y la potencial reconfiguración del mercado petrolero plantean un escenario con múltiples aristas:<br>
+                        <br>
+                        1· <b>Presión sobre los precios internacionales del crudo</b><br>
+
+                        Algunas consultoras advierten que la expectativa de un eventual incremento de la producción venezolana podría <b>sumar presión a la baja sobre 
+                        los precios del petróleo</b>, afectando la competitividad de recursos no convencionales como Vaca Muerta, cuya rentabilidad es especialmente 
+                        sensible a las cotizaciones internacionales.<br>
+
+                        2· <b>Redirección de inversiones energéticas</b><br>
+
+                        Si el nuevo marco geopolítico incentivara una reorientación de capitales hacia Venezuela por parte de petroleras norteamericanas, podría 
+                        generarse una <b>competencia indirecta por la asignación de inversiones</b>, que en otro contexto habrían sido destinadas a proyectos no 
+                        convencionales en la Argentina.<br>
+
+                        3· <b>Mecanismos de resiliencia y diversificación</b><br>
+
+                        Al mismo tiempo, Vaca Muerta ha consolidado una presencia significativa en las exportaciones energéticas, contribuyendo a la generación de 
+                        divisas y al fortalecimiento del sector hidrocarburífero nacional. <b>La Argentina tiene la oportunidad de posicionarse como proveedor confiable
+                         e independiente</b>, aprovechando su estabilidad institucional en comparación con el complejo escenario venezolano.                                       
+                    </p>                        
+                </div>
+     
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Conclusiones estratégicas</b>
+                       <br>
+                       La caída de Maduro y la intervención estadounidense representan <b>una nueva fase en la relación entre la geopolitización del petróleo y la 
+                       política en América Latina</b>. Las declaraciones y acciones de Trump sugieren que, más allá del discurso de seguridad, <b>el acceso y el control 
+                       de recursos energéticos estratégicos ocupan un rol central en la agenda estadounidense</b>, con impacto directo sobre las dinámicas regionales.                                      
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-27">
+                    <p id="turismo">                       
+                       Para Neuquén, el desafío será <b>adaptarse a un entorno internacional en reconfiguración</b>, donde los precios del crudo pueden enfrentar 
+                       presiones a la baja, pero donde también la diversificación, la inversión extranjera y la consolidación de Vaca Muerta como actor clave pueden 
+                       generar <b>resiliencia y ventajas comparativas en el largo plazo</b>.                                      
+                    </p>                        
+                </div>
+           
+                                
+                <span id="leermenos27"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
@@ -332,24 +509,6 @@
             </div>
             <br>
             <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             <script> 
