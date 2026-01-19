@@ -228,6 +228,228 @@
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas28 = document.getElementById("toggleText28");
+                    const leerMenos28 = document.getElementById("leermenos28");
+                    const textosOcultos28 = document.querySelectorAll("#oculto-28");
+                    let visible28 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos28.forEach(texto28 => texto28.style.display = "none");
+                    leerMenos28.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas28.addEventListener("click", function () {
+                        visible28 = true;
+
+                        textosOcultos28.forEach(texto28 => texto28.style.display = "block");
+                        leerMas28.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos28.textContent = "Mostrar menos...";
+                        leerMenos28.style.color = "#7E6BA0";
+                        leerMenos28.style.display = "block";
+                        leerMenos28.style.cursor = "pointer";
+                        leerMenos28.style.fontWeight = "bold";
+                    });
+
+                    leerMenos28.addEventListener("click", function () {
+                        visible28 = false;
+
+                        textosOcultos28.forEach(texto28 => texto28.style.display = "none");
+                        leerMas28.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos28.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Presupuesto, gobernanza y cuidado de la vida: una oportunidad estratégica para Neuquén</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/ChatGPT_Image_19_ene_2026.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 12px;">                   
+                        <p id="turismo">
+                           El <b>Presupuesto Provincial 2026</b> no es únicamente una herramienta financiera: es una <b>decisión política estructural</b> que expresa prioridades, 
+                           organiza capacidades estatales y anticipa el modelo de desarrollo que una provincia decide construir. En un contexto nacional atravesado 
+                           por restricciones fiscales y crecientes demandas sociales, <b>Neuquén</b> presenta una singularidad relevante: cuenta con <b>condiciones 
+                           institucionales, fiscales y de gobernanza</b> que permiten avanzar hacia políticas públicas integradas, orientadas a resultados y con 
+                           fuerte anclaje territorial.                                                                        
+                        </p>                        
+                        <span id="toggleText28" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">
+                        Desde una perspectiva de <b>análisis presupuestario y políticas públicas</b>, el desafío actual no radica en identificar los problemas —la evidencia 
+                        disponible es contundente— sino en <b>diseñar arreglos institucionales inteligentes</b> que permitan abordarlos de manera transversal, eficiente y 
+                        sostenible.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">La prevención del suicidio como problema público transversal</b><br> 
+                       <b>La prevención del suicidio</b>, especialmente en adolescentes y jóvenes, constituye uno de los desafíos más complejos de la agenda pública 
+                       contemporánea. Su carácter <b>multicausal</b> excede ampliamente al sistema de salud y pone de manifiesto la necesidad de <b>intervenciones 
+                        integrales</b>, que articulen salud, educación, desarrollo social, niñez, juventudes, empleo y comunidad.                                       
+                    
+                        Se trata de un <b>problema público paradigmático</b>:<br>
+                        ·&ensp; No reconoce fronteras sectoriales.<br>                 
+
+                        ·&ensp; No se resuelve con una única política.<br>                    
+
+                        ·&ensp; No admite respuestas tardías ni fragmentadas.<br>
+                
+                        Precisamente por estas características, la prevención del suicidio resulta especialmente adecuada para <b>ensayar nuevas arquitecturas de 
+                        gobernanza presupuestaria.</b>
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Qué muestra el Presupuesto 2026 de Neuquén</b><br>                   
+                       El <b>Presupuesto 2026</b> incorpora programas vinculados a <b>salud mental, adicciones, adolescencia y niñez</b> bajo una lógica de <b>Presupuesto Orientado 
+                       a Resultados</b>, lo que constituye una fortaleza institucional significativa. Este enfoque permite identificar políticas, objetivos y 
+                       responsables.                                      
+                    
+                        Sin embargo, el análisis comparativo evidencia una limitación estructural persistente en el sector público argentino:<br>
+                        ·&ensp; Programas que existen, pero operan de manera aislada.<br>                 
+
+                        ·&ensp; Recursos que se asignan, pero no convergen estratégicamente.<br>                    
+
+                        ·&ensp; Metas que se formulan, pero no dialogan entre sí.<br>
+                   
+                        El resultado es un Estado activo, aunque <b>fragmentado</b>, con dificultades para generar impacto sostenido frente a problemas complejos.
+                    </p>                        
+                </div>                         
+                
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">
+                        <b style="font-size: large;">Neuquén y sus ventajas comparativas</b><br>
+                        Neuquén posee ventajas que no todas las jurisdicciones comparten: <b>capacidad de conducción política, orden fiscal relativo y experiencia 
+                        en planificación presupuestaria</b>. Estas condiciones habilitan un salto cualitativo: pasar de la coordinación informal a la <b>integración 
+                        estratégica de políticas públicas.</b><br>
+                        En este marco, emerge una oportunidad concreta: la implementación de un <b>Programa Espejo Provincial</b> como herramienta presupuestaria y de 
+                        gestión, orientada a <b>alinear recursos, metas e intervenciones de distintos ministerios</b> frente a un objetivo común.                   
+                                                             
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">El programa espejo como solución estructural</b><br>                       
+                       El <b>programa espejo</b> no implica crear más burocracia ni incrementar el gasto público. Su valor reside en ordenar estratégicamente 
+                       lo que ya existe.<br>
+
+                       Aplicado a la <b>prevención del suicidio</b>, este enfoque permitiría:<br>
+                        ·&ensp;Identificar programas vigentes en salud, educación, niñez, desarrollo social y juventudes.<br>                 
+
+                        ·&ensp;Alinear créditos presupuestarios bajo un objetivo transversal único.<br>                    
+
+                        ·&ensp;Definir <b>metas comunes, indicadores compartidos y responsabilidades claras</b>.<br>
+
+                        ·&ensp;Reorientar recursos hacia acciones preventivas y territoriales de alto impacto.<br>
+                       
+                        La clave no está en el ministerio ejecutor, sino en la <b>conducción política del conjunto.</b>
+
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">
+                        <b style="font-size: large;">Jefatura de Gabinete como nodo estratégico</b><br>                    
+                        Desde el punto de vista institucional, la <b>Jefatura de Gabinete</b> se presenta como el ámbito natural para liderar esta estrategia, 
+                        no como ejecutora sectorial, sino como órgano de <b>coordinación, planificación y evaluación</b>. Su rol permitiría:<br>
+                        ·&ensp; Asegurar coherencia entre políticas públicas.<br>                 
+
+                        ·&ensp; Monitorear resultados transversales.<br>                    
+
+                        ·&ensp; Introducir correcciones en tiempo real.<br>
+
+                        ·&ensp; Rendir cuentas sobre impactos concretos.<br>
+                        Este esquema fortalece la <b>gobernanza</b>, evita superposiciones y eleva la <b>calidad del gasto público</b>.                                     
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">
+                        <b style="font-size: large;">Una experiencia piloto con potencial expansivo</b><br>                    
+                        La prevención del suicidio puede y debe funcionar como <b>caso piloto</b> de este enfoque. No solo por la urgencia del problema, sino porque 
+                        permite demostrar que <b>otra forma de gestionar el presupuesto es posible</b>.<br>
+                        Una vez validado, el esquema resulta plenamente replicable en otras problemáticas transversales:
+                                         
+
+                        ·&ensp; Niñeces y adolescencias.<br>                    
+
+                        ·&ensp; Violencias.<br>
+
+                        ·&ensp; Consumos problemáticos.<br>
+
+                        ·&ensp; Empleo joven.<br>
+
+                        ·&ensp; Desarrollo territorial equilibrado.<br>
+                                                      
+                    </p>                        
+                </div>
+     
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Presupuesto como herramienta de transformación</b>
+                       <br>
+                       Neuquén se encuentra en una posición estratégica para liderar una experiencia innovadora de <b>gestión pública subnacional</b>. No se trata 
+                       de crear nuevas políticas, sino de <b>gobernar mejor las que ya existen</b>. No de gastar más, sino de <b>gastar con sentido estratégico</b>.                                      
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-28">
+                    <p id="turismo">                       
+                       Cuando el presupuesto deja de ser un ejercicio administrativo y se convierte en una <b>herramienta de conducción política</b>, el Estado 
+                       recupera capacidad transformadora. Y cuando esa transformación se orienta al <b>cuidado de la vida</b>, el impacto trasciende una gestión y 
+                       se consolida como <b>política de Estado.</b>.                                      
+                    </p>                        
+                </div>
+           
+                                
+                <span id="leermenos28"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
                     const leerMas27 = document.getElementById("toggleText27");
                     const leerMenos27 = document.getElementById("leermenos27");
                     const textosOcultos27 = document.querySelectorAll("#oculto-27");
