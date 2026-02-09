@@ -209,13 +209,13 @@ a:hover a:link a:visited {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3rem;
+  padding: 2rem;
 }
 .home p {
   font-size:small;
   text-align: justify;
   color: white;
-  font-weight: 600;
+  font-weight: 330;
 }
 .home .titulo {
   font-size: large;  
@@ -236,10 +236,10 @@ a:hover a:link a:visited {
 .home img {
 width: 60%;
 min-width: 300px; /* Ajusta este valor según el tamaño deseado de la imagen */
-margin: 45px auto; 
+margin: 62px auto; 
 }
 .home div {
-margin-top: 125px;
+margin-top: 58px;
 }
 /* Media query para dispositivos móviles */
 @media (max-width: 800px) {
@@ -254,11 +254,11 @@ margin-top: 125px;
 }
 @media (max-width: 500px) {
 .home {    
-    padding: 2rem;
+    padding: 1rem;
 }
 .home img {
     width: 80%;
-    min-width: 220px; /* Puedes ajustar este valor para dispositivos móviles */      
+    min-width: 110px; /* Puedes ajustar este valor para dispositivos móviles */      
 }  
 .home div {
   margin-top: 0px;
@@ -268,6 +268,7 @@ margin-top: 125px;
 }
 .home p {
   font-size: smaller;
+  font-weight: 200;
   text-align: justify;
 }
 }
