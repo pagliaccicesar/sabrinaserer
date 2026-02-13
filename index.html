@@ -249,6 +249,138 @@
 
   <section id="evento">
         <div class="container">
+
+
+             <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas30 = document.getElementById("toggleText30");
+                    const leerMenos30 = document.getElementById("leermenos30");
+                    const textosOcultos30 = document.querySelectorAll("#oculto-30");
+                    let visible30 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos30.forEach(texto30 => texto30.style.display = "none");
+                    leerMenos30.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas30.addEventListener("click", function () {
+                        visible30 = true;
+
+                        textosOcultos30.forEach(texto30 => texto30.style.display = "block");
+                        leerMas30.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos30.textContent = "Mostrar menos...";
+                        leerMenos30.style.color = "#7E6BA0";
+                        leerMenos30.style.display = "block";
+                        leerMenos30.style.cursor = "pointer";
+                        leerMenos30.style.fontWeight = "bold";
+                    });
+
+                    leerMenos30.addEventListener("click", function () {
+                        visible30 = false;
+
+                        textosOcultos30.forEach(texto30 => texto30.style.display = "none");
+                        leerMas30.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos30.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Reforma laboral en Argentina: el nuevo contrato social del trabajo y el corrimiento silencioso del riesgo.</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/A_digitally_created_composite_photograph_features_.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 12px;">                   
+                        <p id="turismo">
+                           <b>No es una reforma técnica: es una definición de poder</b><br>
+                           La reforma laboral en Argentina impulsada por el gobierno de Javier Milei no puede leerse como un simple aggiornamento normativo. 
+                           Se trata de una decisión política estructural que redefine el vínculo entre <b>Estado, mercado y trabajo</b>.                                  
+                        </p>                        
+                        <span id="toggleText30" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-30">
+                    <p id="turismo">
+                        El eje deja de ser la protección del empleo y pasa a centrarse en la reducción del costo laboral y del riesgo empresario. El mensaje 
+                        político es claro: el mercado ordena, el Estado se retira y el trabajador se adapta.<br>
+                        <b>Del salario como derecho al salario como variable contingente</b><br>
+                        Uno de los cambios más sensibles es el nuevo esquema de ingresos frente a enfermedad o accidente.<br>
+                        La reforma habilita situaciones en las que:<br>
+                        <b>Una lesión no laboral podría implicar percibir solo el 50% del salario.</b><br>
+                        <b>Una enfermedad grave podría garantizar apenas el 75% del ingreso.</b><br>
+                        Este punto marca un quiebre profundo: el salario como derecho garantizado pasa a convertirse en una variable condicionada al estado 
+                        físico del trabajador. Enfermarse deja de ser una contingencia social protegida y pasa a ser un riesgo individual.<br>
+                        <b>En términos políticos, el ajuste se traslada al cuerpo.</b><br>
+                        <b>Cambio de paradigma: de la protección a la flexibilidad</b><br>
+                        La Ley de Contrato de Trabajo se construyó sobre un principio central: el trabajador es la parte estructuralmente más débil y debe ser protegido.<br>
+                        La reforma propone un esquema diferente:<br>
+                        Más “libertad contractual”, pero mayor desigualdad estructural.<br>
+                        Menor estabilidad laboral.<br>
+                        Esquemas alternativos de indemnización.<br>
+                        Coberturas parciales ante contingencias.<br>
+                        No es solo una modificación jurídica. <b>Es un cambio de paradigma en el modelo laboral argentino.</b><br>
+                        Impacto económico y previsional: el costo diferido<br>
+                        <b>Para el sector privado, los beneficios son evidentes:</b><br>
+                        ✔ <b>menor litigiosidad</b><br>
+                        ✔ <b>mayor previsibilidad financiera</b><br>
+                        ✔ <b>reducción de costos indirectos</b><br>
+                        <b>Para los trabajadores, el saldo es distinto:</b><br>
+                        ✖ <b>mayor precarización laboral</b><br>
+                        ✖ <b>ingresos más inestables</b><br>
+                        ✖ <b>incertidumbre estructural</b><br>
+                        Además, menores salarios y trayectorias laborales fragmentadas impactan directamente en el sistema previsional argentino, 
+                        generando <b>jubilaciones futuras más bajas</b>.<br>
+                        El ahorro fiscal presente puede transformarse en <b>pasivo previsional futuro.</b><br>
+                        <b>Gobernanza laboral y debilitamiento institucional</b><br>
+                        La reforma también redefine el rol de los sindicatos y la negociación colectiva, <b>favoreciendo acuerdos individuales por sobre convenios 
+                        sectoriales.</b><br>
+                        Esto no es solo un debate gremial. Es una cuestión de gobernanza institucional: sin actores colectivos fuertes, el Estado pierde capacidad de 
+                        ordenar el conflicto y regular el mercado de trabajo.<br>
+                        <b>Conclusión: quién asume el riesgo del modelo</b><br>
+                        La reforma laboral no elimina derechos de manera explícita. Los redefine, los condiciona y los vuelve inciertos.<br>
+                        <b>El trabajador deja de ser sujeto protegido y pasa a ser gestor individual de su propio riesgo.</b><br>
+                        La discusión de fondo es estratégica:<br>
+                        <b>¿Qué modelo de desarrollo queremos? ¿Quién lo financia? ¿Quién asume el riesgo?</b><br>
+                        Porque cuando el ajuste deja de ser fiscal y se vuelve corporal, el costo no desaparece. Se acumula.
+                    </p>                        
+                </div>
+
+                
+           
+                                
+                <span id="leermenos30"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
                     const leerMas29 = document.getElementById("toggleText29");
