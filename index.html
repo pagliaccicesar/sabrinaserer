@@ -251,6 +251,216 @@
         <div class="container">
 
 
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas31 = document.getElementById("toggleText31");
+                    const leerMenos31 = document.getElementById("leermenos31");
+                    const textosOcultos31 = document.querySelectorAll("#oculto-31");
+                    let visible31 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos31.forEach(texto31 => texto31.style.display = "none");
+                    leerMenos31.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas31.addEventListener("click", function () {
+                        visible31 = true;
+
+                        textosOcultos31.forEach(texto31 => texto31.style.display = "block");
+                        leerMas31.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos31.textContent = "Mostrar menos...";
+                        leerMenos31.style.color = "#7E6BA0";
+                        leerMenos31.style.display = "block";
+                        leerMenos31.style.cursor = "pointer";
+                        leerMenos31.style.fontWeight = "bold";
+                    });
+
+                    leerMenos31.addEventListener("click", function () {
+                        visible31 = false;
+
+                        textosOcultos31.forEach(texto31 => texto31.style.display = "none");
+                        leerMas31.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos31.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Ley de Glaciares: por qué este debate definirá el futuro de la Patagonia</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 50%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/GLACIARES_WEB.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 4px;">                   
+                        <p id="turismo">
+                           Hoy el Congreso de la Nación discute una reforma al régimen de la <b>Ley 26.639 de Protección de Glaciares</b> y del Ambiente Periglacial. 
+                           Este debate va más allá de un cambio normativo: pone en juego la <b>seguridad hídrica</b>, la <b>sustentabilidad ambiental</b> y la <b>gestión 
+                           eficiente de los recursos públicos</b> en una región que enfrenta <b>desafíos climáticos</b> crecientes.                                  
+                        </p>                        
+                        <span id="toggleText31" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-31">
+                    <p id="turismo">
+                       
+                        <b style="font-size: large;">Contexto: qué se propone y qué está en juego</b><br>
+                        El proyecto de modificación busca redefinir los criterios de <b>protección territorial</b>, reduciendo el alcance sobre <b>ambientes periglaciales</b> y 
+                        delegando mayor grado de decisión a las provincias. Este cambio, si bien se presenta como una mejora regulatoria para facilitar 
+                        inversiones, altera sustancialmente el equilibrio entre <b>protección ambiental</b> y <b>desarrollo económico</b>.<br>
+                        Desde mi experiencia en <b>gestión por resultados y administración financiera pública</b>, sostengo que las <b>políticas ambientales</b> sólidas
+                         no son frenos al desarrollo: son condiciones estructurales para un <b>crecimiento sustentable</b> y predecible.<br>
+                         <br>
+
+                        <b style="font-size: large;">Oportunidad estratégica: consolidar la seguridad hídrica.</b><br>
+                        En la <b>Patagonia</b>, los <b>glaciares</b> no son un paisaje remoto o decorativo: son <b>depósitos de agua dulce</b> esenciales para:<br>
+                        ·&ensp;El abastecimiento urbano y rural<br>
+
+                        ·&ensp;La producción agropecuaria en cuencas clave<br>
+
+                        ·&ensp;El balance hídrico en un contexto de <b>variabilidad climática</b> creciente<br>
+
+                        Desde una perspectiva de <b>gestión pública orientada a resultados</b>, preservar estos <b>reservorios naturales</b> fortalece la <b>resiliencia 
+                        de las políticas públicas</b> y reduce futuros <b>costos fiscales</b> asociados a sequías, traslados de agua y mitigación de crisis.<br>
+                        <br>
+                        
+                        <b style="font-size: large;">Oportunidad de innovación en administración financiera del sector público</b><br>
+                        Una <b>normativa ambiental</b> robusta abre puertas para <b>instrumentos financieros sostenibles</b>:<br>
+                        ·&ensp;<b>Fondos fiduciarios</b> para conservación de cuencas y ecosistemas<br>
+
+                        ·&ensp;<b>Incentivos fiscales</b> para inversiones verdes que respeten límites ambientales<br>
+
+                        ·&ensp;<b>Pagos por servicios ambientales</b> que internalicen el valor del capital natural<br>
+
+
+                        Integrar estos mecanismos en los <b>procesos presupuestarios</b> y <b>planes estratégicos</b> significa maximizar <b>resultados sociales y ambientales</b> 
+                        por cada peso invertido, una meta central en la <b>gestión financiera pública eficiente</b>.<br>
+
+                        <br>
+
+
+                       <b style="font-size: large;">Amenaza crítica: debilitamiento de la protección de ecosistemas</b><br>
+                        La apertura de sectores del <b>ambiente periglacial</b> a actividades extractivas sin criterio científico uniforme genera riesgos concretos:<br>
+                        
+                        ·&ensp;Pérdida irreversible de <b>servicios ecosistémicos</b><br>
+
+                        ·&ensp;Amenaza sobre <b>biodiversidad</b> emblemática de la Patagonia<br>
+
+                        ·&ensp;Fragmentación de hábitats con impacto en <b>economías locales</b> vinculadas al <b>turismo sustentable</b><br>
+
+
+                        Desde mi rol de asesora en <b>gestión por resultados</b>, sostengo que los <b>costos de deterioro ambiental</b> superan en largo plazo 
+                        los supuestos beneficios de proyectos de corto plazo cuando no están alineados con criterios claros de <b>sostenibilidad</b>.<br>
+
+
+                        <br>
+
+                        <b style="font-size: large;">Amenaza para la predictibilidad en la gestión pública</b><br>
+                        La delegación de decisiones ambientales clave a múltiples jurisdicciones sin <b>estándares mínimos nacionales</b> crea:<br>
+                        
+                        ·&ensp;<b>Fragmentación normativa</b>, dificultando inversiones planificadas a largo plazo<br>
+
+                        ·&ensp;Mayor <b>riesgo legal</b> e incertidumbre regulatoria, que encarece proyectos públicos y privados<br>
+
+                        ·&ensp;Debilidad en la <b>gobernanza ambiental</b>, afectando la capacidad de monitoreo y <b>rendición de cuentas</b><br>
+
+
+                        Este tipo de escenarios contradice los principios de una <b>administración pública eficiente</b> y orientada a resultados, 
+                        donde la claridad de reglas y la predictibilidad son insumos básicos para la toma de decisiones.<br>
+
+                        <br>
+
+                        <b style="font-size: large;">Integrar ambiente y resultados: un llamado a la acción</b><br>
+                        La <b>Patagonia</b> puede —y debe— liderar un modelo distinto de desarrollo:<br>
+                        
+                        ·&ensp;<b>Protección del capital natural</b> como prioridad estratégica: no negociable para <b>seguridad hídrica</b> y calidad de vida<br>
+
+                        ·&ensp;<b>Marco regulatorio</b> claro y basado en ciencia: para atraer inversiones con garantías de sustentabilidad<br>
+
+                        ·&ensp;<b>Herramientas financieras</b> e institucionales modernas: que incorporen impacto ambiental como criterio en la asignación de recursos<br>
+
+                        ·&ensp;<b>Gestión pública con mirada de largo plazo</b>: que conecte <b>planificación estratégica</b>, presupuesto y monitoreo 
+                        de <b>resultados ambientales</b><br>
+
+                        <br>
+
+                        <b style="font-size: large;">Conclusión</b><br>
+                        La Patagonia no es periferia: es <b>reserva estratégica</b> de agua dulce, biodiversidad y estabilidad climática para toda la Argentina. 
+                        Y cuando se discute la protección de sus <b>glaciares</b>, no se debate una norma sectorial; se debate el <b>modelo de desarrollo</b> que el Estado 
+                        decide financiar, promover y legitimar.<br>
+
+                        Un país que debilita sus <b>activos ambientales críticos</b> compromete su <b>soberanía hídrica</b>, su previsibilidad fiscal y su capacidad de 
+                        generar <b>valor público sostenible</b>. Desde la <b>gestión por resultados</b> sabemos que los costos diferidos del deterioro ambiental 
+                        siempre terminan impactando en el presupuesto, en la infraestructura y en la calidad de vida.<br>
+
+                        La Argentina necesita reglas claras, visión de largo plazo y coherencia entre planificación estratégica, presupuesto y 
+                        sostenibilidad. Necesita liderazgo político que entienda que el capital natural no es un obstáculo, sino un activo estratégico que 
+                        debe ser gestionado con responsabilidad intergeneracional.<br>
+                        
+                        Porque el verdadero desarrollo no se mide solo en exportaciones o en inversiones de corto plazo: se mide en la capacidad del 
+                        Estado de proteger lo esencial, garantizar derechos y construir un futuro viable para las próximas generaciones.<br>
+
+                        Y en ese horizonte, <b>defender los glaciares</b> es defender soberanía, previsibilidad y <b>desarrollo inteligente</b> para la Nación.
+                       
+                      
+
+
+                  
+
+
+
+
+
+
+
+
+                    </p>
+                        
+                </div>
+
+                
+           
+                                
+                <span id="leermenos31"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
              <script> 
                 document.addEventListener("DOMContentLoaded", function () {
                     const leerMas30 = document.getElementById("toggleText30");
