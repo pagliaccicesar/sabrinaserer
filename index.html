@@ -251,6 +251,242 @@
         <div class="container">
 
 
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas32 = document.getElementById("toggleText32");
+                    const leerMenos32 = document.getElementById("leermenos32");
+                    const textosOcultos32 = document.querySelectorAll("#oculto-32");
+                    let visible32 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos32.forEach(texto32 => texto32.style.display = "none");
+                    leerMenos32.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas32.addEventListener("click", function () {
+                        visible32 = true;
+
+                        textosOcultos32.forEach(texto32 => texto32.style.display = "block");
+                        leerMas32.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos32.textContent = "Mostrar menos...";
+                        leerMenos32.style.color = "#7E6BA0";
+                        leerMenos32.style.display = "block";
+                        leerMenos32.style.cursor = "pointer";
+                        leerMenos32.style.fontWeight = "bold";
+                    });
+
+                    leerMenos32.addEventListener("click", function () {
+                        visible32 = false;
+
+                        textosOcultos32.forEach(texto32 => texto32.style.display = "none");
+                        leerMas32.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos32.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Neuquén en el centro del tablero: entre la épica productiva y la responsabilidad histórica</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 86%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/Sabri_WEB_3326.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 55px;">                   
+                        <p id="turismo">
+                           La <b>apertura de sesiones legislativas</b> del 1° de marzo dejó una definición que reconfigura el <b>mapa estratégico nacional</b>: el presidente 
+                           Javier Milei afirmó que <b>Neuquén será una de las nuevas metrópolis</b> de la Argentina. No es una frase menor.<br>
+                    
+                           Es una declaración de <b>modelo de país</b>.<br>
+                           <br>
+                      
+                           Desde una perspectiva de <b>gestión pública orientada a resultados</b>, esta afirmación abre <b>oportunidades estructurales</b> —pero también exige 
+                           rigurosidad técnica, institucionalidad sólida y <b>responsabilidad política</b>— si realmente se pretende transformar potencial 
+                           en <b>desarrollo sostenible</b>.                              
+                        </p>                        
+                        <span id="toggleText32" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Un discurso de confrontación en un momento de definición estratégica</b><br> 
+                       La apertura legislativa combinó dos planos bien diferenciados:<br>                
+                        
+                        ·&ensp; Un tono confrontativo hacia la oposición, con múltiples descalificaciones<br>                 
+
+                        ·&ensp; Una narrativa de <b>transformación estructural</b> basada en reformas y expansión exportadora<br>                 
+                
+                        El problema no es solo retórico. Cuando el discurso presidencial adopta un registro agresivo, el efecto no es neutro: 
+                        erosiona consensos, tensiona la <b>convivencia democrática</b> y proyecta hacia el exterior una imagen de <b>fragilidad institucional</b>.<br>
+                        <br>
+                        En términos de <b>gobernanza</b>, la <b>previsibilidad política</b> es un activo macroeconómico. La violencia discursiva, en cambio, 
+                        incrementa el <b>riesgo país</b> simbólico.<br>
+                        <br>
+                        Y en paralelo, mientras se instala el conflicto como eje narrativo, quedan en segundo plano preocupaciones concretas del ciudadano 
+                        común: <b>inflación residual, poder adquisitivo, empleo informal</b> y acceso a servicios básicos.
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">2025: el relato de la estabilización y las reformas</b><br>                   
+                        El Presidente presentó 2025 como el año de la <b>consolidación macroeconómica</b>. Los principales ejes mencionados fueron:<br>       
+                    
+                        ·&ensp;<b>Equilibrio fiscal</b> y reducción del déficit<br>
+                        ·&ensp;Profundización de la <b>reforma laboral</b><br>                          
+
+                        ·&ensp;Apertura comercial y acuerdos internacionales<br>                    
+
+                        ·&ensp;Reducción impositiva gradual<br>
+                        ·&ensp;Expansión del <b>complejo energético</b><br>
+                        <br>    
+                   
+                        Desde el enfoque de <b>administración financiera pública</b>, la pregunta relevante no es solo si se alcanzó el equilibrio contable, 
+                        sino qué <b>calidad de gasto</b> se consolidó, qué <b>impacto distributivo</b> generó y qué <b>resultados verificables</b> produjo en
+                         bienestar ciudadano.<br>
+                         <br>
+                         La <b>estabilidad macro</b> es condición necesaria. Pero no es suficiente si no se traduce en <b>desarrollo inclusivo</b>.
+                    </p>                        
+                </div>                         
+                
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">
+                        <b style="font-size: large;">Neuquén: de provincia energética a metrópolis estratégica</b><br>
+                        Aquí aparece el punto neurálgico del discurso: el posicionamiento del <b>Gran Neuquén</b> como nuevo epicentro productivo nacional.<br>
+                        <br>
+                        El argumento central se apoya en:
+                        ·&ensp;La expansión de <b>Vaca Muerta</b> como motor exportador
+                        ·&ensp;El crecimiento del <b>complejo hidrocarburífero</b><br>                          
+
+                        ·&ensp;El desarrollo minero cordillerano<br>                    
+
+                        ·&ensp;La consolidación de <b>infraestructura energética</b><br>
+                        <br>
+                        Si esta proyección se materializa, Neuquén no solo sería un <b>polo energético</b>, sino un nodo logístico, financiero, tecnológico y urbano 
+                        de <b>escala nacional</b>.<br>
+                        <br>
+                        Esto implica una <b>mutación estructural</b> en la matriz productiva de la Argentina.
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Impacto real para la provincia: ¿qué significan estos anuncios en términos concretos?</b><br>                       
+                       Si se ejecuta con <b>planificación estratégica</b>, los resultados esperables podrían traducirse en:<br>
+
+                      
+                        1&ensp;·&ensp;<b>Incremento de recursos fiscales provinciales</b> Mayores <b>regalías</b>, mayor recaudación indirecta y posibilidad de 
+                        ampliar <b>inversión pública</b> en infraestructura social.<br>                 
+
+                        2&ensp;·&ensp;<b>Transformación urbana acelerada</b> Expansión demográfica, presión sobre vivienda, transporte, salud y 
+                        educación. Sin <b>planificación territorial</b>, el crecimiento puede convertirse en desorden.<br>                    
+
+                        3&ensp;·&ensp;<b>Demanda de capital humano especializado</b> Mayor necesidad de <b>formación técnica</b> y profesional 
+                        vinculada a energía, ingeniería, logística y servicios asociados.<br>
+
+                        4&ensp;·&ensp;<b>Tensión ambiental y social</b> El desarrollo extractivo exige <b>gobernanza ambiental</b> robusta, 
+                        mecanismos de participación y políticas de mitigación.<br>
+                       
+                        Neuquén puede convertirse en metrópolis. Pero sin <b>diseño institucional</b>, puede convertirse en enclave.
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">
+                        <b style="font-size: large;">La oportunidad histórica: matriz productiva con valor agregado</b><br>                    
+                        Para que Neuquén no sea solo exportadora de recursos primarios, el salto estratégico debe incluir:<br>
+                        ·&ensp; Desarrollo de <b>cadenas de valor locales</b><br>                 
+
+                        ·&ensp; Industrialización asociada al complejo energético<br>                    
+
+                        ·&ensp; <b>Fondo anticíclico provincial</b><br>
+
+                        ·&ensp; Estrategia de <b>diversificación productiva</b><br>
+
+                        ·&ensp; Políticas de <b>innovación tecnológica</b><br>
+
+                        La metrópolis no se define por volumen de exportaciones, sino por <b>densidad institucional, capital humano y calidad de vida.</b>                  
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">
+                        <b style="font-size: large;">El riesgo: crecimiento sin cohesión social</b><br>                    
+                        Mientras se proyecta a Neuquén como centro neurálgico del nuevo <b>mapa productivo</b>, el discurso presidencial omitió una 
+                        <b>agenda social concreta</b> para el ciudadano promedio que hoy enfrenta:<br>
+                        ·&ensp; Dificultades para llegar a fin de mes<br>                 
+
+                        ·&ensp; Fragilidad laboral<br>                    
+
+                        ·&ensp; Incremento del costo de vida<br>
+
+                        ·&ensp; Brechas territoriales<br>                      
+
+                        El <b>desarrollo sin cohesión social</b> es frágil. La estabilidad sin inclusión es transitoria.              
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">
+                        <b style="font-size: large;">Neuquén como motor nacional: responsabilidad política y visión de futuro</b><br>                    
+                       Neuquén tiene condiciones objetivas para convertirse en una <b>>metrópolis estratégica</b> del siglo XXI. Recursos naturales, 
+                       ubicación geopolítica, capital humano en expansión y un <b>ecosistema productivo</b> dinámico.<br>
+                       <br>
+                       Pero el verdadero diferencial no será el petróleo ni el gas. Será la capacidad de articular:<br>
+                        ·&ensp; <b>Planificación estratégica</b><br>                 
+
+                        ·&ensp; <b>Presupuesto orientado a resultados</b><br>                    
+
+                        ·&ensp; <b>Gestión pública eficiente</b><br>
+
+                        ·&ensp; <b>Gobernanza ambiental</b> responsable<br>
+                        
+                        ·&ensp; <b>Inclusión social</b> sostenida<br> 
+
+                        La historia ofrece pocas oportunidades de redefinir el rol de una provincia en el esquema nacional. Esta es una.<br>
+                        <br>
+                        Neuquén puede liderar la nueva <b>matriz productiva argentina</b>.<br>
+                        <br>
+                        La pregunta no es si crecerá. La pregunta es <b>cómo crecerá, para quiénes y con qué institucionalidad</b>.<br>
+                        <br>
+                        Y ahí se juega el verdadero futuro.
+                    </p>                        
+                </div>
+           
+                                
+                <span id="leermenos32"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
                     const leerMas31 = document.getElementById("toggleText31");
