@@ -250,6 +250,294 @@
   <section id="evento">
         <div class="container">
 
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas33 = document.getElementById("toggleText33");
+                    const leerMenos33 = document.getElementById("leermenos33");
+                    const textosOcultos33 = document.querySelectorAll("#oculto-33");
+                    let visible33 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos33.forEach(texto33 => texto33.style.display = "none");
+                    leerMenos33.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas33.addEventListener("click", function () {
+                        visible33 = true;
+
+                        textosOcultos33.forEach(texto33 => texto33.style.display = "block");
+                        leerMas33.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos33.textContent = "Mostrar menos...";
+                        leerMenos33.style.color = "#7E6BA0";
+                        leerMenos33.style.display = "block";
+                        leerMenos33.style.cursor = "pointer";
+                        leerMenos33.style.fontWeight = "bold";
+                    });
+
+                    leerMenos33.addEventListener("click", function () {
+                        visible33 = false;
+
+                        textosOcultos33.forEach(texto33 => texto33.style.display = "none");
+                        leerMas33.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos33.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">8 de marzo: igualdad real y gobernanza estratégica hacia 2030</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 86%; height: auto;padding-top: 15px; padding-bottom: 18px;" src="./img/8M_WEB_CORREGIDA.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 55px;">                   
+                        <p id="turismo">
+                            <b style="font-size: large;">El origen de una lucha que cambió la historia</b><br>
+                           El <b>Día Internacional de la Mujer</b> tiene su origen en uno de los momentos más simbólicos de la <b>historia política</b> del siglo XX.<br>
+                    
+                           El <b>8 de marzo de 1917</b>, miles de mujeres rusas salieron a las calles de Petrogrado reclamando "pan y paz" en medio de la 
+                           Primera Guerra Mundial. Aquella movilización, protagonizada principalmente por <b>obreras textiles</b>, se transformó en una de las 
+                           chispas que desencadenaron la revolución social que cambiaría el rumbo político de Rusia.<br>
+                           <br>
+
+                           Entre sus demandas centrales se encontraba un reclamo profundamente revolucionario para la época: el <b>derecho al voto femenino</b>.<br>                      
+                                                        
+                        </p>                        
+                        <span id="toggleText33" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">                       
+                       Décadas después, la fecha fue institucionalizada globalmente por las <b>Naciones Unidas</b> como una jornada de reflexión sobre las <b>desigualdades 
+                       estructurales</b> que enfrentan las mujeres y sobre el rol de los Estados en la construcción de sociedades más equitativas.<br>
+                       Más de un siglo después, el desafío continúa siendo el mismo: transformar los <b>derechos formales</b> en <b>igualdad real</b>.
+                       
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Violencia de género: el indicador más extremo de desigualdad</b><br>                   
+                        En Argentina, la <b>violencia contra las mujeres</b> continúa siendo uno de los indicadores más dramáticos de <b>desigualdad estructural</b>.<br>
+                        Durante 2025 se registraron más de <b>260 femicidios</b>, lo que equivale aproximadamente a una mujer asesinada cada 33 horas.<br>
+                        Las estadísticas muestran además un patrón persistente:<br>
+                    
+                        ·&ensp;La mayoría de los <b>femicidios</b> ocurre en el <b>ámbito doméstico</b><br>
+                        ·&ensp;En gran parte de los casos el agresor es pareja o expareja</b><br>
+                        ·&ensp;Cientos de niños y niñas quedan <b>huérfanos</b> cada año como consecuencia directa de estos crímenes<br>
+                        
+                        <br>                   
+                        La <b>violencia de género</b> no es únicamente un problema criminal. Es, sobre todo, un problema de <b>arquitectura institucional</b>.<br>
+                         <br>
+                        
+                    </p>                        
+                </div>                         
+                
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">La economía invisible del cuidado</b><br>
+                        Otro de los factores estructurales de desigualdad es la <b>distribución del tiempo</b>.<br>
+                        En Argentina, las mujeres dedican en promedio entre <b>6 y 7 horas diarias</b> al <b>trabajo doméstico y de cuidados no remunerado</b>, 
+                        mientras que los varones dedican aproximadamente 3 horas.<br>
+                        Esto implica que alrededor del <b>75% del trabajo doméstico</b> es realizado por mujeres.<br>
+                        Si ese trabajo fuera contabilizado dentro de la <b>economía formal</b>, representaría cerca del <b>15% del PBI nacional</b>, 
+                        convirtiéndose en uno de los sectores económicos más importantes del país.<br>
+                     
+                     
+                        La desigual distribución del tiempo impacta directamente en:<br>
+                        ·&ensp;Las <b>oportunidades laborales</b><br>
+                        ·&ensp;El <b>desarrollo profesional</b><br>
+                        ·&ensp;La <b>autonomía económica</b><br>                 
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-32">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Educación: la revolución silenciosa de las mujeres</b><br>                       
+                        En el ámbito educativo se ha producido una <b>transformación estructural</b>.<br>
+                        Actualmente, las mujeres representan aproximadamente el <b>60% de la matrícula universitaria</b> en Argentina.<br>
+                        <br>
+                        Las carreras más elegidas por mujeres se concentran en:<br>
+
+                        ·&ensp;Salud</b><br>
+                        ·&ensp;Psicología<br>
+                        ·&ensp;Educación<br>
+                        ·&ensp;Ciencias sociales<br>
+                        ·&ensp;Derecho<br>
+                        <br>
+                       
+                        Sin embargo, los varones continúan predominando en sectores estratégicos como:<br>
+                        ·&ensp;Ingeniería</b><br>
+                        ·&ensp;Informática<br>
+                        ·&ensp;Tecnología<br>
+                        <br>
+                        Esto muestra que la <b>brecha de género</b> ya no se encuentra en el acceso a la educación, sino en las <b>oportunidades 
+                        laborales</b> y <b>los espacios de liderazgo</b>.
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">Liderazgo femenino: avances con techos de cristal</b><br>                    
+                        Argentina ha avanzado en <b>representación política femenina</b>.<br>
+                        Las mujeres ocupan aproximadamente:<br>
+                        ·&ensp; El <b>40% del Congreso Nacional</b><br>
+                        ·&ensp; Cerca del <b>35% de los cargos de decisión</b> en el sector público<br>
+                        <br>                 
+
+                        Sin embargo, en el <b>sector privado</b> la presencia femenina en directorios empresariales sigue siendo inferior al 15%.<br>
+                        Esto revela la persistencia de <b>techos de cristal</b> en los niveles más altos de toma de decisiones.              
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">De la igualdad declarativa a la igualdad gestionada</b><br>                    
+                        Los países que lideran los <b>indicadores globales de igualdad</b> —como Islandia, Noruega y Suecia— no llegaron a esos resultados 
+                        por casualidad.<br>
+                        <br>
+                        Aplicaron políticas públicas sostenidas durante décadas:<br>
+                        ·&ensp; <b>Sistemas universales de cuidado</b><br>
+                        ·&ensp; <b>Licencias parentales compartidas</b><br>
+                        ·&ensp; <b>Paridad política</b><br>
+                        ·&ensp; <b>Presupuestos con perspectiva de género</b><br>                      
+
+                        Según el índice global elaborado por el <b>World Economic Forum</b>, estos países presentan los niveles más altos de igualdad del mundo.       
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">Gobernanza Estratégica Integrada: un nuevo paradigma</b><br>                    
+                       Frente a estos desafíos, la especialista en gestión pública para resultados Cra. Sabrina Serer propone un enfoque innovador basado 
+                       en el Modelo de Gobernanza Estratégica Integrada.<br>
+                       <br>
+                       Este modelo plantea que las políticas públicas deben articular tres dimensiones clave del Estado:<br>
+                        ·&ensp; <b>Planificación estratégica</b><br>
+                        ·&ensp; <b>Presupuesto público</b><br>
+                        ·&ensp; <b>Monitoreo de resultados</b><br>
+                        <br>                        
+
+                        El objetivo es superar la <b>fragmentación institucional</b> y construir políticas públicas orientadas a <b>resultados concretos</b> en 
+                        la ciudadanía.<br>
+                       
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">Presupuesto Espejo: innovación en gestión pública</b><br>                    
+                        Dentro de este enfoque, la Cra. Serer propone el instrumento del <b>Presupuesto Espejo</b>, una metodología que permite visualizar 
+                        de manera transversal todos los recursos del Estado destinados a resolver un <b>problema público</b>.<br>
+                        <br>
+                        El <b>Presupuesto Espejo</b> consiste en:<br>
+                        1.&ensp; Identificar un <b>problema estructural</b> (por ejemplo, violencia de género)<br>
+                        2.&ensp; Mapear todas las <b>políticas públicas</b> que inciden sobre ese problema<br>
+                        3.&ensp; Integrar esos recursos dentro de un <b>espejo presupuestario transversal</b><br>
+                   
+                        Esto permite:<br>
+                        ·&ensp; Mejorar la <b>coordinación entre organismos</b><br>
+                        ·&ensp; Transparentar el <b>gasto público</b><br>
+                        ·&ensp; Evaluar si los recursos realmente generan <b>resultados</b><br>                                              
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">Plan de Igualdad 2030: un enfoque basado en resultados</b><br>                    
+                        Aplicando el <b>Modelo Serer de Gobernanza Estratégica Integrada</b>, es posible diseñar una estrategia de 
+                        igualdad con <b>metas verificables</b>.<br>
+                        <br>
+                        Superar las <b>desigualdades de género</b> requiere transformar las políticas públicas en <b>estrategias medibles</b>. La siguiente matriz 
+                        presenta un conjunto de objetivos, indicadores y metas hacia 2030 que permiten orientar la acción del Estado bajo un enfoque de 
+                        <b>gestión estratégica</b>.
+                        <br>
+                        <b>Cuadro estratégico de políticas públicas para la igualdad de género: objetivos, indicadores y metas hacia 2030</b><br>
+                        <b>Eje estratégico</b><br>
+                        <img src="./img/text_1.png" alt="Sabrina Serer" style="width: 100%; height: auto;">
+
+                        <br>
+
+                        <i>Nota: Elaboración propia de la Cra. Sabrina Serer. Matriz desarrollada en el marco del Modelo Serer de Gobernanza Estratégica 
+                        Integrada aplicado al diseño de políticas públicas orientadas a resultados.</i>                                                                    
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">Índice de Igualdad Estratégica 2030</b><br>                    
+                        Como herramienta de monitoreo, este enfoque propone un nuevo indicador: Índice de Igualdad Estratégica, basado en tres dimensiones.
+                        <br>
+                        Con el objetivo de evaluar la capacidad del Estado para transformar políticas públicas en resultados reales de igualdad, se 
+                        propone el Índice de Igualdad Estratégica, una herramienta analítica que permite monitorear la articulación entre gobernanza 
+                        institucional, asignación presupuestaria e impacto social.<br>
+
+                        <b>Índice de Igualdad Estratégica: dimensiones de medición para el monitoreo de políticas públicas de género</b><br>
+                 
+                        <img src="./img/text_2.png" alt="Sabrina Serer" style="width: 80%; height: auto; position: relative; left: 0; right: 0;">
+
+                        <br>
+
+                        <i>Nota: Elaboración propia de la Cra. Sabrina Serer, en el marco del Modelo Serer de Gobernanza Estratégica Integrada aplicado al diseño 
+                        y monitoreo de políticas públicas orientadas a la igualdad de género.</i>                                                                    
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">Igualdad de género como política de desarrollo</b><br>                    
+                        La <b>igualdad de género</b> no es solamente una agenda de derechos. Es también una <b>estrategia de desarrollo económico y social.</b><br>
+                        <br>                      
+                
+                        Los países que han logrado mayores niveles de igualdad presentan también:<br>
+                        ·&ensp; <b>Economías más innovadoras</b><br>
+                        ·&ensp; Mayores niveles de <b>bienestar social</b><br>
+                        ·&ensp; Mayor <b>productividad económica</b><br>                                              
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-33">
+                    <p id="turismo">
+                        <b style="font-size: large;">📖 Descargá el libro "Diseño y Monitoreo de Políticas Públicas" GRATIS</b><br>                                   
+                        En este libro, la Cra. Sabrina Serer desarrolla en profundidad el <b>Modelo de Gobernanza Estratégica Integrada</b> y las 
+                        herramientas para diseñar políticas públicas orientadas a resultados.<br>
+                        <br>
+
+                        <b style="font-size: large;">Descargá el libro gratis aquí: </b><a href="./img/DISEÑO Y MONITOREO DE POLÍTICAS PÚBLICAS Final Digital Julio 2022 (1).pdf" target="_blank"> Enlace al libro PDF</a><br>
+
+                        <br>
+                        <i>"La igualdad de género no se alcanza únicamente ampliando derechos. Se alcanza cuando el Estado es capaz de diseñar instituciones 
+                            que produzcan resultados. Gobernar el futuro implica planificar estratégicamente, asignar recursos con inteligencia y medir si 
+                            las políticas realmente transforman la vida de las personas. La igualdad no es una consigna: es una arquitectura de políticas 
+                            públicas."</i>
+                        <br>
+                        <b>— Cra. Sabrina Serer</b>
+
+                                                           
+                    </p>                        
+                </div>
+
+
+           
+                                
+                <span id="leermenos33"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
 
 
             <script> 
@@ -469,19 +757,6 @@
             </div>
             <br>
             <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
