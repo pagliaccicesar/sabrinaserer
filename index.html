@@ -99,23 +99,9 @@
   <section class="home">      
      <img class="picself img-thumbnail" src="./img/Sabri_Image_2025.jpeg">
 
-      <div>         
-         <!--<p style="color: #E3BFD6; font-weight: 600; font-size: medium;">¡Hola! 👋 Soy Sabrina, apasionada por construir un futuro mejor para todas las generaciones venideras. 
-            Para mí, ser buena profesional va de la mano de ser una buena persona. Mi objetivo es compartir conocimientos y experiencias, contribuyendo así a mejorar 
-            la gestión pública desde cualquier rol que ocupemos. Sueño con un futuro mejor para nuestros niños y jóvenes, construyendo paso a paso una Argentina 
-            más próspera y justa para todos.</p>-->
-            <!--<p class="titulo">Contadora Pública (UBA) | Especialista en Administración Financiera del Sector Público (UNCo) | Planificación, Gestión y 
-            Monitoreo de Políticas Públicas | Formación y asesoramiento técnico a gobiernos</p>-->
-
+      <div>
             <p class="titulo">Cra. Sabrina Serer</p>
            
-           
-            <!--<p class="frase_1"><i>"Donde otros ven números, yo veo decisiones de vida."</i></p>-->
-        
-            <!--<p>
-                Soy Sabrina Serer y llevo más de dos décadas haciendo algo que me apasiona: transformar el presupuesto público en impacto real para la gente. No trabajo 
-                con cifras frías: trabajo con historias, con necesidades, con sueños colectivos. Desde la coordinación de la Administración Financiera del Ministerio 
-                de Salud de Neuquén, lidero equipos y procesos que convierten recursos en soluciones, con datos, estrategia y transparencia.</p>-->
             <p>Soy una dirigente convencida de que gobernar no es administrar la inercia, sino transformar la realidad con método, decisión y resultados.</p>
             <p>Me especialicé en administración financiera pública, planificación estratégica y análisis de políticas públicas, y construí mi trayectoria 
                 profesional trabajando sobre uno de los principales problemas del Estado argentino: la fragmentación entre la política, el presupuesto y la 
@@ -137,22 +123,8 @@
                 experiencia y el liderazgo al servicio de un proyecto político que transforme el modo de gobernar.
             </p>
             <p>El futuro no se improvisa. Se diseña, se financia y se conduce.                
-            </p>
-             
-                
+            </p>             
 
-          <!--<div class="cards">
-              <div style="background-color: rgb(38, 39, 39);" class="card">
-                  <h1 class="entry-title">
-                  <a href="#publicacion">Diseño y monitoreo de las políticas públicas  <br> en el marco de la gestión para resultados</a>
-                </h1>
-                <small>Por <a href="#about" style="font-weight: 600;">Sabrina Serer</a></small>
-                
-                <span><a href="#publicacion">Conoce mas sobre el libro</a></span>
-                <span>Ver acá: <a href="#evento">Ultimos contenidos</a></span>
-              </div>                   
-          </div>-->
-          
 
       </div>                
   </section>
@@ -184,25 +156,11 @@
                             <p>Trabajo desde una perspectiva colaborativa, con una fuerte vocación de lo público y el compromiso de profesionalizar la gestión estatal sin perder 
                             de vista lo humano. Creo en el diseño de políticas que no solo funcionen, sino que <b>importen</b>. Que se midan, que se expliquen, que se compartan. 
                             Y sobre todo: que <b>transformen realidades.</b></p>
-
-
-
-
-
-
-
-                    <!--Soy contadora graduada de la UBA y Especialista en Administración Financiera del Sector Público 
-                    por la UNCO. Actualmente, estoy cursando la Licenciatura en Relaciones Internacionales en la Universidad Siglo XXI y un Máster en Análisis Político 
-                    en la Universitat Oberta de Catalunya.<br>
-                    <br>
-                    En mi labor profesional, soy referente provincial del Presupuesto Orientado a Resultados (PoR) del Gobierno de la Provincia del Neuquén. Además, 
-                    represento a la provincia en la Comisión de Planificación, Evaluación y Calidad de las Políticas Públicas del CoFeFuP, dependiente de la Jefatura 
-                    de Gabinete de Ministros de la República Argentina.-->             
+          
                   </div>
-                <div class="col-md-4"><img class="picself img-thumbnail"  src="./img/perfil_sabrina_about.png" alt="Sabrina Serer"></div>
-              
+                <div class="col-md-4"><img class="picself img-thumbnail"  src="./img/perfil_sabrina_about.png" alt="Sabrina Serer"></div>        
                 
-                <!--<div class="col-md-4"><img class="picself img-thumbnail"></div>-->
+               
 
               <div class="botonera_libro">
                       <a href="./soy.html" class="btn">Mis resultados</a>                               
@@ -235,11 +193,10 @@
                   </div>
 
                   <div class="botonera_libro">
-                          <!--<a href="./libro.html" class="btn">Más sobre el libro</a>-->
+                          
                           <a href="./venta.html" class="btn">Comprar el libro</a>
-                  </div>                
-                
-                <!--<div class="col-md-4"><img class="picself img-thumbnail"></div>-->
+                  </div>               
+             
               </div>
           </div>
       </div>
@@ -249,6 +206,428 @@
 
   <section id="evento">
         <div class="container">
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas35 = document.getElementById("toggleText35");
+                    const leerMenos35 = document.getElementById("leermenos35");
+                    const textosOcultos35 = document.querySelectorAll("#oculto-35");
+                    let visible35 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos35.forEach(texto35 => texto35.style.display = "none");
+                    leerMenos35.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas35.addEventListener("click", function () {
+                        visible35 = true;
+
+                        textosOcultos35.forEach(texto35 => texto35.style.display = "block");
+                        leerMas35.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos35.textContent = "Mostrar menos...";
+                        leerMenos35.style.color = "#7E6BA0";
+                        leerMenos35.style.display = "block";
+                        leerMenos35.style.cursor = "pointer";
+                        leerMenos35.style.fontWeight = "bold";
+                    });
+
+                    leerMenos35.addEventListener("click", function () {
+                        visible35 = false;
+
+                        textosOcultos35.forEach(texto35 => texto35.style.display = "none");
+                        leerMas35.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos35.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Argentina fuera de la OMS: gobernar sin red en un sistema que ya estaba al límite</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 86%; height: auto;padding-top: 15px; padding-bottom: 1px;" src="./img/OMS_PORTADA_CORREGIDA.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 65px;">                   
+                        <p id="turismo">
+                            <b>Presupuesto, poder y salud pública en la Argentina que viene.</b><br>
+                            <br>
+                           <b>Las decisiones estructurales no se anuncian: se sienten. Y en salud, se sienten rápido.</b><br> 
+                    
+                           La salida de Argentina de la <b>Organización Mundial de la Salud</b> no es simplemente un cambio de alineamiento internacional. 
+                           Es una <b>redefinición del modelo de gestión sanitaria</b>: menos coordinación global, más autonomía nacional y, en los hechos, 
+                           una mayor exposición al <b>riesgo</b> en un sistema que ya operaba con tensiones acumuladas.<br>
+                           <br>
+                           El punto no es ideológico. El punto es <b>operativo</b>.
+                                                                                 
+                        </p>                        
+                        <span id="toggleText35" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">El presupuesto no miente: la salud pierde capacidad en silencio</b>
+                       <br>
+                       Hay una narrativa instalada que habla de <b>reducción del Estado</b> como sinónimo de eficiencia.<br>
+                       Pero cuando se baja al <b>presupuesto sanitario</b>, la evidencia obliga a matizar.<br>
+                       El <b>gasto en salud</b> a nivel nacional ha crecido en términos nominales en los últimos años, pero ha perdido <b>capacidad real de intervención.</b> 
+                       Esto no es un detalle técnico: es el núcleo del problema.<br>
+                       Cuando los recursos no alcanzan para sostener <b>programas preventivos</b>, el sistema cambia de lógica. Deja de anticipar y empieza a reaccionar.<br>
+                       Y eso ya está ocurriendo.<br>
+                       La caída en <b>programas de vacunación</b>, la reducción de <b>políticas territoriales</b> y la creciente presión sobre <b>hospitales públicos</b> 
+                       no son hechos aislados. Son la expresión de un sistema que está entrando en <b>modo de administración de la escasez</b>.
+                        
+                    <br>                   
+                                         
+                    </p>                        
+                </div>                         
+                
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">
+                        <b style="font-size: large;">Mucho gasto, poco resultado: la trampa estructural del sistema argentino</b><br>                       
+                        Argentina no tiene un problema de volumen de <b>gasto sanitario</b>. Tiene un problema de <b>diseño</b>.<br>
+
+                     
+                        El <b>sistema fragmentado</b> —público, obras sociales y privado— genera una paradoja difícil de sostener:<br>
+                        ·&ensp;	Se gasta mucho<br>                       
+                        ·&ensp; Se duplica cobertura<br>
+                        ·&ensp; Y, aun así, el <b>acceso efectivo</b> no está garantizado<br>
+                       
+                        <br>
+                       El resultado es conocido por cualquier ciudadano: se paga cobertura, pero se termina recurriendo al <b>sistema público</b> cuando la 
+                       situación se vuelve crítica.<br>
+                       Esto convierte al <b>sector público</b> en un amortiguador permanente. Y cuando ese amortiguador se debilita, todo el sistema entra en tensión.                             
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Federalismo sanitario: cuando Nación se retira, las provincias absorben el impacto</b><br>                       
+                        En Argentina, la <b>salud</b> no se gestiona desde un único nivel. Se sostiene, principalmente, desde las <b>provincias</b>.<br>
+                        Por eso, cada decisión nacional que reduce coordinación, financiamiento o <b>soporte técnico</b> no desaparece: se traslada.<br>
+                        Y ese traslado no es neutro. Implica que las provincias deben:<br>
+
+                        ·&ensp; Financiar más<br>
+                        ·&ensp; Gestionar con mayor <b>incertidumbre</b><br>
+                        ·&ensp; Y responder con menos herramientas<br>
+                        
+                        <br>
+                       
+                        La salida de la <b>OMS</b> profundiza esta lógica. No porque represente una pérdida directa de recursos, sino porque elimina 
+                        una <b>red de soporte</b> que reducía costos de coordinación, validaba decisiones y aportaba <b>previsibilidad</b>
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">
+                        <b style="font-size: large;">Neuquén: autonomía relativa, riesgo creciente</b><br>                    
+                        Neuquén tiene una ventaja comparativa: <b>recursos propios y capacidad institucional</b>.<br>
+                        Pero incluso en ese escenario, la ecuación se tensiona.<br>
+                        El <b>sistema de salud provincial</b> se apoya en regalías, recursos tributarios y transferencias. Sin embargo, también 
+                        depende —aunque no siempre se visibilice— de marcos técnicos, estándares y articulaciones que exceden lo local.<br>
+                        Sin la OMS, Neuquén no pierde financiamiento inmediato. Pierde algo más complejo: <b>respaldo</b>.<br>
+                        Y eso se traduce en:<br>
+
+
+                        ·&ensp; Mayor costo de gestión<br>
+                        ·&ensp; Mayor exposición ante <b>crisis sanitarias</b><br>
+                        ·&ensp; Y mayor presión sobre su propio <b>presupuesto</b><br>
+                        
+                        <br>
+                        En términos claros: <b>la provincia gana autonomía, pero asume más riesgo.</b>.                               
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">
+                        <b style="font-size: large;">La ficción de la cobertura: cuando el sistema deja de garantizar acceso</b><br>                    
+                        Uno de los grandes problemas del <b>sistema argentino</b> es la distancia entre lo que declara y lo que efectivamente garantiza.<br>
+               
+                        La mayoría de la población tiene algún tipo de <b>cobertura</b>. Pero eso no significa <b>acceso oportuno</b>, equitativo ni de calidad.<br>
+                       
+                        Las demoras, los copagos y la <b>saturación estructural</b> hacen que el sistema público termine siendo el verdadero garante de última instancia.<br>
+
+                        Cuando ese sistema se debilita, la <b>desigualdad</b> se amplifica.<br>                      
+
+                        Y ahí aparece el dato más incómodo de todos: <b>las decisiones macro terminan impactando más fuerte en quienes menos margen tienen para adaptarse.</b>      
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">
+                        <b style="font-size: large;">2030: el debate que la política sigue postergando</b><br>                    
+                        La salida de la OMS obliga a una discusión que Argentina viene evitando hace décadas: <b>cómo se organiza, financia y gestiona su 
+                        sistema de salud</b>.<br>
+                        No alcanza con hablar de soberanía. Sin capacidad de gestión, la soberanía es solo retórica.<br>
+                        La <b>Gestión para Resultados (GPR)</b> plantea un cambio de lógica: dejar de discutir cuánto se gasta y empezar a discutir <b>qué resultados 
+                        se obtienen</b> con ese gasto.<br>
+                        Esto implica rediseñar el sistema sobre cinco pilares: <b>presupuesto, información, federalismo, cobertura y gestión del riesgo</b>.<br>
+                        Pero no como consignas, sino como un <b>modelo operativo</b> que permita sostener el sistema en un contexto de mayor autonomía.<br>
+                        Antes de avanzar en la síntesis, hay que entender algo clave: <b>sin un esquema de este tipo, la salida de la OMS no reduce dependencia. 
+                        La reemplaza por desorden</b>.
+
+                              
+                    </p>                        
+                </div>
+
+
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">
+                        <b style="font-size: large;">Rediseño del sistema sanitario argentino en clave GPR</b><br>
+                        <br>
+
+                        <img src="./img/cuadro_texto_35.png" alt="Sabrina Serer" style="width: 90%; height: auto; display:block; margin:auto;"><br>
+                        <br>                       
+                        
+
+                        <b><i>Este esquema no es una aspiración técnica. Es una condición política.</i></b><br>
+                        Porque sin este tipo de rediseño, el sistema no colapsa de inmediato, pero entra en un proceso de <b>deterioro progresivo</b>
+                         que es mucho más difícil de revertir.                            
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-35">
+                    <p id="turismo">
+                        <b style="font-size: large;">Cierre: la decisión ya está tomada, ahora empieza la verdadera responsabilidad</b><br>
+                        Salir de la OMS fue una decisión. <b>Sostener el sistema sanitario</b> sin esa red es otra completamente distinta.<br>
+                        La política argentina enfrenta ahora una disyuntiva que no admite neutralidad:<br>
+
+                        ·&ensp; Avanza hacia un sistema más eficiente, integrado y <b>orientado a resultados</b><br>
+                        ·&ensp; O profundiza un esquema fragmentado donde cada provincia resuelve como puede y cada ciudadano accede según su capacidad<br>
+                        <br>
+
+                        <b>No hay punto intermedio.</b><br>
+                        Porque en salud, el costo de la desorganización no se mide en déficit fiscal. Se mide en <b>desigualdad</b>. Se mide en oportunidades 
+                        perdidas. Y, en los casos más extremos, se mide en <b>vidas.</b><br>
+                        La pregunta que queda abierta —y que interpela directamente a quienes toman decisiones— es simple, pero incómoda:<br>
+                        <br>
+                        <b>¿La Argentina que viene va a gestionar la salud como un sistema… o va a seguir administrando sus consecuencias?</b>         
+
+                              
+                    </p>                        
+                </div>
+                   
+
+
+           
+                                
+                <span id="leermenos35"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas34 = document.getElementById("toggleText34");
+                    const leerMenos34 = document.getElementById("leermenos34");
+                    const textosOcultos34 = document.querySelectorAll("#oculto-34");
+                    let visible34 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos34.forEach(texto34 => texto34.style.display = "none");
+                    leerMenos34.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas34.addEventListener("click", function () {
+                        visible34 = true;
+
+                        textosOcultos34.forEach(texto34 => texto34.style.display = "block");
+                        leerMas34.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos34.textContent = "Mostrar menos...";
+                        leerMenos34.style.color = "#7E6BA0";
+                        leerMenos34.style.display = "block";
+                        leerMenos34.style.cursor = "pointer";
+                        leerMenos34.style.fontWeight = "bold";
+                    });
+
+                    leerMenos34.addEventListener("click", function () {
+                        visible34 = false;
+
+                        textosOcultos34.forEach(texto34 => texto34.style.display = "none");
+                        leerMas34.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos34.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Neuquén: del anuncio al sistema. La arquitectura estratégica que el desarrollo exige</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 86%; height: auto;padding-top: 15px; padding-bottom: 1px;" src="./img/NQN_WEB.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 75px;">                   
+                        <p id="turismo">
+                            <b>Neuquén no está ante un discurso. Está ante una definición histórica.</b><br>
+                           La <b>apertura legislativa 2026</b> dejó una señal inequívoca: Rolando Figueroa decidió <b>gobernar el futuro</b>, no administrar la inercia.<br>
+                    
+                           Mientras el escenario nacional redefine su <b>mapa productivo</b>, Neuquén eligió asumir un rol protagónico. No como espectador del nuevo 
+                           ciclo argentino, sino como <b>actor central</b>.<br>
+                           <br>
+                                                                                 
+                        </p>                        
+                        <span id="toggleText34" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                
+                <div class="col-md-12" id="oculto-34">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Los anuncios que marcan un modelo</b>
+                        ·&ensp;<b>Minería</b> con regulación moderna<br>
+                        ·&ensp;<b>Control ambiental</b> fortalecido<br>
+                        ·&ensp;<b>Créditos para vivienda</b> con ingeniería financiera propia<br>
+                        ·&ensp;<b>Obra pública</b> como palanca de desarrollo<br>                    
+                        ·&ensp;<b>Universidad de Artes</b> para diversificar matriz productiva<br>
+                        ·&ensp;<b>Agencia de Tecnología Sanitaria</b> para racionalizar el gasto<br>
+                        ·&ensp;<b>Polo de Mujeres y Diversidad</b> como institucionalidad permanente<br>
+                        
+                        <br>                   
+                       No es una sumatoria de anuncios. Es un <b>esquema de poder territorial</b> en construcción.                        
+                    </p>                        
+                </div>                         
+                
+                <div class="col-md-12" id="oculto-34">
+                    <p id="turismo">
+                        <b style="font-size: large;">La ventana histórica que Neuquén tiene hoy</b><br>                       
+                        La provincia que entienda el momento, lidera la década.<br>
+                     
+                        Hoy Neuquén tiene una <b>ventana histórica</b>:<br>
+                        ·&ensp;<b>Recursos estratégicos</b><br>
+                        ·&ensp;<b>Posición geopolítica</b> privilegiada<br>
+                        ·&ensp;<b>Capacidad energética</b> decisiva<br>
+                        ·&ensp;<b>Autonomía fiscal</b> relativa<br>
+                        ·&ensp;<b>Voluntad política</b> de transformación<br>
+                        <br>
+                        Pero la diferencia entre <b>oportunidad y desarrollo</b> radica en un solo punto: gobernanza.<br>
+                        Sin <b>arquitectura estratégica</b>, los anuncios se diluyen. Sin <b>integración institucional</b>, los ministerios compiten en lugar de 
+                        complementarse. <b>Sin planificación vinculada al presupuesto</b>, el Plan 2030 se vuelve retórico.<br>
+                        <br>
+                        El <b>liderazgo político</b> está. Ahora debe consolidarse el <b>sistema que lo sostenga</b>.                
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-34">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Gobernanza Estratégica Integrada: el factor que convierte ambición en estructura</b><br>                       
+                        El desafío 2027 no será electoral. Será <b>estructural</b>.<br>
+                        La provincia necesita un modelo que:<br>
+
+                        ·&ensp;Vincule <b>planificación, presupuesto y ejecución</b> en un mismo circuito decisional<br>
+                        ·&ensp;Alinee minería, ambiente, energía e infraestructura bajo <b>metas comunes</b>.<br>
+                        ·&ensp;Establezca <b>indicadores de impacto</b> en tiempo real<br>
+                        ·&ensp;Permita <b>corregir desvíos</b> antes de que se conviertan en crisis<br>
+                        ·&ensp;Genere <b>previsibilidad</b> para inversores y <b>confianza</b> para la ciudadanía<br>
+                        <br>
+                       
+                        El <b>Modelo de Gobernanza Estratégica Integrada</b> no es una teoría académica. Es una herramienta para administrar 
+                        complejidad. Es el puente entre <b>liderazgo político</b> y <b>resultados sostenibles</b><br>
+                        Es el instrumento que puede convertir el <b>Plan Quinquenal al 2030</b> en un <b>sistema operativo provincial</b>, no en un documento aspiracional.
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-34">
+                    <p id="turismo">
+                        <b style="font-size: large;">Del anuncio al sistema: la verdadera batalla política</b><br>                    
+                        Neuquén está entrando en una etapa donde:<br>
+                        ·&ensp;La <b>minería</b> debe dialogar con ambiente sin bloquear desarrollo<br>
+                        ·&ensp;La <b>vivienda</b> debe integrarse a <b>ordenamiento territorial</b>.<br>
+                        ·&ensp;La <b>salud</b> debe optimizar recursos sin perder calidad<br>
+                        ·&ensp;La <b>obra pública</b> debe priorizar impacto, no urgencia<br>
+                        ·&ensp;El <b>presupuesto</b> debe expresar estrategia, no contingencia<br>
+                        <br>
+                        Eso no se logra con voluntarismo. Se logra con <b>diseño institucional</b>.             
+
+                        Y cuando el <b>diseño institucional</b> acompaña al liderazgo, la provincia deja de reaccionar y empieza a <b>conducir</b>.              
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-34">
+                    <p id="turismo">
+                        <b style="font-size: large;">2030 no es una fecha. Es un modelo de poder territorial</b><br>                    
+                        La pregunta no es si Neuquén puede crecer. La pregunta es si puede transformarse en el <b>caso modelo de gestión provincial</b> en Argentina.<br>
+               
+                        Tiene condiciones para hacerlo. Pero las provincias que marcan época no son las que anuncian más. Son las que <b>integran mejor</b>.<br>
+                       
+                        Neuquén puede liderar el nuevo <b>mapa productivo argentino</b>. Puede convertirse en referencia de <b>desarrollo sostenible</b>. Puede 
+                        consolidar una <b>institucionalidad moderna</b> y eficiente.<br>
+                      
+
+                        Y eso exige un salto: pasar de la <b>política sectorial</b> a <b>la política sistémica</b>.       
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-34">
+                    <p id="turismo">
+                        <b style="font-size: large;">El futuro no se espera. Se diseña</b><br>                    
+                        Hoy el liderazgo político ha puesto las piezas sobre el tablero. La responsabilidad histórica es organizarlas bajo 
+                        una <b>arquitectura estratégica integrada</b> que garantice:<br>
+                        ✔ <b>Operatividad real</b><br>
+                        ✔ <b>Optimización de recursos neuquinos</b><br>
+                        ✔ <b>Previsibilidad institucional</b><br>
+                        ✔ <b>Continuidad más allá de coyunturas</b><br>
+                        ✔ <b>Resultados medibles y defendibles</b><br>
+                        <br>
+                        Neuquén tiene decisión. Tiene conducción. Tiene oportunidad.<br>
+                        El siguiente paso es consolidar el <b>modelo que transforme esa oportunidad en legado</b>.<br>
+
+                        Porque la historia no la escriben los que administran el presente. La escriben los que <b>diseñan el futuro</b>.       
+                    </p>                        
+                </div>
+                   
+
+
+           
+                                
+                <span id="leermenos34"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
@@ -4712,134 +5091,7 @@
 
                     </div>
                 </div>
-            </section>      
-
-
-
-
-
-
-
-
-
-
-
-           <!-- <div class="row">
-
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">El veto que amenaza el futuro: el impacto en la educación pública y el desarrollo del país.</h2>
-                </div>               
-            </div>
-            <br>
-            <div class="row text-center">
-                <div class="col-md-7">
-                    <p id="turismo">El reciente veto a la Ley de Financiamiento Universitario, convalidado en la Cámara de Diputados por 160 votos a favor, 84 en contra 
-                        y 5 abstenciones, plantea un desafío importante para el futuro de la educación pública en Argentina 📉. Esta ley buscaba aumentar el 
-                        financiamiento de las universidades nacionales para garantizar su funcionamiento y ajustar los salarios docentes y no docentes en un 
-                        contexto económico complicado 💼. A pesar de las movilizaciones masivas en defensa de la educación pública 🗣️, la mayoría de los legisladores 
-                        apoyó la decisión presidencial, desconociendo las necesidades urgentes de nuestras instituciones educativas.</p>
-                </div>
-
-                <div class="col-md-5">
-                    <img class="flyer" style="width: 60%; height: auto; padding-bottom: 15px;" src="./img/universidad.jpg" alt="Sabrina Serer">
-                </div>
-
-
-                <div class="col-md-12">
-                    <p id="turismo">En términos de matrícula, las universidades públicas han demostrado ser el pilar fundamental del acceso a la educación superior 
-                        en el país 🎓. Entre 2010 y 2020, la matrícula en instituciones públicas creció un 30%, alcanzando los 2 millones de estudiantes 📈. 
-                        Este crecimiento no es casual: la gratuidad y la calidad de la educación universitaria son factores clave para garantizar la inclusión 
-                        de sectores de menores ingresos que, de otro modo, no podrían acceder a la universidad 🏫. Vetar una ley que buscaba fortalecer el 
-                        financiamiento de estas instituciones pone en riesgo este avance ⚠️.
-                    </p>
-                    
-                </div>
-                <div class="col-md-12">
-                    <p id="turismo">El impacto económico de la educación superior también es significativo 💡. Un informe del Consejo Interuniversitario Nacional 
-                        (CIN) señala que los graduados universitarios aportan un 30% más al PBI en comparación con quienes no accedieron a la universidad 💵. Las 
-                        universidades públicas no solo educan, sino que también impulsan el desarrollo económico del país 🌍, formando profesionales que contribuyen 
-                        al crecimiento y la innovación 🔧. Este veto, por lo tanto, no afecta solo a la comunidad educativa, sino a toda la sociedad 🏛️.</p>                        
-                </div>
-                <div class="col-md-12">
-                    <p id="turismo">El presupuesto universitario, que en 2023 representó aproximadamente el 0,9% del PBI 🏦, está mayoritariamente destinado a salarios, 
-                        dejando muy poco para infraestructura o equipamiento 🛠️. La ley vetada proponía un sistema de actualización bimestral basado en indicadores económicos 
-                        como el Índice de Precios al Consumidor (IPC) 📊 y la variación del tipo de cambio 💹, lo que permitiría ajustar el financiamiento de las 
-                        universidades en función de la inflación, asegurando su sostenibilidad ⚖️. En un país con alta inflación, este tipo de ajuste es esencial para 
-                        mantener la calidad educativa 🏅.</p>
-                </div>
-                <div class="col-md-12">
-                    <p id="turismo">Finalmente, es importante recordar que más del 85% de las investigaciones científicas en Argentina son realizadas en universidades 
-                        públicas 🔬, según el CONICET. Estas instituciones son motores de innovación y conocimiento en áreas clave para el desarrollo del país 💡. Sin 
-                        un financiamiento adecuado, el futuro de la educación pública, la ciencia y la tecnología está en riesgo 🚨. La defensa de la educación 
-                        pública, gratuita y de calidad es, por lo tanto, una prioridad que debe estar reflejada en las políticas públicas y en el presupuesto 
-                        nacional 📢.</p>                        
-                </div>
-                
-            </div>
-            <br>
-            <br>
-
-
-
-            <div class="row">
-
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Participación en la Facultad de Turismo de la Universidad del Comahue.</h2>
-                </div>               
-            </div>
-            <br>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <p id="turismo">Tuve la oportunidad de compartir mi experiencia sobre la implementación de la planificación estratégica en el marco de la gestión por 
-                        resultados en el Ministerio de Salud de Neuquén, como parte de la materia Planificación Estratégica Turística en la Facultad de Turismo de la 
-                        Universidad del Comahue. Mi libro, "Diseño y Monitoreo de Políticas Públicas en el Marco de la Gestión para Resultados", fue incluido en 
-                        la bibliografía de la materia, lo que me permitió profundizar sobre cómo aplicamos esta metodología en el ámbito de la salud pública.<br>
-                        Durante el encuentro, abordamos herramientas metodológicas y discutimos la importancia de distinguir entre política y políticas públicas.</p>
-                </div>
-                <div class="col-md-4">
-                    <img class="flyer" style="width: 90%; height: auto;" src="./img/novedadesGPR.jpg" alt="Sabrina Serer">
-                </div>
-                <div class="col-md-4">
-                    <p id="turismo">Además, exploramos cómo la gestión estratégica se vincula con la operativa, tomando como ejemplo el plan de salud que desarrollamos en 
-                        Neuquén. Fue un espacio muy enriquecedor para reflexionar sobre la relevancia de la planificación en cualquier sector, desde la salud hasta el turismo.<br>
-                        Por último, quiero destacar el valor incalculable de la universidad pública y gratuita. Es gracias a esta institución que podemos formar 
-                        profesionales capacitados para cuidar la soberanía del conocimiento y aplicar estos aprendizajes en beneficio de nuestra sociedad.<br></p>
-                        <p style="text-align: center; font-size: smaller;">#GestiónPorResultados #PolíticasPúblicas #PlanificaciónEstratégica #UniversidadPública #SoberaníaDelConocimiento #FacultadDeTurismo</p>
-                </div>
-            </div>
-            <br>
-            <br>
-
-            <div class="row" >
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Mi aporte en la Gestión Pública.<br>Neuquén Presenta un Plan de Salud 
-                        Transformador. Gracias a Econoticias por destacar nuestro trabajo en la planificación estratégica del plan provincial de salud. Su 
-                        reconocimiento nos impulsa a seguir optimizando recursos para un sistema de salud más eficiente y equitativo. ¡Seguimos adelante! 💼💪</h2>
-                </div>
-                <br>
-                    
-
-                    <div class="col-md-12 text-center">
-                        <a href="https://econoticias.com.ar/neuquen-impulsa-un-plan-de-salud-sustentable-inversion-estrategica-para-un-futuro-saludable-%f0%9f%8c%b1%f0%9f%8f%a5/" target="_blank">
-                            <img class="noticia" src="./img/noticia.png" alt="Sabrina Serer"></a>
-                    </div>
-            </div>
-            <br>
-            <br>
-            
-
-
-                <div class="row" >
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase" style="font-size: 160%;">¡No te pierdas mi participación en el tercer panel de Argentina Planifica! Hablé sobre cómo desde el 
-                            Ministerio de Salud de Neuquén estamos transformando la provincia. 💼💪</h2>
-                    </div>
-                    <br>                       
-
-                        <div class="col-md-12 text-center">
-                            <iframe src="https://www.youtube.com/embed/45U5vpl1EdE?si=lumN9vk4bICnUj3f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                </div>-->
+            </section>
 
         </div>
   </section>
@@ -4856,11 +5108,7 @@
           <div class="row text-center">
               <div class="col-md-4">
                   <span><img src="./img/publicacion1.png" alt=""></span>
-                  <!--<span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
-
-          </span>-->
+                 
                   <h4 class="service-heading">#EquidadDeGénero</h4>
                   <p class="text-muted">La educación financiera no discrimina. Descubrí nuestros recursos para aprender sobre finanzas sin importar tu género. 
                       Tu presupuesto debería reflejar la igualdad. Aprende cómo lograrlo aquí.Empezá a invertir en proyectos con impacto de género hoy mismo!
@@ -4870,10 +5118,7 @@
               </div>
               <div class="col-md-4">
                   <span><img src="./img/publicacion2.png" alt="Sabrina Serer"></span>
-                  <!--<span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-arrows-alt fa-stack-1x fa-inverse"></i>
-          </span>-->
+                  
                   <h4 class="service-heading">#FuturoMasIgualitario</h4>
                   <p class="text-muted">Inversiones con impacto de género:<br> Investigá opciones de inversión que respalden proyectos y empresas que promuevan la igualdad
                        de género. Protegé tu futuro con un seguro que entienda tus necesidades. Empezá a invertir en proyectos con impacto de género hoy mismo!
@@ -4883,10 +5128,7 @@
               </div>
               <div class="col-md-4">
                   <span><img src="./img/publicacion3.png" alt="Sabrina Serer"></span>
-                  <!--<span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
-          </span>-->
+                  
                   <h4 class="service-heading">#AhorroParaEmergencias</h4>
                   <p class="text-muted">Ahorro para emergencias de género:<br> Asegúrate de que todos tengan acceso a un fondo de emergencia, independientemente de su género.
                        Empezá a invertir en proyectos con impacto de género hoy mismo!
@@ -4970,8 +5212,7 @@
       </p>
       <a href="./venta.html" class="banner-boton">Saber más!</a>
     </div>
-    <div class="banner-imagen">
-      <!--<img src="./img/tapa-libro-seccion.png" alt="Libro Diseño y Monitoreo de Políticas Públicas">-->
+    <div class="banner-imagen">      
       <img src="./img/arbolito_sabri.png" alt="Libro Diseño y Monitoreo de Políticas Públicas">
     </div>
   </div>
@@ -5005,10 +5246,10 @@
                         <div class="form-group">
                             <input class="form-control" id="phone" name="telephone" type="tel" placeholder="Tu telefono" required>
                         </div>                            
-                        <div class="form-group form-check">
+                        <!--<div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
                             <label class="form-check-label" for="newsletter">Si, quiero recibir el Newsletter</label>
-                        </div>
+                        </div>-->
                         </div>
                         <div class="col-md-6">
                         <div class="form-group">
@@ -5088,6 +5329,120 @@
       </div>
   </section>
 
+
+  <!--<section id="newsletter">
+    <div class="container">      
+        <style>
+        @font-face {
+            font-display: block;
+            font-family: "Lato", sans-serif;          
+            src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;           
+            font-family: "Lato", sans-serif;  
+            font-weight: 600;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;      
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+        }
+
+        #sib-container input:-ms-input-placeholder {
+            text-align: left;
+            font-family: "Lato", sans-serif;            
+            color: #c0ccda;
+        }
+
+        #sib-container input::placeholder {
+            text-align: left;
+            font-family: "Lato", sans-serif;            
+            color: #c0ccda;
+        }
+
+        #sib-container a {
+            text-decoration: underline;
+            color: #2BB2FC;
+        }
+        @media (max-width: 768px) {
+            #newsletter {
+                padding-top: 40px;
+            }
+            .sib-form-block {
+                font-size: 25px;
+            }
+        }
+        </style>
+        <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+       
+        <div class="sib-form" style="text-align: center;
+                background: linear-gradient(135deg, #7E57C2, #F48FB1);                                           ">
+        <div id="sib-form-container" class="sib-form-container">
+            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+            
+                <form id="sib-form" method="POST" target="hidden_iframe"
+                action="https://1963ce36.sibforms.com/serve/MUIFAPDvc2VwMNmqP-KTw185f20BdvFGUmEAvA519cSv1ttqz8cAwQc8w-OZ_ggezCdP81SloOCag2wgDkRWw-ev4kWyuM5MYtdLUG-YhJnyfyj7EYlUUhfjWnE4-4UplZRzNvQaF0AFTRvRipwSt3zz_MyDRIiak-2najc6iCbG_YGh-DnbxBp0GI9gbLQE5CaPFZ9qrlT4LxT4_g=="
+                onsubmit="mostrarMensaje()">
+
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="font-size:26px; text-align:left; font-weight:700; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                    <p>Newsletter</p>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                    <div class="sib-text-form-block">
+                    <p>Suscribete a nuestro newsletter para recibir informes actualizados.</p>
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                    <div class="form__label-row ">
+                        <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Lucida Grande&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Ingresa tu email para suscribirte</label>
+
+                        <div class="entry__field">
+                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="email" data-required="true" required />
+                        </div>
+                    </div>
+
+                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                    </label>
+                    
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="text-align: left">                    
+                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="background-color: white; font-size: small; font-weight: 600; color: #7E6BA0; border: 3px #E3BFD6 solid; padding: 8px; margin: 3px;" form="sib-form" type="submit">
+                    Suscribirme
+                    </button>
+
+                    <div id="mensaje-exito" style="display:none; margin-top:12px; font-size: 12px; color: rgb(181, 170, 251); font-family: lato, sans-serif;">
+                        Gracias por suscribirte. No olvides confirmar el email que te enviamos.
+                    </div>                 
+
+                </div>
+                </div>
+                <input type="text" name="email_address_check" value="" class="input--hidden">
+                <input type="hidden" name="locale" value="en">
+                <input type="hidden" name="html_type" value="simple">
+            </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+            </div>
+        </div>
+        </div>      
+
+    </div>
+
+  </section>-->
+
  
 
   <!-- Footer -->
@@ -5109,10 +5464,7 @@
                   <ul class="list-inline social-buttons">
                       <li class="list-inline-item">
                           <a target='_blank' href="https://www.instagram.com/sabrinasererok/"><i class="fa fa-instagram"></i></a>
-                      </li>
-                      <!--<li class="list-inline-item">
-                          <a target='_blank' href="https://www.facebook.com/share/rbgLLNNNdJ3k3AXk/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
-                      </li>   -->                         
+                      </li>                                            
                       <li class="list-inline-item">
                           <a target='_blank' href="https://www.linkedin.com/in/sabricserer455843715/"><i class="fa fa-linkedin"></i></a>
                       </li>
@@ -5142,8 +5494,7 @@
                   <div class="row">
                       <div class="col-lg-8 mx-auto">
                           <div class="modal-body">
-                              <!-- Project Details Go Here -->
-                              <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                              
                               <p class="item-intro text-muted">Presentación del libro en la Universidad Nacional del Comahue 09/09/2022</p>
                               <div class="grid-container">
                                   <div class="item"><img src="./img/unco1.png" alt="sabrina serer"></div>
@@ -5155,9 +5506,7 @@
                                   <div class="item"><img src="./img/unco7.png" alt="sabrina serer"></div>
                                   <div class="item"><img src="./img/unco8.png" alt="sabrina serer"></div>                                        
                               </div>
-                              <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
-                              <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
-                              
+                             
                                   <a class="botonera_form" data-dismiss="modal" type="button">
                                       <i class="fa fa-times"></i> Cerrar galeria</a>
                           </div>
@@ -5180,8 +5529,7 @@
                   <div class="row">
                       <div class="col-lg-8 mx-auto">
                           <div class="modal-body">
-                              <!-- Project Details Go Here -->
-                              <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                             
                               <p class="item-intro text-muted">Feria del libro Ciudad de Neuquén 22/09/22</p>
                               <div class="grid-container">
                                   <div class="item"><img src="./img/nqn_feria1.png" alt="sabrina serer"></div>
@@ -5190,8 +5538,7 @@
                                   <div class="item"><img src="./img/nqn_feria4.png" alt="sabrina serer"></div>        
                                   <div class="item"><img src="./img/nqn_feria5.png" alt="sabrina serer"></div>                                                                               
                               </div>
-                              <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
-                              <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                              
                               
                               <a class="botonera_form" data-dismiss="modal" type="button">
                                       <i class="fa fa-times"></i> Cerrar galeria</a>
@@ -5215,8 +5562,7 @@
                   <div class="row">
                       <div class="col-lg-8 mx-auto">
                           <div class="modal-body">
-                              <!-- Project Details Go Here -->
-                              <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                             
                               <p class="item-intro text-muted">Presentación Feria del libro Cipolletti 03/10/2022</p>
                               <div class="grid-container">
                                   <div class="item"><img src="./img/cipo1.png" alt="sabrina serer"></div>
@@ -5226,8 +5572,7 @@
                                   <div class="item"><img src="./img/cipo5.png" alt="sabrina serer"></div>
                                   <div class="item"><img src="./img/cipo6.png" alt="sabrina serer"></div>                                                                               
                               </div>
-                              <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
-                              <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                              
                               
                               <a class="botonera_form" data-dismiss="modal" type="button">
                                   <i class="fa fa-times"></i> Cerrar galeria</a>
@@ -5255,8 +5600,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                           
                             <div class="row text-center">
                                 <div class="col-md-12">
                                     <p id="turismo">El reciente veto a la Ley de Financiamiento Universitario, convalidado en la Cámara de Diputados por 160 votos a favor, 84 en contra 
@@ -5300,8 +5644,7 @@
                                 </div>
                                 
                             </div>
-                            <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
-                            <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                           
                             
                                 <a class="botonera_form" data-dismiss="modal" type="button">
                                     <i class="fa fa-times"></i> Cerrar</a>
@@ -5325,8 +5668,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                           
                             <div class="row text-center">
                                 <div class="col-md-12">
                                     <p id="turismo">Tuve la oportunidad de compartir mi experiencia sobre la implementación de la planificación estratégica en el marco de la gestión por 
@@ -5344,8 +5686,7 @@
                                         <p style="text-align: center; font-size: smaller;">#GestiónPorResultados #PolíticasPúblicas #PlanificaciónEstratégica #UniversidadPública #SoberaníaDelConocimiento #FacultadDeTurismo</p>
                                 </div>
                             </div>
-                            <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
-                            <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                            
                             
                             <a class="botonera_form" data-dismiss="modal" type="button">
                                     <i class="fa fa-times"></i> Cerrar</a>
@@ -5369,8 +5710,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                            
                             <div class="row" >
                                 <div class="col-lg-12 text-center">
                                     <h2 class="section-heading text-uppercase" style="font-size: 100%;">Mi aporte en la Gestión Pública.<br>Neuquén Presenta un Plan de Salud 
@@ -5386,8 +5726,7 @@
                                             <img class="noticia" src="./img/noticia.png" alt="Sabrina Serer"></a>
                                     </div>
                             </div>
-                            <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
-                            <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                           
                             
                             <a class="botonera_form" data-dismiss="modal" type="button">
                                 <i class="fa fa-times"></i> Cerrar</a>
@@ -5412,8 +5751,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <!--h2 class="text-uppercase">Feria del libro 22/09/22</h2>-->
+                           
                             <div class="row" >
                                  <!--<div class="col-lg-12 text-center">
                                     <h2 class="section-heading text-uppercase" style="font-size: 160%;">¡No te pierdas mi participación en el tercer panel de Argentina Planifica! Hablé sobre cómo desde el 
@@ -5425,8 +5763,7 @@
                                         <iframe src="https://www.youtube.com/embed/45U5vpl1EdE?si=lumN9vk4bICnUj3f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     </div>
                             </div>
-                            <!--<img class="img-fluid d-block mx-auto" src="https://preview.ibb.co/haxqFw/nileres.jpg" alt="">-->
-                            <!--<p>In this project, I coordinated with other developers to modified the front end of the website. Did some debugging and UI.</p>-->
+                            
                             
                             <a class="botonera_form" data-dismiss="modal" type="button">
                                 <i class="fa fa-times"></i> Cerrar</a>
@@ -5439,8 +5776,15 @@
 </div>
 
 
-
-
+ <!-- JS del newsletter -->
+    <script>
+    function mostrarMensaje() {
+        setTimeout(function() {
+            document.getElementById("mensaje-exito").style.display = "block";
+            document.getElementById("sib-form").reset();
+        }, 500);
+    }
+    </script>
 
 
 
@@ -5472,44 +5816,3 @@
 
 
 
-<!--
-
-<span id="toggleText" style="color: blue; cursor: pointer;">Leer más...</span>
-
-
-<script>
-                document.addEventListener("DOMContentLoaded", function () {
-                const leerMas = document.getElementById("toggleText"); // Selecciona el span
-                const textosOcultos = document.querySelectorAll("#oculto-1"); // Selecciona los textos ocultos
-                let visible = false; // Estado del contenido
-
-                // Ocultar textos inicialmente
-                textosOcultos.forEach(texto => texto.style.display = "none");
-
-                leerMas.addEventListener("click", function () {
-                    visible = !visible; // Alternar estado
-
-                    textosOcultos.forEach(texto => {
-                        texto.style.display = visible ? "block" : "none"; // Muestra u oculta los textos
-                    });
-
-                    leerMas.textContent = visible ? "Leer menos..." : "Leer más...";
-                });
-            });
-               
-            </script>
-            <style>              
-            #toggleText {
-                color: blue;
-                font-weight: bold;
-                cursor: pointer;
-                display: block;
-                margin-top: 1px;
-            }
-            
-            #toggleText:hover {
-                text-decoration: underline;
-            }
-            </style>
-            
--->
