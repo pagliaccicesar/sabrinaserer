@@ -209,6 +209,324 @@
 
             <script> 
                 document.addEventListener("DOMContentLoaded", function () {
+                    const leerMas36 = document.getElementById("toggleText36");
+                    const leerMenos36 = document.getElementById("leermenos36");
+                    const textosOcultos36 = document.querySelectorAll("#oculto-36");
+                    let visible36 = false;
+
+                    // Ocultar textos inicialmente
+                    textosOcultos36.forEach(texto36 => texto36.style.display = "none");
+                    leerMenos36.style.display = "none"; // ocultar "Mostrar menos..." al inicio
+
+                    leerMas36.addEventListener("click", function () {
+                        visible36 = true;
+
+                        textosOcultos36.forEach(texto36 => texto36.style.display = "block");
+                        leerMas36.style.display = "none"; // ocultar "Leer más..."
+                        leerMenos36.textContent = "Mostrar menos...";
+                        leerMenos36.style.color = "#7E6BA0";
+                        leerMenos36.style.display = "block";
+                        leerMenos36.style.cursor = "pointer";
+                        leerMenos36.style.fontWeight = "bold";
+                    });
+
+                    leerMenos36.addEventListener("click", function () {
+                        visible36 = false;
+
+                        textosOcultos36.forEach(texto36 => texto36.style.display = "none");
+                        leerMas36.style.display = "block"; // volver a mostrar "Leer más..."
+                        leerMenos36.style.display = "none"; // ocultar "Mostrar menos..."
+                    });
+                });
+            </script>
+
+ 
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 140%;">Petróleo, guerra y Estado: la oportunidad incómoda de Argentina en un mundo en conflicto</h2>
+                </div>               
+            </div>
+            <br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <img class="flyer" style="width: 100%; height: auto;padding-top: 15px; padding-bottom: 1px;" src="./img/PETRO_WEB_CORREGIDA.png" alt="Sabrina Serer">
+                </div>
+                
+                <div class="col-md-8" style="padding-top: 65px;">                   
+                        <p id="turismo">
+                            <b style="font-size: large;">Una guerra que redefine el orden energético</b><br>
+                            <br>                           
+                    
+                           La escalada del conflicto en <b>Medio Oriente</b>, con epicentro en la tensión entre Irán, Israel y Estados Unidos, vuelve a 
+                           colocar al <b>petróleo</b> en el centro de la escena internacional. No como un insumo más, sino como lo que nunca dejó de 
+                           ser: un <b>vector de poder</b>, una variable de <b>orden global</b> y un condicionante directo de la <b>estabilidad económica</b> de los Estados.<br>
+                           <br>
+                           Lejos de interpretaciones coyunturales, este episodio puede leerse como parte de una dinámica más profunda: la persistencia de 
+                           la <b>energía como organizadora</b> de la política internacional.
+
+                                                                                 
+                        </p>                        
+                        <span id="toggleText36" style="color: #7E6BA0;display: block;cursor: pointer;font-weight: bold;">Leer más...</span>
+                        <br>                   
+                </div>     
+                
+                
+                
+                <div class="col-md-12" id="oculto-36">
+                    <p id="turismo">                       
+                       Tal como lo demuestra la literatura sobre <b>shocks petroleros</b> —particularmente los aportes de Hamilton y Kilian—, los precios del 
+                       crudo no reflejan únicamente condiciones materiales de producción, sino <b>expectativas, riesgos y conflictos</b>. En otras palabras, 
+                       el petróleo incorpora en su precio la <b>incertidumbre del mundo</b>.                        
+                    <br>    
+                                         
+                    </p>                        
+                </div>                         
+                
+                <div class="col-md-12" id="oculto-36">
+                    <p id="turismo">
+                        <b style="font-size: large;">El Golfo Pérsico: donde la percepción mueve los mercados</b><br>                       
+                                             
+                        En este contexto, la región del <b>Golfo Pérsico</b> adquiere una centralidad crítica. El <b>estrecho de Ormuz</b>, punto neurálgico 
+                        por el que circula una proporción sustantiva del comercio global de crudo, se convierte en un verdadero <b>termómetro geopolítico</b>.<br>
+                       
+                        <br>
+                       No es necesario que se interrumpa efectivamente el flujo de petróleo para que los mercados reaccionen. Basta con que esa 
+                       posibilidad sea <b>creíble</b>. La economía, en este plano, opera tanto sobre <b>percepciones</b> como sobre hechos. La llamada 
+                       "<b>prima de riesgo geopolítico</b>" explica por qué los precios pueden escalar incluso en ausencia de daños materiales concretos.                         
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-36">
+                    <p id="turismo">                       
+                       <b style="font-size: large;">Lo que enseña la política internacional comparada</b><br>                       
+                        Pero lo verdaderamente relevante no es solo el impacto inmediato en los precios, sino la <b>forma en que distintos países 
+                        procesan estos shocks</b>. Aquí es donde la <b>política internacional comparada</b> aporta una clave de lectura fundamental.<br>                        
+                        <br>
+                       No todos los Estados reaccionan de la misma manera ante una perturbación externa. Las respuestas están condicionadas por 
+                       sus <b>capacidades institucionales</b>, su <b>estructura productiva</b> y su <b>calidad de gobernanza</b>. Tal como señalan autores como Dani 
+                       Rodrik o Kathleen Thelen, las crisis externas no determinan resultados: <b>los mediatizan</b>.<br>
+                       <br>
+                       Los países <b>importadores de energía</b> suelen enfrentar presiones inflacionarias, deterioro fiscal y tensiones sociales. En cambio, 
+                       los <b>productores</b> —o aquellos con potencial exportador— acceden a una oportunidad, pero también a un riesgo: el de no poder 
+                       transformar esa <b>renta extraordinaria</b> en <b>desarrollo sostenible</b>.
+                        
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-36">
+                    <p id="turismo">
+                        <b style="font-size: large;">Argentina: entre la oportunidad y la restricción</b><br>                    
+                        Es en este punto donde Argentina aparece, no como protagonista del conflicto, pero sí como un actor potencialmente afectado por 
+                        sus consecuencias. La existencia de <b>recursos no convencionales</b> en <b>Vaca Muerta</b> modifica su posición relativa: el país 
+                        deja de ser exclusivamente vulnerable a los aumentos del precio del petróleo y pasa a tener una capacidad, al menos 
+                        potencial, de <b>beneficiarse de ellos</b>.<br>
+                        <br>
+                        Un escenario de <b>precios altos</b> podría mejorar los <b>términos de intercambio</b>, atraer inversiones y dinamizar el <b>sector energético</b>. Sin 
+                        embargo, estos beneficios no son automáticos. La falta de <b>infraestructura</b>, la <b>inestabilidad macroeconómica</b> y la ausencia de 
+                        una <b>estrategia integral de gobernanza energética</b> limitan seriamente la capacidad de capturar esas ventajas.
+                        Pero incluso en ese escenario, la ecuación se tensiona.<br>
+                        <br>
+                        La evidencia comparada es contundente: <b>los recursos naturales no garantizan desarrollo</b>. Países como <b>Noruega</b> han logrado 
+                        transformar la renta petrolera en estabilidad y bienestar a través de <b>planificación de largo plazo e instituciones sólidas</b>. Otros, 
+                        en cambio, han quedado atrapados en ciclos de volatilidad y dependencia. La diferencia no está en el recurso, sino en el <b>Estado</b>.<br>
+                        <br>
+                                                       
+                    </p>                        
+                </div>
+
+                <div class="col-md-12" id="oculto-36">
+                    <p id="turismo">
+                        <b style="font-size: large;">¿Puede Argentina verse involucrada en la guerra?</b><br>                    
+                        Desde una perspectiva estrictamente militar, la probabilidad es baja. Argentina no cuenta con <b>capacidad de proyección</b> de poder ni 
+                        con compromisos estratégicos que la vinculen directamente al conflicto en Medio Oriente.<br>
+                        <br>
+                        Sin embargo, esta lectura resulta incompleta. <b>Las guerras contemporáneas</b> no se limitan al plano militar. También se expresan en 
+                        dimensiones <b>económicas, energéticas y diplomáticas</b>.<br>
+                        <br>
+                        En ese marco, los países con <b>recursos estratégicos</b> adquieren una nueva centralidad. No porque participen del conflicto, 
+                        sino porque se vuelven relevantes en la <b>reconfiguración de las cadenas globales de suministro</b>. La energía redefine vínculos, 
+                        prioridades y alineamientos.<br>
+                        <br>
+                        Argentina, entonces, <b>no será arrastrada a la guerra</b>, pero sí puede verse crecientemente interpelada por ella. No 
+                        por lo que hace, sino por <b>lo que tiene</b>.              
+                             
+                    </p>                        
+                </div>
+                
+                <div class="col-md-12" id="oculto-36">
+                    <p id="turismo">
+                        <b style="font-size: large;">El problema de fondo: la ausencia de estrategia</b><br>                    
+                        El riesgo principal no radica en el conflicto en sí, sino en la <b>falta de una respuesta estructurada</b> a sus efectos. Los países 
+                        que logran capitalizar estos escenarios son aquellos que cuentan con <b>Estados capaces</b> de planificar, coordinar e implementar 
+                        políticas de manera consistente.<br>
+                        <br>
+                        La discusión no debería centrarse únicamente en el precio del petróleo o en la evolución del conflicto, sino en la <b>capacidad 
+                        del país para gestionar sus recursos</b> en un contexto internacional cada vez más inestable.<br>
+                        <br>                              
+                    </p>                        
+                </div>
+
+
+                <div class="col-md-12" id="oculto-36">
+                    <p id="turismo">
+                        <b style="font-size: large;">Conclusión: recursos, poder y decisión política</b><br>                      
+                        La crisis en Medio Oriente vuelve a poner en evidencia que el <b>petróleo sigue siendo un 
+                        factor de poder global</b>. Pero también deja una lección más profunda: <b>no alcanza con poseer recursos estratégicos</b>.<br>
+                        <br>
+                        El verdadero diferencial está en la <b>capacidad política e institucional</b> para transformarlos en desarrollo. En un mundo atravesado 
+                        por tensiones energéticas, la ventaja no la tienen quienes tienen petróleo, sino <b>quienes saben qué hacer con él</b>.
+                   
+                                                
+                    </p>        
+
+                
+
+                    <!--<section id="newsletter">
+                    <div class="container">      
+                        <style>
+                        @font-face {
+                            font-display: block;
+                            font-family: "Lato", sans-serif;          
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+                        }
+
+                        @font-face {
+                            font-display: fallback;           
+                            font-family: "Lato", sans-serif;  
+                            font-weight: 600;
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+                        }
+
+                        @font-face {
+                            font-display: fallback;      
+                            font-family: "Lato", sans-serif;
+                            font-weight: 700;
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+                        }
+
+                        #sib-container input:-ms-input-placeholder {
+                            text-align: left;
+                            font-family: "Lato", sans-serif;            
+                            color: #c0ccda;
+                        }
+
+                        #sib-container input::placeholder {
+                            text-align: left;
+                            font-family: "Lato", sans-serif;            
+                            color: #c0ccda;
+                        }
+
+                        #sib-container a {
+                            text-decoration: underline;
+                            color: #2BB2FC;
+                        }
+                        @media (max-width: 768px) {
+                            #newsletter {
+                                padding-top: 40px;
+                            }
+                            .sib-form-block {
+                                font-size: 25px;
+                            }
+                        }
+                        </style>
+                        <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">-->
+                    
+                        <!--<div class="sib-form" style="text-align: center;
+                                background: linear-gradient(135deg, #7E57C2, #F48FB1);                                           ">-->
+                        <!--<div id="sib-form-container" class="sib-form-container">
+                            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+                            
+                                <form id="sib-form" method="POST" target="hidden_iframe"
+                                action="https://1963ce36.sibforms.com/serve/MUIFAPDvc2VwMNmqP-KTw185f20BdvFGUmEAvA519cSv1ttqz8cAwQc8w-OZ_ggezCdP81SloOCag2wgDkRWw-ev4kWyuM5MYtdLUG-YhJnyfyj7EYlUUhfjWnE4-4UplZRzNvQaF0AFTRvRipwSt3zz_MyDRIiak-2najc6iCbG_YGh-DnbxBp0GI9gbLQE5CaPFZ9qrlT4LxT4_g=="
+                                onsubmit="mostrarMensaje()">
+
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:26px; text-align:left; font-weight:700; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <p>Newsletter</p>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <div class="sib-text-form-block">
+                                    <p>Suscribete a nuestro newsletter para recibir informes actualizados.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-input sib-form-block">
+                                    <div class="form__entry entry_block">
+                                    <div class="form__label-row ">
+                                        <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Lucida Grande&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Ingresa tu email para suscribirte</label>
+
+                                        <div class="entry__field">
+                                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="email" data-required="true" required />
+                                        </div>
+                                    </div>
+
+                                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                    </label>
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="text-align: left">                    
+                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="background-color: white; font-size: small; font-weight: 600; color: #7E6BA0; border: 3px #E3BFD6 solid; padding: 8px; margin: 3px;" form="sib-form" type="submit">
+                                    Suscribirme
+                                    </button>
+
+                                    <div id="mensaje-exito" style="display:none; margin-top:12px; font-size: 12px; color: rgb(181, 170, 251); font-family: lato, sans-serif;">
+                                        Gracias por suscribirte. No olvides confirmar el email que te enviamos.
+                                    </div>                 
+
+                                </div>
+                                </div>
+                                <input type="text" name="email_address_check" value="" class="input--hidden">
+                                <input type="hidden" name="locale" value="en">
+                                <input type="hidden" name="html_type" value="simple">
+                            </form>
+                            <iframe name="hidden_iframe" style="display:none;"></iframe>
+                            </div>
+                        </div>-->
+                        <!--</div>      
+
+                    </div>
+
+                </section>-->
+                
+
+                </div>               
+           
+                                
+                <span id="leermenos36"></span>
+                               
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> 
+                document.addEventListener("DOMContentLoaded", function () {
                     const leerMas35 = document.getElementById("toggleText35");
                     const leerMenos35 = document.getElementById("leermenos35");
                     const textosOcultos35 = document.querySelectorAll("#oculto-35");
@@ -412,14 +730,124 @@
                         perdidas. Y, en los casos más extremos, se mide en <b>vidas.</b><br>
                         La pregunta que queda abierta —y que interpela directamente a quienes toman decisiones— es simple, pero incómoda:<br>
                         <br>
-                        <b>¿La Argentina que viene va a gestionar la salud como un sistema… o va a seguir administrando sus consecuencias?</b>         
-
-                              
-                    </p>                        
-                </div>
-                   
+                        <b>¿La Argentina que viene va a gestionar la salud como un sistema… o va a seguir administrando sus consecuencias?</b>                              
+                    </p>
 
 
+                    <!--<section id="newsletter">
+                    <div class="container">      
+                        <style>
+                        @font-face {
+                            font-display: block;
+                            font-family: "Lato", sans-serif;          
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+                        }
+
+                        @font-face {
+                            font-display: fallback;           
+                            font-family: "Lato", sans-serif;  
+                            font-weight: 600;
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+                        }
+
+                        @font-face {
+                            font-display: fallback;      
+                            font-family: "Lato", sans-serif;
+                            font-weight: 700;
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+                        }
+
+                        #sib-container input:-ms-input-placeholder {
+                            text-align: left;
+                            font-family: "Lato", sans-serif;            
+                            color: #c0ccda;
+                        }
+
+                        #sib-container input::placeholder {
+                            text-align: left;
+                            font-family: "Lato", sans-serif;            
+                            color: #c0ccda;
+                        }
+
+                        #sib-container a {
+                            text-decoration: underline;
+                            color: #2BB2FC;
+                        }
+                        @media (max-width: 768px) {
+                            #newsletter {
+                                padding-top: 40px;
+                            }
+                            .sib-form-block {
+                                font-size: 25px;
+                            }
+                        }
+                        </style>
+                        <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+                    
+                        <!--<div class="sib-form" style="text-align: center;
+                                background: linear-gradient(135deg, #7E57C2, #F48FB1);                                           ">-->
+                        <!--<div id="sib-form-container" class="sib-form-container">
+                            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+                            
+                                <form id="sib-form" method="POST" target="hidden_iframe"
+                                action="https://1963ce36.sibforms.com/serve/MUIFAPDvc2VwMNmqP-KTw185f20BdvFGUmEAvA519cSv1ttqz8cAwQc8w-OZ_ggezCdP81SloOCag2wgDkRWw-ev4kWyuM5MYtdLUG-YhJnyfyj7EYlUUhfjWnE4-4UplZRzNvQaF0AFTRvRipwSt3zz_MyDRIiak-2najc6iCbG_YGh-DnbxBp0GI9gbLQE5CaPFZ9qrlT4LxT4_g=="
+                                onsubmit="mostrarMensaje()">
+
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:26px; text-align:left; font-weight:700; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <p>Newsletter</p>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <div class="sib-text-form-block">
+                                    <p>Suscribete a nuestro newsletter para recibir informes actualizados.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-input sib-form-block">
+                                    <div class="form__entry entry_block">
+                                    <div class="form__label-row ">
+                                        <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Lucida Grande&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Ingresa tu email para suscribirte</label>
+
+                                        <div class="entry__field">
+                                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="email" data-required="true" required />
+                                        </div>
+                                    </div>
+
+                                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                    </label>
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="text-align: left">                    
+                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="background-color: white; font-size: small; font-weight: 600; color: #7E6BA0; border: 3px #E3BFD6 solid; padding: 8px; margin: 3px;" form="sib-form" type="submit">
+                                    Suscribirme
+                                    </button>
+
+                                    <div id="mensaje-exito" style="display:none; margin-top:12px; font-size: 12px; color: rgb(181, 170, 251); font-family: lato, sans-serif;">
+                                        Gracias por suscribirte. No olvides confirmar el email que te enviamos.
+                                    </div>                 
+
+                                </div>
+                                </div>
+                                <input type="text" name="email_address_check" value="" class="input--hidden">
+                                <input type="hidden" name="locale" value="en">
+                                <input type="hidden" name="html_type" value="simple">
+                            </form>
+                            <iframe name="hidden_iframe" style="display:none;"></iframe>
+                            </div>
+                        </div>
+                       </div>    
+
+                    </div>
+
+                </section>-->
+
+                </div>               
            
                                 
                 <span id="leermenos35"></span>
@@ -605,12 +1033,124 @@
                         El siguiente paso es consolidar el <b>modelo que transforme esa oportunidad en legado</b>.<br>
 
                         Porque la historia no la escriben los que administran el presente. La escriben los que <b>diseñan el futuro</b>.       
-                    </p>                        
-                </div>
-                   
+                    </p>
 
+                    <!--<section id="newsletter">
+                    <div class="container">      
+                        <style>
+                        @font-face {
+                            font-display: block;
+                            font-family: "Lato", sans-serif;          
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+                        }
 
-           
+                        @font-face {
+                            font-display: fallback;           
+                            font-family: "Lato", sans-serif;  
+                            font-weight: 600;
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+                        }
+
+                        @font-face {
+                            font-display: fallback;      
+                            font-family: "Lato", sans-serif;
+                            font-weight: 700;
+                            src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+                        }
+
+                        #sib-container input:-ms-input-placeholder {
+                            text-align: left;
+                            font-family: "Lato", sans-serif;            
+                            color: #c0ccda;
+                        }
+
+                        #sib-container input::placeholder {
+                            text-align: left;
+                            font-family: "Lato", sans-serif;            
+                            color: #c0ccda;
+                        }
+
+                        #sib-container a {
+                            text-decoration: underline;
+                            color: #2BB2FC;
+                        }
+                        @media (max-width: 768px) {
+                            #newsletter {
+                                padding-top: 40px;
+                            }
+                            .sib-form-block {
+                                font-size: 25px;
+                            }
+                        }
+                        </style>
+                        <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">-->
+                    
+                        <!--<div class="sib-form" style="text-align: center;
+                                background: linear-gradient(135deg, #7E57C2, #F48FB1);                                           ">-->
+                        <!--<div id="sib-form-container" class="sib-form-container">
+                            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+                            
+                                <form id="sib-form" method="POST" target="hidden_iframe"
+                                action="https://1963ce36.sibforms.com/serve/MUIFAPDvc2VwMNmqP-KTw185f20BdvFGUmEAvA519cSv1ttqz8cAwQc8w-OZ_ggezCdP81SloOCag2wgDkRWw-ev4kWyuM5MYtdLUG-YhJnyfyj7EYlUUhfjWnE4-4UplZRzNvQaF0AFTRvRipwSt3zz_MyDRIiak-2najc6iCbG_YGh-DnbxBp0GI9gbLQE5CaPFZ9qrlT4LxT4_g=="
+                                onsubmit="mostrarMensaje()">
+
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:26px; text-align:left; font-weight:700; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <p>Newsletter</p>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <div class="sib-text-form-block">
+                                    <p>Suscribete a nuestro newsletter para recibir informes actualizados.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-input sib-form-block">
+                                    <div class="form__entry entry_block">
+                                    <div class="form__label-row ">
+                                        <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Lucida Grande&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Ingresa tu email para suscribirte</label>
+
+                                        <div class="entry__field">
+                                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="email" data-required="true" required />
+                                        </div>
+                                    </div>
+
+                                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family: lato, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                    </label>
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="text-align: left">                    
+                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="background-color: white; font-size: small; font-weight: 600; color: #7E6BA0; border: 3px #E3BFD6 solid; padding: 8px; margin: 3px;" form="sib-form" type="submit">
+                                    Suscribirme
+                                    </button>
+
+                                    <div id="mensaje-exito" style="display:none; margin-top:12px; font-size: 12px; color: rgb(181, 170, 251); font-family: lato, sans-serif;">
+                                        Gracias por suscribirte. No olvides confirmar el email que te enviamos.
+                                    </div>                 
+
+                                </div>
+                                </div>
+                                <input type="text" name="email_address_check" value="" class="input--hidden">
+                                <input type="hidden" name="locale" value="en">
+                                <input type="hidden" name="html_type" value="simple">
+                            </form>
+                            <iframe name="hidden_iframe" style="display:none;"></iframe>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+
+                </section>-->
+                    
+                    
+
+                </div>           
                                 
                 <span id="leermenos34"></span>
                                
@@ -902,10 +1442,11 @@
                             las políticas realmente transforman la vida de las personas. La igualdad no es una consigna: es una arquitectura de políticas 
                             públicas."</i>
                         <br>
-                        <b>— Cra. Sabrina Serer</b>
+                        <b>— Cra. Sabrina Serer</b>                                                           
+                    </p>            
+                    
+                    
 
-                                                           
-                    </p>                        
                 </div>
 
 
@@ -1128,7 +1669,12 @@
                         La pregunta no es si crecerá. La pregunta es <b>cómo crecerá, para quiénes y con qué institucionalidad</b>.<br>
                         <br>
                         Y ahí se juega el verdadero futuro.
-                    </p>                        
+                    </p>
+
+                    
+                    
+                    
+
                 </div>
            
                                 
@@ -1300,20 +1846,10 @@
                         Estado de proteger lo esencial, garantizar derechos y construir un futuro viable para las próximas generaciones.<br>
 
                         Y en ese horizonte, <b>defender los glaciares</b> es defender soberanía, previsibilidad y <b>desarrollo inteligente</b> para la Nación.
-                       
-                      
-
-
-                  
-
-
-
-
-
-
-
 
                     </p>
+
+                    
                         
                 </div>
 
@@ -1325,25 +1861,6 @@
             </div>
             <br>
             <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1453,10 +1970,10 @@
                         La discusión de fondo es estratégica:<br>
                         <b>¿Qué modelo de desarrollo queremos? ¿Quién lo financia? ¿Quién asume el riesgo?</b><br>
                         Porque cuando el ajuste deja de ser fiscal y se vuelve corporal, el costo no desaparece. Se acumula.
-                    </p>                        
-                </div>
-
-                
+                    </p>                   
+                    
+                    
+                </div>               
            
                                 
                 <span id="leermenos30"></span>
@@ -1464,18 +1981,6 @@
             </div>
             <br>
             <br>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1684,10 +2189,10 @@
                 <div class="col-md-12" id="oculto-29">
                     <p id="turismo">                       
                        Y esa es, sin dudas, la conversación que el Estado argentino necesita dar.                            
-                    </p>                        
-                </div>
-     
-                
+                    </p>
+                    
+                    
+                </div>          
 
                 
            
@@ -1888,7 +2393,10 @@
                        Cuando el presupuesto deja de ser un ejercicio administrativo y se convierte en una <b>herramienta de conducción política</b>, el Estado 
                        recupera capacidad transformadora. Y cuando esa transformación se orienta al <b>cuidado de la vida</b>, el impacto trasciende una gestión y 
                        se consolida como <b>política de Estado.</b>.                                      
-                    </p>                        
+                    </p>
+                    
+                    
+
                 </div>
            
                                 
@@ -2067,7 +2575,10 @@
                        Para Neuquén, el desafío será <b>adaptarse a un entorno internacional en reconfiguración</b>, donde los precios del crudo pueden enfrentar 
                        presiones a la baja, pero donde también la diversificación, la inversión extranjera y la consolidación de Vaca Muerta como actor clave pueden 
                        generar <b>resiliencia y ventajas comparativas en el largo plazo</b>.                                      
-                    </p>                        
+                    </p>                   
+                    
+                    
+
                 </div>
            
                                 
@@ -2175,7 +2686,10 @@
                        Cierro el 2025 con la convicción de que el conocimiento cobra sentido cuando se pone al servicio del bien común 🚀. Agradezco a quienes 
                        confiaron en esta mirada estratégica y a quienes me acompañaron en cada kilómetro recorrido por el interior de nuestra provincia. El desafío 
                        que viene nos encontrará preparados para liderar una gestión moderna, transparente y, por sobre todo, profundamente humana.                                       
-                    </p>                        
+                    </p>
+
+                                        
+                    
                 </div>                         
                 
            
@@ -2314,7 +2828,10 @@
                         Conducción que sepa mirar al sur y pensar desde América Latina.<br>
                         Porque gobernar bien también es un acto de amor 💖.
                         
-                    </p>                        
+                    </p>
+                    
+                    
+
                 </div>                   
                 
            
@@ -2510,7 +3027,8 @@
                     <p id="turismo">
                         <b>Cra. Sabrina Serer</b><br>
                                 
-                    </p>                        
+                    </p>
+                                          
                 </div>    
            
                                 
@@ -2648,7 +3166,10 @@
                         
                         
                                                 
-                    </p>                        
+                    </p>                   
+                    
+                    
+
                 </div> 
                                 
                 <span id="leermenos23"></span>
@@ -2831,7 +3352,8 @@
                         Necesita gobernantes competentes, evaluables, responsables y comprometidos con el bien común.<br>
                         Que lleguen los mejores.<br>
                         Pero, sobre todo: <b>que los dejen llegar.</b>                        
-                    </p>                        
+                    </p>
+                                            
                 </div>               
                 
                 <span id="leermenos22"></span>
@@ -2980,7 +3502,9 @@
                         Mientras escribo estas líneas, miro a mi bebé y pienso que su futuro —y el de millones de chicos— depende de nuestras decisiones 
                         colectivas. Invertir en las infancias no es gasto: es sembrar las raíces de un país más justo, humano y próspero. Si realmente queremos 
                         transformar la Argentina, tenemos que empezar por lo más esencial: dar a cada niña y niño la oportunidad de crecer con salud, educación, 
-                        amor y dignidad.</p>                        
+                        amor y dignidad.</p>
+                        
+                    
                 </div>              
                 
                 
@@ -3123,7 +3647,9 @@
                         fortaleza del Estado no radica en gritar más fuerte, sino en construir consensos, articular políticas y sostener la confianza ciudadana.<br>
 
                         En definitiva, la historia enseña que los liderazgos personalistas se consumen rápido, mientras que las instituciones sólidas perduran. Y en
-                         esa diferencia se juega no solo el presente, sino el futuro político de la Argentina.</p>                        
+                         esa diferencia se juega no solo el presente, sino el futuro político de la Argentina.</p>
+                         
+                         
                 </div>
                 
                 
@@ -3242,7 +3768,9 @@
                 <div class="col-md-12" id="oculto-19">
                     <p id="turismo">
                         El desafío no es técnico, es filosófico y político: recuperar el presupuesto como acto soberano de construcción colectiva, como espacio de 
-                        consenso, como herramienta de transformación. Porque sin presupuesto no hay proyecto. Y sin proyecto, no hay destino.</p>                        
+                        consenso, como herramienta de transformación. Porque sin presupuesto no hay proyecto. Y sin proyecto, no hay destino.</p>
+                        
+                        
                 </div>
                 
                 <span id="leermenos19"></span>
@@ -3338,7 +3866,8 @@
                         con cada ministerio y secretaría para vincular sus presupuestos con los planes institucionales. Neuquén tiene una oportunidad única: ser 
                         la primera provincia del país que gobierna con algoritmos al servicio del bien común, con datos abiertos, inteligencia artificial y 
                         presupuesto con sentido. No se trata de robotizar la política, sino de humanizarla con decisiones más inteligentes, más transparentes 
-                        y más justas.</p>                        
+                        y más justas.</p>
+                                             
                 </div>
                 
                 <span id="leermenos18"></span>
@@ -3455,7 +3984,9 @@
                         Puede transformarse en la <b>provincia del dato, la evidencia y la eficiencia pública.</b></p>                        
                 </div>
                 <div class="col-md-12" id="oculto-17">
-                    <p id="turismo">Lo que Neuquén haga en los próximos dos años no será sólo gestión: será legado. <b>Gobernar es decidir. Y hoy, decidir es evaluar.</b></p>                        
+                    <p id="turismo">Lo que Neuquén haga en los próximos dos años no será sólo gestión: será legado. <b>Gobernar es decidir. Y hoy, decidir es evaluar.</b></p>
+                    
+                    
                 </div>
                 <span id="leermenos17"></span>
                                
@@ -3582,7 +4113,10 @@
                         El gobierno de Figueroa tiene la oportunidad de marcar un rumbo distinto. No para confrontar con la Nación, sino para mostrar que otra forma 
                         de hacer política es posible. Que se puede decidir mejor, gastar con sentido y transformar la realidad desde la evidencia.
                         Porque evaluar no es auditar: es gobernar con inteligencia. Y cuando eso se hace desde el territorio, con liderazgo y con estrategia, lo 
-                        público deja de ser promesa y se convierte en presente.</p>                        
+                        público deja de ser promesa y se convierte en presente.</p>
+                        
+                    
+
                 </div>
                 <span id="leermenos16"></span>
                                
@@ -3736,7 +4270,9 @@
                 </div>
 
                 <div class="col-md-12" id="oculto-15">
-                    <p id="turismo">Neuquén está demostrando que es posible. Y lo está haciendo con política de verdad. Que nadie mire para otro lado.</p>                 
+                    <p id="turismo">Neuquén está demostrando que es posible. Y lo está haciendo con política de verdad. Que nadie mire para otro lado.</p>
+                    
+                    
                 </div>
                 
                
@@ -3864,7 +4400,9 @@
                     <p id="turismo">América Latina está atravesada por una reconfiguración de sus liderazgos, de sus partidos y, sobre todo, de sus formas de 
                         representación. El caso Milei debe ser leído como síntoma y advertencia: cuando los partidos tradicionales no logran canalizar el malestar 
                         social, surgen liderazgos que prometen orden y libertad, pero que terminan erosionando las bases mismas de la democracia. Frente a eso, 
-                        el desafío no es solo resistir, sino también construir alternativas capaces de combinar eficacia, legitimidad y justicia social.</p>                        
+                        el desafío no es solo resistir, sino también construir alternativas capaces de combinar eficacia, legitimidad y justicia social.</p>
+                        
+                        
                 </div>       
                 
                 
@@ -3945,7 +4483,9 @@
                         transformadora.</p>                        
                 </div>
                 <div class="col-md-12" id="oculto-13">
-                    <p id="turismo">📚 Si todavía no lo leíste, el libro está disponible de forma gratuita en este link 👉 <a href="./venta.html" target="_blank">www.sabrinaserer.ar/libro</a></p>                 
+                    <p id="turismo">📚 Si todavía no lo leíste, el libro está disponible de forma gratuita en este link 👉 <a href="./venta.html" target="_blank">www.sabrinaserer.ar/libro</a></p>
+                    
+                    
                 </div>                
                 <span id="leermenos13"></span>   
                 
@@ -4036,7 +4576,9 @@
                 
 
                 <div class="col-md-12" id="oculto-12">
-                    <a href="./img/Como se gobierna en America Latina sin mayoría legislativa.pdf" target="_blank">👉 Descargá el informe completo acá</a>                    
+                    <a href="./img/Como se gobierna en America Latina sin mayoría legislativa.pdf" target="_blank">👉 Descargá el informe completo acá</a>
+                    
+                    
                 </div>
                 <span id="leermenos12"></span>            
                 
@@ -4126,7 +4668,9 @@
                         proyecto! 🙏✨</p>                        
                 </div>
                 <div class="col-md-12" id="oculto-11">
-                    <p id="turismo">#Evaluar #PolíticasPúblicas #DesarrolloSocial #SabrinaSerer #Argentina #GpR</p>                        
+                    <p id="turismo">#Evaluar #PolíticasPúblicas #DesarrolloSocial #SabrinaSerer #Argentina #GpR</p>
+                    
+                    
                 </div>
                 <span id="leermenos11"></span>               
                 
@@ -4215,7 +4759,9 @@
                 <div class="col-md-12" id="oculto-10">
                     <p id="turismo">Este seminario y la nueva especialización están dirigidos a profesionales de la salud, administradores y responsables de políticas 
                         públicas que buscan fortalecer sus capacidades en planificación y gestión. ¡Los invito a sumarse a esta propuesta de formación en la UNCo y 
-                        a seguir construyendo juntos un sistema de salud más eficiente y equitativo! ¡Los espero!</p>                        
+                        a seguir construyendo juntos un sistema de salud más eficiente y equitativo! ¡Los espero!</p>
+                        
+                        
                 </div>
                 <span id="leermenos10"></span>               
                 
@@ -4302,7 +4848,9 @@
                         y calidad del gasto público.</p>                        
                 </div>
                 <div class="col-md-12" id="oculto-1">
-                    <a href="./img/Serer_Transversalidad_.pdf" target="_blank">💾  Enlace al documento PDF</a>                    
+                    <a href="./img/Serer_Transversalidad_.pdf" target="_blank">💾  Enlace al documento PDF</a>
+                    
+                    
                 </div>  
                 <span id="leermenos1"></span>
                 
@@ -4406,7 +4954,12 @@
                         valor público en la implementación de políticas públicas. Ya no somos solo generadores de datos duros: somos actores fundamentales para que 
                         los resultados se materialicen en los distintos ministerios. Nuestra responsabilidad es ofrecer herramientas que aporten previsibilidad al 
                         gasto y hagan un uso eficiente de los recursos públicos, con una visión integral y comprensiva del contexto ministerial al que pertenecemos.
-                        </p>                                                
+                    </p>
+
+                    
+
+                        
+                        
                 </div>
                 <span id="leermenos2"></span>        
             
@@ -4559,7 +5112,9 @@
                 </div>
                 
                 <div class="col-md-12" id="oculto-3">
-                    <p id="turismo">#HaciendoLoTécnicoHumano #GestiónEficiente #PresupuestoConPropósito #Neuquén #CompromisoPúblico #TransformaciónCultural</p>                        
+                    <p id="turismo">#HaciendoLoTécnicoHumano #GestiónEficiente #PresupuestoConPropósito #Neuquén #CompromisoPúblico #TransformaciónCultural</p>
+                    
+                    
                 </div>
                 <span id="leermenos3"></span> 
                 
@@ -4647,7 +5202,9 @@
                         resultados y con una mirada puesta siempre en el bienestar de la comunidad. 🌱✨</p>
                 </div>
                 <div class="col-md-12" id="oculto-4">
-                    <p id="turismo">#Capacitación #SaludEficiente #Neuquén #GestiónConPropósito #CompromisoPúblico #DesarrolloInstitucional</p>                        
+                    <p id="turismo">#Capacitación #SaludEficiente #Neuquén #GestiónConPropósito #CompromisoPúblico #DesarrolloInstitucional</p>
+                    
+                    
                 </div>
                 <span id="leermenos4"></span>
                 
@@ -4746,7 +5303,9 @@
                         y trabajo en equipo. 💙</p>                        
                 </div>
                 <div class="col-md-12" id="oculto-5">
-                    <p id="turismo">#NuevosDesafíos #CrecimientoProfesional #Neuquén #GestiónEficiente #CompromisoPúblico</p>                        
+                    <p id="turismo">#NuevosDesafíos #CrecimientoProfesional #Neuquén #GestiónEficiente #CompromisoPúblico</p>
+                    
+                    
                 </div>
                 <span id="leermenos5"></span>
                 
@@ -4841,7 +5400,9 @@
                 <div class="col-md-12" id="oculto-6">
                     <p id="turismo">Compartir estas inquietudes y conocimientos 📚 con colegas motivados por mejorar la eficacia en sus equipos técnicos 🧩 es un 
                         privilegio, y juntos, estamos construyendo los cimientos 🏗️ de una administración pública más justa y orientada a resultados, que pone a la 
-                        salud y el bienestar en el centro de sus prioridades. 🌟💙</p>                        
+                        salud y el bienestar en el centro de sus prioridades. 🌟💙</p>
+                        
+                        
                 </div>
 
                 <span id="leermenos6"></span>
@@ -4921,6 +5482,8 @@
                         financiamiento y reforzar un sistema de salud que responda realmente a las necesidades de nuestra comunidad. 🌍🏥<br>                        
                         Confío en que con estos avances, Neuquén se convertirá en un modelo de gestión transparente y sustentable, orientado al bienestar de cada 
                         uno de sus habitantes.</p>
+
+                       
                         
                 </div>
                 <span id="leermenos7"></span>
@@ -5008,7 +5571,9 @@
                         tiene como objetivo principal mejorar la calidad de vida de nuestra población. 💚</p>
                 </div>
                 <div class="col-md-12" id="oculto-8">
-                    <p id="turismo">— Sabrina Serer, Equipo de Administración Financiera, Ministerio de Salud de Neuquén 🌿</p>                        
+                    <p id="turismo">— Sabrina Serer, Equipo de Administración Financiera, Ministerio de Salud de Neuquén 🌿</p>
+                    
+                    
                 </div>
                 <span id="leermenos8"></span>
                 
@@ -5202,20 +5767,20 @@
   
   <!--banner-->
   
-  <section class="banner-libro">
-  <div class="banner-container">
-    <div class="banner-texto">
-      <h2>El conocimiento transforma la gestión pública!</h2>
-      <p>Ideal para quienes se desempeñan en áreas de salud, desarrollo social, planificación territorial y administración financiera, esta obra propone caminos 
-        posibles para una gestión pública más estratégica, transparente y transformadora.
+<section class="banner-libro">
+    <div class="banner-container">
+        <div class="banner-texto">
+            <h2>El conocimiento transforma la gestión pública!</h2>
+            <p>Ideal para quienes se desempeñan en áreas de salud, desarrollo social, planificación territorial y administración financiera, esta obra propone caminos 
+            posibles para una gestión pública más estratégica, transparente y transformadora.
    
-      </p>
-      <a href="./venta.html" class="banner-boton">Saber más!</a>
+            </p>
+            <a href="./venta.html" class="banner-boton">Saber más!</a>
+        </div>
+        <div class="banner-imagen">      
+            <img src="./img/arbolito_sabri.png" alt="Libro Diseño y Monitoreo de Políticas Públicas">
+        </div>
     </div>
-    <div class="banner-imagen">      
-      <img src="./img/arbolito_sabri.png" alt="Libro Diseño y Monitoreo de Políticas Públicas">
-    </div>
-  </div>
 </section>
 
 
@@ -5330,7 +5895,7 @@
   </section>
 
 
-  <section id="newsletter">
+  <!--<section id="newsletter">
     <div class="container">      
         <style>
         @font-face {
@@ -5441,7 +6006,7 @@
 
     </div>
 
-  </section>
+  </section>-->
 
  
 
