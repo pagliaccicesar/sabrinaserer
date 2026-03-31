@@ -56,7 +56,9 @@ body {
   transition: background 0.3s ease;
 }
 .comprar {  
-  background: linear-gradient(to right, #7E6BA0, #E3BFD6);
+  background: linear-gradient(to right, #E3BFD6, #E3BFD6);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 0px #ac9ad7;
   color: white;
 }
 .comprar:hover {
@@ -72,7 +74,7 @@ body {
   justify-content: center;
 }
 .image-section img {   
-  width: 200px; /* Ajustado */
+  width: 200px; 
   height: auto; 
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
   margin-top: 1px; 
@@ -87,8 +89,8 @@ body {
     "sinopsis ficha"
     "comment form";
   grid-template-columns: 1fr 1fr;
-  gap: 60px; /* Reducido el espacio entre columnas */
-  padding: 40px; /* Reducido para un bloque más compacto */
+  gap: 60px; 
+  padding: 40px; 
 }
 
 .main h2 {
@@ -117,7 +119,7 @@ body {
 
 .form-pdf-libro h2 {
   text-align: center;
-  margin-bottom: 1.5rem; /* Ajustado para ser más compacto */
+  margin-bottom: 1.5rem;
 }
 
 form {
@@ -132,21 +134,21 @@ input {
   width: 100%;
   background: #f5f5f5;
   border: 0;
-  padding: 12px; /* Ajustado */
+  padding: 12px; 
   border-radius: 8px;
   margin-bottom: 10px;
   border: 1px solid #eee;
 }
 .btn2 {
   width: 100%;
-  padding: 10px; /* Ajustado */
-  border: 0;
+  padding: 10px;
+  border: 0;  
   background: #c3b6e2;
-  font-size: 1em; /* Ajustado */
+  font-size: 1em; 
   color: #fff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 3px 0px #ac9ad7;
-  margin-top: 1rem; /* Ajustado */
+  margin-top: 1rem; 
   border-radius: 0.25rem;
 }
 .btn2:hover {
@@ -175,7 +177,7 @@ input {
 } 
 
 .margin-below {
-  margin-bottom: 1rem; /* Ajustado */
+  margin-bottom: 1rem; 
 }
 .form-control:focus {
   border-color: #7743ff;
@@ -185,7 +187,46 @@ input {
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .main {
+.container {
+    flex-direction: column;
+    align-items: center;
+  }
+.image-section {
+    order: 1;
+    flex: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+.image-section img {
+    max-height: 300px;
+    width: auto;
+    max-width: 90%;
+  }  
+.text-section {
+    order: 3;
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+.text-section .buttons {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+.comprar {
+    width: 140px;
+    text-align: center;
+  }
+.text-section h1 {
+    font-size: 2rem;    
+  }
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;    
+  }
+.main {
     margin-top: 20px;   
     gap: 20px;
     padding: 20px;
@@ -195,79 +236,58 @@ input {
       "comment"
       "form";
     grid-template-columns: 1fr;
-  }
-  .text-section {
-    flex: none;
-    width: 100%;
-  }
-  .text-section h1 {
-    font-size: 2rem; /* Reducido más para pantallas pequeñas */
-  }
-  .subtitle {
-    font-size: 1rem; /* Ajustado */
-    margin-bottom: 20px;
-  }
-  .buttons {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-  .btn {
-    width: 80%;
-    padding: 10px; /* Ajustado */
-  }
-  .image-section {
-    flex: none;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .image-section img {
-    max-height: 300px; /* Ajustado */
-    width: auto;
-    max-width: 90%;
-  }
+  }  
 }
 
-@media (max-width: 480px) {
-  .menu-section {
+@media (max-width: 480px) {  
+.text-section .buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+.comprar {
+    width: 140px;
+    text-align: center;
+  }
+.menu-section {
     order: -2;
     height: 20px;
     margin-top: 10px;
   }  
-  .image-section img {   
-    max-width: 40%; /* Ajustado */
+.image-section img {   
+    max-width: 40%; 
   }
-  .text-section h1 {
-    font-size: 1.2rem; /* Ajustado */
-    text-align: justify;
+.text-section h1 {
+    font-size: 1.2rem; 
+    text-align: center;
     padding-right: 20px;
     padding-left: 20px;
+  }  
+.subtitle {
+    font-size: 0.7rem;  
+    text-align: center; 
   }
-  .subtitle {
-    font-size: 0.7rem; /* Reducido */
-    padding-left: 20px;  
-  }
-  .main h2 {
+.main h2 {
     font-weight: 400;
     font-size: medium;
     padding-bottom: 10px;
 }
 .buttons {
-    font-size: 0.7rem; /* Reducido */  
-    /*padding: 10px 10px;*/ /* Ajustado para que sean más pequeños */
+    font-size: 0.7rem;    
     border-radius: 8px;
     font-weight: bold;
   }
-  .iniciar, .comprar {
+.iniciar, .comprar {
     width: 80px;
     text-align: center;
     padding: 8px 16px;
   }
-  form {  
+form {  
     padding: 1.3rem;
     width: 100%; 
   }
-  .form-pdf-libro h2 {
+.form-pdf-libro h2 {
     text-align: left; 
   }
 }
