@@ -11,14 +11,15 @@ body {
 .container {  
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;  
+  max-width: 1200px;
+  height: 50%;
   margin: 0 auto;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
 }
 .text-section {
-  flex: 1 1 500px;
+  flex: 1 1 200px; /* Reducido para hacerla más compacta */
 }
 .menu-section {    
     width: 100%;
@@ -34,68 +35,70 @@ body {
     text-align: center;
 }
 .text-section h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem; /* Reducido para pantallas grandes */
+  margin-bottom: 10px;
   color: white;  
 }
 .subtitle {
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 1.3rem; /* Reducido a un tamaño más manejable */
+  margin-bottom: 30px;
   color: white;  
 }
 .buttons {
   display: flex;
-  gap: 20px;
+  gap: 10px; /* Reducido el espacio entre botones */
 }
 .btn {
   text-decoration: none;
-  padding: 12px 28px;
+  padding: 10px 20px; /* Ajustado para que sean más pequeños */
   border-radius: 8px;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 .comprar {  
-  background: linear-gradient(to right, #7E6BA0, #E3BFD6);
+  background: linear-gradient(to right, #E3BFD6, #E3BFD6);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 0px #ac9ad7;
   color: white;
 }
-
 .comprar:hover {
   opacity: 0.9;
 }
 .iniciar {
   background: linear-gradient(to right, #7E6BA0, #E3BFD6);
-  color: white; 
-}
-.descargar:hover {
-  background-color: #f7f7f7;
+  color: white;  
 }
 .image-section {
-  flex: 1 1 300px;
+  flex: 1 1 250px; /* Reducido para ajustarse más a la sección */
   display: flex;
   justify-content: center;
 }
 .image-section img {   
-  width: 350px;
+  width: 200px; 
   height: auto; 
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-  margin-top: 1px; /* ajusta este valor según el alto del subtítulo */
+  margin-top: 1px; 
 }
 
 .main {
   background-color: white;
   color: black;  
-  margin-top: 120px;
+  margin-top: 80px; /* Reducido para que se presente más cerca de la parte superior */
   display: grid;
   grid-template-areas:
     "sinopsis ficha"
     "comment form";
   grid-template-columns: 1fr 1fr;
-  gap: 90px;
-  padding: 80px;
+  gap: 60px; 
+  padding: 40px; 
 }
+
 .main h2 {
   font-weight: 400;
   padding-bottom: 10px;
+}
+.main p {
+    font-size: small;
 }
 .sinopsis-libro {
   grid-area: sinopsis;
@@ -109,15 +112,16 @@ body {
 }
 .form-pdf-libro {
   grid-area: form;
-  flex-direction: column; /*solo para boton de PDF*/
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
 .form-pdf-libro h2 {
   text-align: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 }
+
 form {
   background: #f7f4ff;
   border-radius: 0.3rem;
@@ -130,21 +134,21 @@ input {
   width: 100%;
   background: #f5f5f5;
   border: 0;
-  padding: 20px;
+  padding: 12px; 
   border-radius: 8px;
   margin-bottom: 10px;
   border: 1px solid #eee;
 }
 .btn2 {
   width: 100%;
-  padding: 12px;
-  border: 0;
+  padding: 10px;
+  border: 0;  
   background: #c3b6e2;
-  font-size: 1.1em;
+  font-size: 1em; 
   color: #fff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 3px 0px #ac9ad7;
-  margin-top: 1.2rem;
+  margin-top: 1rem; 
   border-radius: 0.25rem;
 }
 .btn2:hover {
@@ -165,128 +169,125 @@ input {
   line-height: 1.25;
   color: #55595c;
   background-color: #f9f9f9;
-  background-image: none;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
 .form-pdf-libro .btn2 {
   cursor: pointer;
 } 
+
 .margin-below {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem; 
 }
 .form-control:focus {
   border-color: #7743ff;
   box-shadow: inset 0 1px 1px rgba(45, 45, 45, 0.07),
     0 0 8px rgba(129, 129, 129, 0.6);
 }
-/*@media (max-width: 905px) {
-  .container {
+
+/* Media Queries */
+@media (max-width: 768px) {
+.container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 20px;
   }
-  .menu-section {
-    order: -1;
-  }}*/
-
-@media (max-width: 768px) {
-  .main {
-    margin-top: 45px;   
-    gap: 40px;
-    padding: 35px 20px;
+.image-section {
+    order: 1;
+    flex: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+.image-section img {
+    max-height: 300px;
+    width: auto;
+    max-width: 90%;
+  }  
+.text-section {
+    order: 3;
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+.text-section .buttons {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+.comprar {
+    width: 140px;
+    text-align: center;
+  }
+.text-section h1 {
+    font-size: 2rem;    
+  }
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;    
+  }
+.main {
+    margin-top: 20px;   
+    gap: 20px;
+    padding: 20px;
     grid-template-areas:
       "sinopsis"
       "ficha"
       "comment"
       "form";
     grid-template-columns: 1fr;
-  }
-  .main p {
-    text-align: left;
-  }
+  }  
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {  
+.text-section .buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+.comprar {
+    width: 140px;
     text-align: center;
-    padding: 20px;
   }
-  .menu-section {
-    order: -2;
-  }
-  .text-section {    
-    flex: none;
-    width: 100%;
-  }
-  .text-section h1 {
-    font-size: 2.2rem;
-  }
-  .subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  .buttons {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-  .btn {
-    width: 80%;
-    padding: 14px;
-  }
-  .image-section {
-    flex: none;
-    width: 100%;
-    margin-top: 30px;
-  }
-  .image-section img {
-    max-height: 350px;
-    width: auto;
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .menu-section {
+.menu-section {
     order: -2;
     height: 20px;
     margin-top: 10px;
   }  
-  .image-section {
-    order: -1;
+.image-section img {   
+    max-width: 40%; 
   }
-  .image-section img {   
-    width: auto;
-    max-width: 50%;
-  }
-  .text-section h1 {
-    font-size: 1.8rem;
+.text-section h1 {
+    font-size: 1.2rem; 
     text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }  
+.subtitle {
+    font-size: 0.7rem;  
+    text-align: center; 
   }
-  .subtitle {
-    font-size: 1rem;
-  }
-  .btn {
-    font-size: 1rem;
-  }
-  .menu-section {    
-      height: 20px;
+.main h2 {
+    font-weight: 400;
+    font-size: medium;
+    padding-bottom: 10px;
 }
-  .iniciar {
-    width: 90px;
+.buttons {
+    font-size: 0.7rem;    
+    border-radius: 8px;
+    font-weight: bold;
   }
-  form {  
+.iniciar, .comprar {
+    width: 80px;
+    text-align: center;
+    padding: 8px 16px;
+  }
+form {  
     padding: 1.3rem;
     width: 100%; 
-}
+  }
 .form-pdf-libro h2 {
     text-align: left; 
-}
-  
+  }
 }
